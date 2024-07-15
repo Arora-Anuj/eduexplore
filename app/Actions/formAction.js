@@ -127,7 +127,7 @@ export async function handleFormSubmit(prev, formdata) {
 
         subject: `Query Form`,
         // to: process.env.SendtoEmail,
-        to: 'dbuu@college.com',
+        to: 'dbuucollege@gmail.com',
       };
       await smtp.sendMail(mailConfig);
       console.log("email sent using smtp")
