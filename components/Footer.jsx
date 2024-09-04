@@ -49,6 +49,21 @@ function Footer() {
           </ul>
 
           </div>
+          <div>
+          <p className="text-[#98a2b3] text-[1em]">COMPANY</p>
+          <ul className="list-none font-medium">
+            <Link href="/about-us">
+            <li className="mt-4">Terms & Condition </li>
+            </Link>
+            <Link href="/request-demo">
+            <li className="mt-4">Privacy Policy </li>
+            </Link>
+            <Link href="/partner-with-us">
+            <li className="mt-4">Refund & Cancellation Policy </li>
+            </Link>
+          </ul>
+
+          </div>
         </div>
       </div>
       <div className="m-auto flex  items-center justify-center py-9 px-0">
