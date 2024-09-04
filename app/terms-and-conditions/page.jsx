@@ -11,258 +11,73 @@ function page() {
     <>
       <Navbar/>
 
+      <div className="p-8">
+      <h1 className="text-3xl font-bold mb-6">Terms and Conditions</h1>
+      
+      <section className="mb-6">
+        <h2 className="text-2xl font-semibold mb-4">1. Introduction</h2>
+        <p>Welcome to the Star Kid app! By accessing or using our app, you agree to comply with and be bound by the following terms and conditions. Please read them carefully. If you do not agree to these terms, please do not use the app.</p>
+      </section>
 
-        <section>
-        <div className='grid sm:grid-cols-2 grid-cols-1
- mt-[100px] mx-12 lg:mx-[100px] lg:gap-16 xl:gap-24'>
-    
-    <div className='w-full h-full mt-8'>
-      <Image
-      src={partner1}
-      alt="about1"
-      />
+      <section className="mb-6">
+        <h2 className="text-2xl font-semibold mb-4">2. Use of the App</h2>
+        <ul className="list-disc ml-6">
+          <li><strong>Account Registration:</strong> To access certain features, you may be required to create an account. You agree to provide accurate, current, and complete information during the registration process and to update such information as necessary.</li>
+          <li><strong>User Content:</strong> You are responsible for any content you submit or upload to the app, including but not limited to photos, videos, and text. You grant Star Kid a non-exclusive, royalty-free, perpetual license to use, reproduce, modify, and display such content.</li>
+        </ul>
+      </section>
+
+      <section className="mb-6">
+        <h2 className="text-2xl font-semibold mb-4">3. Subscription and Payment</h2>
+        <ul className="list-disc ml-6">
+          <li><strong>Subscription Plans:</strong> Star Kid offers various subscription plans that provide access to premium features. By subscribing, you agree to pay the applicable subscription fees.</li>
+          <li><strong>Payment Terms:</strong> Subscription fees are billed in advance on a monthly or annual basis, depending on your chosen plan. All payments are non-refundable.</li>
+          <li><strong>Automatic Renewal:</strong> Your subscription will automatically renew at the end of each billing cycle unless you cancel it before the renewal date. You may cancel your subscription at any time through your account settings.</li>
+          <li><strong>Cancellation:</strong> Once subscribed you cannot cancel your subscription.</li>
+        </ul>
+      </section>
+
+      <section className="mb-6">
+        <h2 className="text-2xl font-semibold mb-4">4. User Conduct</h2>
+        <ul className="list-disc ml-6">
+          <li><strong>Prohibited Activities:</strong> You agree not to engage in any activities that violate these terms or applicable laws, including but not limited to the following:</li>
+          <ul className="list-disc ml-10">
+            <li>Hacking, cracking, or circumventing any security features of the app.</li>
+            <li>Harassing, threatening, or defaming other users.</li>
+            <li>Uploading content that is illegal, obscene, or infringing on intellectual property rights.</li>
+          </ul>
+          <li><strong>Termination:</strong> We reserve the right to terminate or suspend your account if you violate these terms or engage in any prohibited activities.</li>
+        </ul>
+      </section>
+
+      <section className="mb-6">
+        <h2 className="text-2xl font-semibold mb-4">5. Intellectual Property</h2>
+        <p><strong>Ownership:</strong> Star Kid and its content, features, and functionality are the exclusive property of Star Kid or its licensors. You agree not to reproduce, duplicate, copy, sell, or exploit any portion of the app without express written permission from Star Kid.</p>
+      </section>
+
+      <section className="mb-6">
+        <h2 className="text-2xl font-semibold mb-4">6. Limitation of Liability</h2>
+        <ul className="list-disc ml-6">
+          <li><strong>No Warranties:</strong> The app is provided on an "as is" and "as available" basis. Star Kid makes no warranties, whether express or implied, regarding the app's functionality, availability, or accuracy.</li>
+          <li><strong>Limitation of Liability:</strong> In no event shall Star Kid be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the app, even if we have been advised of the possibility of such damages.</li>
+        </ul>
+      </section>
+
+      <section className="mb-6">
+        <h2 className="text-2xl font-semibold mb-4">7. Governing Law</h2>
+        <p>These terms shall be governed by and construed in accordance with the laws of India, without regard to its conflict of law provisions.</p>
+      </section>
+
+      <section className="mb-6">
+        <h2 className="text-2xl font-semibold mb-4">8. Changes to These Terms</h2>
+        <p>We may update these terms from time to time. When we do, we will revise the "Last Updated" date at the bottom of this page. Your continued use of the app after any changes indicates your acceptance of the new terms.</p>
+      </section>
+
+      <section className="mb-6">
+        <h2 className="text-2xl font-semibold mb-4">9. Contact Us</h2>
+        <p>If you have any questions about these terms, please contact us at <a href="mailto:contact@eduexplore.in" className="text-blue-500 underline">contact@eduexplore.in</a>.</p>
+      </section>
     </div>
-
-    <div className='' > 
-    <h1 className='font-semibold text-[24px] sm:text-[40px]  '>
-     Corporations
-      </h1> 
-      <h2 className='text-[18px] sm:text-2xl text-[#4B17D5] font-semibold py-4 sm:py-0 '>
-      Doing good is good for business
-      </h2>
-      <p className='text-[#475467] text-[16px]  py-4'>
-      My Talent works with medium to large scale corporations to deploy their CSR funds for well defined programs in affordable private schools (APS).
-
-      </p>
-      <p className='text-[#475467] text-[16px]  py-4'>
-      Affordable private schools charge Rs. 2000 per month or less as fees from
-their students. These are well meaning not-for-profit organizations, at times
-run by passionate teams but almost always short of funds to invest in
-technology based interventions to improve learning outcomes of students.
-
-      </p>
-      <p className='text-[#475467] text-[16px]  py-4'>
-      With My Talent, companies can use their CSR fund to help the schools implement our offering. We believe that it is important for all stake-holders to be sufficiently vested in running a CSR program to see real learning outcomes.
-Consequently, the structure of the CSR initiative is 60% contribution by
-company, 20% contribution by the school and 20% by My Talent.
-
-      </p>
-
-     <div className=' bg-[#E3DAFB] font-normal p-4 rounded-2xl mt-6 text-[#475467]'>
-        <p>
-        We also have experience running CSR program in government schools. If you wish to partner with us for your CSR initiative, you can write to us at:
-        {" "}
-     </p>
-     <span className='relative'>
-
-        <span className='text-[#005EDF] '>
-       {" "}   contact@eduexplore.in
-        </span>
-        <Image
-        className='absolute top-[20%] right-0'
-        src="/arrow1.svg"
-        alt="arrow1"
-        width={100}
-        height={100}
-        />
-     </span>
-     </div>
-    </div>
-
-    </div> 
-
-
-
-
-        <div className='grid sm:grid-cols-2 
-        
- mt-[100px] mx-12 lg:mx-[100px] lg:gap-16 xl:gap-24'>
-    
-    
-
-    <div className='' > 
-    <h1 className='font-semibold text-[24px] sm:text-[40px]  '>
-     Content developers
-      </h1> 
-      <h2 className='text-[18px] sm:text-2xl text-[#4B17D5] font-semibold  py-4 sm:py-0'>
-      Take content to 2M+ Students
-      </h2>
-      <p className='text-[#475467] text-[16px]  py-4'>
-      We believe that there is a massive unmet need for high quality content in the
-K-12 market.
-
-      </p>
-      <p className='text-[#475467] text-[16px]  py-4'>
-      My Talent partners with digital first content developers to take their offerings to students.
-
-      </p>
-      <p className='text-[#475467] text-[16px]  py-4 '>
-      My Talent helps content developers to take their content offerings to more than 2 million K-12 students on the My Talent Platform. On a select basis My Talent can also co-create digital products around the proprietary content of the developer.
-
-      </p>
-
-     <div className=' bg-[#E3DAFB] font-normal p-4 rounded-2xl mt-6'>
-        <p>
-        If you wish to explore a partnership with My Talent, please write to us at {" "}
-     </p>
-     <span className='relative'>
-        <span className='text-[#005EDF] '>
-       {" "}   contact@eduexplore.in
-        </span>
-        <Image
-        className='absolute top-[80%] right-0 w-full'
-        src="/arrow2.svg"
-        alt="arrow2"
-        width={100}
-        height={100}
-        />
-        </span>
-     </div>
-    </div>
-
-
-    <div className='w-full h-full mt-6 sm:order-last order-first'>
-      <Image
-      src={partner2}
-      alt="about1"
-      />
-    </div>
-
-    </div> 
-
-
-
-
-
-
-
-    <div className='grid sm:grid-cols-2 grid-cols-1
- mt-[100px] mx-12 lg:mx-[100px] lg:gap-16 xl:gap-24'>
-    
-    
-
-    <div className='' > 
-    <h1 className='font-semibold   text-[24px] sm:text-[40px] '>
-    Channel Partners and
-    Resellers
-      </h1> 
-      <Image
-      className='w-auto h-auto py-4'
-      src="/eleven.svg"
-      alt="one plus one equal to 11 not"
-      width={100}
-      height={100}
-      />
-      <h2 className='text-[18px] sm:text-[24px]  text-[#4B17D5] font-semibold '>
-      Let’s partner to make it true
-      </h2>
-      <p className='text-[#475467] text-[16px]  py-4'>
-      We work with independent freelancers and small companies who have
-access and relationships with K-12 schools and are passionate about
-generating income for themselves without committing to fixed job hours.
-
-      </p>
-      <p className='text-[#475467] text-[16px]  py-4'>
-      My Talent provides the following support to its channel partners:
-
-      </p>
-
-      <h1 className='font-bold text-[16px]  pt-4'>
-        Marketing 
-        </h1>
-      
-      <li className='text-[#475467] text-[16px]    '>
-      Printed Brochures
-      </li>
-      <li className='text-[#475467] text-[16px]   '>
-      Digital collateral - presentation, videos
-      </li>
-      <li className='text-[#475467] text-[16px]   '>
-      Detailed documents on Features and Benefits
-      </li>
-      
-      <li className='text-[#475467] text-[16px]  pb-4 '>
-      Case Studies
-      </li>
-
-
-
-      <h1 className='font-bold text-[16px]  pt-4'>
-        Sales Support 
-        </h1>
-      
-      <li className='text-[#475467] text-[16px]   '>
-      Dedicated relationship manager to act as SPOC with the company
-      </li>
-      <li className='text-[#475467] text-[16px]   '>
-      Ensuring no channel-conflict with other partners, direct sales teams
-      </li>
-      
-      <li className='text-[#475467] text-[16px]   '>
-      Product Training - Live and Videos
-      </li>
-      <li className='text-[#475467] text-[16px]   '>
-      On-demand demonstration to clients
-      </li>
-      <li className='text-[#475467] text-[16px]  pb-4 '>
-      Sales assistance to close large schools
-      </li>
-
-
-
-      <h1 className='font-bold text-[16px]  pt-4'>
-      Post Sales Support
-        </h1>
-      
-      <li className='text-[#475467] text-[16px]     '>
-      End to End handholding of the customer - starting from the time the  purchase order is collected
-      </li>
-      <li className='text-[#475467] text-[16px]   '>
-      All queries of school and training requirements are handled directly by the company
-      </li>
-      
-      <li className='text-[#475467] text-[16px]  pb-4 '>
-      Updating school data, setting up different modules is also done by the company
-      </li>
-      
-   
-
-
-
-
-     <div className=' bg-[#E3DAFB] font-normal p-4 rounded-2xl '>
-        <p>
-        If you are interested to partner with us, send us an email on {" "}
-     </p>
-     <span className='relative'>
-
-    
-        <span className='text-[#005EDF] '>
-       {" "}   contact@eduexplore.in
-        </span>
-        <Image
-        className='absolute top-[52%] right-[24%]'
-        src="/arrow3.svg"
-        alt="arrow3"
-        width={100}
-        height={100}
-        />
-        </span>
-     </div>
-    </div>
-
-
-    <div className='w-full h-full mt-6 sm:order-last order-first'>
-      <Image
-      src={partner3}
-      alt="about1"
-      />
-    </div>
-
-    </div> 
-
-
-        </section>
 
       <MainFooter/>
   <Footer/>
