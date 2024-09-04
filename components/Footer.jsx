@@ -36,7 +36,7 @@ function Footer() {
           </div>
           <div>
           <p className="text-[#98a2b3] text-[1em]">COMPANY</p>
-          <div className="felx justify-betwwen">
+          <div className="flex justify-betwwen">
           
           <ul className="list-none font-medium">
             <Link href="/about-us">
