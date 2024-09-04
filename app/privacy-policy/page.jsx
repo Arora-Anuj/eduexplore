@@ -64,7 +64,7 @@ function page() {
 
       <section className="mb-6">
         <h2 className="text-2xl font-semibold mb-4">8. Contact Us</h2>
-        <p>If you have any questions or concerns about this Privacy Policy, please contact us at <a href="mailto:support@mytalentapp.com" className="text-blue-500 underline">support@mytalentapp.com</a>.</p>
+        <p>If you have any questions or concerns about this Privacy Policy, please contact us at <a href="mailto:contact@eduexplore.in" className="text-blue-500 underline">support@mytalentapp.com</a>.</p>
       </section>
     </div>
 
