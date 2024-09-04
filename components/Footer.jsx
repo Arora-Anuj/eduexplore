@@ -36,6 +36,8 @@ function Footer() {
           </div>
           <div>
           <p className="text-[#98a2b3] text-[1em]">COMPANY</p>
+          <div className="felx justify-betwwen">
+          
           <ul className="list-none font-medium">
             <Link href="/about-us">
             <li className="mt-4">About us </li>
@@ -48,21 +50,20 @@ function Footer() {
             </Link>
           </ul>
 
-          </div>
-          <div>
-          <p className="text-[#98a2b3] text-[1em]">COMPANY</p>
           <ul className="list-none font-medium">
             <Link href="/about-us">
-            <li className="mt-4">Terms & Condition </li>
+            <li className="mt-4">About us </li>
             </Link>
             <Link href="/request-demo">
-            <li className="mt-4">Privacy Policy </li>
+            <li className="mt-4">Contact us </li>
             </Link>
             <Link href="/partner-with-us">
-            <li className="mt-4">Refund & Cancellation Policy </li>
+            <li className="mt-4">Partner with us </li>
             </Link>
           </ul>
-
+          
+          </div>
+          
           </div>
         </div>
       </div>
