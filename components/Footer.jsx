@@ -37,7 +37,7 @@ function Footer() {
           <div>
           <p className="text-[#98a2b3] text-[1em]">COMPANY</p>
 
-          <div className="flex justify-betwwen space-x-8">          
+          <div className="flex justify-betwwen space-x-12">          
           <ul className="list-none font-medium">
             <Link href="/about-us">
             <li className="mt-4">About us </li>
