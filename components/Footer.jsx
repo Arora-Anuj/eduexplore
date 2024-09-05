@@ -60,6 +60,9 @@ function Footer() {
             <Link href="/refund-cancellation">
             <li className="mt-4">Refund & Cancellation Policy </li>
             </Link>
+            <Link href="/shipping-delivery">
+            <li className="mt-4">Shipping & Delivery </li>
+            </Link>
           </ul>
           
           </div>
