@@ -66,6 +66,9 @@ function page() {
         <h2 className="text-2xl font-semibold mb-4">8. Contact Us</h2>
         <p>If you have any questions or concerns about this Privacy Policy, please contact us at <a href="mailto:contact@eduexplore.in" className="text-blue-500 underline">support@mytalentapp.com</a>.</p>
       </section>
+
+      <h1 className="text-3xl font-bold mb-6">Account Deletion</h1>
+      <p>If you wish to delete your account, you can email us at contact@eduexplore.in and mention your registration details.</p>
     </div>
 
       <MainFooter/>
