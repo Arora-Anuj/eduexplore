@@ -9,7 +9,7 @@ function Footer() {
           {/* <img src="/mainLogo.png" alt="main-logo" /> */}
           <Link href="/">
           <div className="powerSmurf text-[#5a39d6] text-3xl  cursor-pointer pl-3 sm:pl-0 ">
-            My Talent
+            StarKid
           </div>
           </Link>
           <div className=" mt-8 ml-2 flex gap-4 pl-2 sm:pl-0">
@@ -29,7 +29,7 @@ function Footer() {
               <p className="text-[#98a2b3] text-[1em]">PRODUCTS</p>
               <ul className="list-none font-medium">
                 <Link href="/">
-                <li className="mt-4"> My Talent App</li>
+                <li className="mt-4"> StarKid App</li>
                 </Link>
                 
                 </ul>
