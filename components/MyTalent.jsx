@@ -74,7 +74,7 @@ function MyTalent() {
       <section className="w-[90%] m-auto text-center max-w-[1128px] sm:hidden block">
           <div className="mb-7 mt-20">
             <h1 className="font-semibold text-[28px] leading-[38px] md:text-[32px] lg:text-[40px]">
-              How does My Talent help  
+              How does StarKid help  
               <span className="text-[#4b17d5] md:text-[32px] lg:text-[40px]"> empower </span>
               your school?
             </h1>
@@ -134,7 +134,7 @@ function MyTalent() {
               className="font-semibold text-[28px] leading-[38px] md:text-[32px] lg:text-[40px]
           "
             >
-              How does My Talent help  
+              How does StarKid help  
               <span className=" text-[#4b17d5] md:text-[32px] lg:text-[40px]">  empower </span>
               your school?
             </h1>
