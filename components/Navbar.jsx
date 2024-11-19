@@ -33,7 +33,7 @@ function Navbar() {
             {/* <img  className="w-48 h-full " src="/mainLogo.png" alt="main-logo"  /> */}
             <Link href="/">
               <div className="powerSmurf text-[#5a39d6] text-[26px] sm:text-4xl  cursor-pointer font-bold">
-                My Talent
+                StarKid
               </div>
             </Link>
           </div>
