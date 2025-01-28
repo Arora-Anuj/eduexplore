@@ -233,7 +233,6 @@ function getClassFromAge(age) {
   if (isNaN(age)) {
     throw new Error(`Invalid age: ${age}. Age must be a valid number.`);
   }
-
   age = Math.round(age);
 
   if (age >= 3 && age <= 8) return 3;
@@ -246,7 +245,6 @@ function getClassFromAge(age) {
   throw new Error(`Invalid age: ${age}`);
 }
 
-// Function to check if phone number exists
 async function checkPhoneExists(phoneNumber) {
   const querySnapshot = await db
     .collectionGroup("parentContacts") 
@@ -262,7 +260,6 @@ async function checkPhoneExists(phoneNumber) {
   return { exists: true, parentId };
 }
 
-// Function to create a new parent
 async function createNewParent(phone, studentDetail) {
   const parentId = db.collection("Parents").doc().id;
   const parentRef = db.collection("Parents").doc(parentId);
@@ -272,7 +269,6 @@ async function createNewParent(phone, studentDetail) {
     manualExpirationDate: admin.firestore.Timestamp.fromDate(new Date("2025-02-14")),
   });
 
-  // Save parent contact under parentContacts subcollection
   const parentContactRef = db.collection(`Parents/${parentId}/parentContacts`).doc(phone);
   await parentContactRef.set({
     parentContact: phone,
@@ -280,7 +276,6 @@ async function createNewParent(phone, studentDetail) {
     parentRelation: "None",
   });
 
-  // Save student detail under userIds subcollection
   const userId = db.collection(`Parents/${parentId}/UserIds`).doc().id;
   const userRef = db.collection(`Parents/${parentId}/UserIds`).doc(userId);
   await userRef.set(studentDetail);
@@ -288,7 +283,6 @@ async function createNewParent(phone, studentDetail) {
   return { parentId, userId };
 }
 
-// Function to create a new user for an existing parent
 async function createNewUserForExistingParent(parentId, studentDetail) {
   try {
     const userIdsRef = db.collection(`Parents/${parentId}/UserIds`);
