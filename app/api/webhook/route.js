@@ -373,7 +373,7 @@ export async function POST(req) {
         { status: 200 }
       );
     } else {
-      // Create a new parent and user
+      
       const { parentId, userId } = await retryOperation(() => createNewParent(phone, studentDetail));
 
       const data = {
