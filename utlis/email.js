@@ -8,9 +8,9 @@ export async function sendEmail(
   emailType = "enquiry",
   extraContent = null
 ) {
-  // console.log(process.env.RESEND_API);
-  // console.log(process.env.SendtoEmail);
-  // console.log(process.env.fromEmail);
+  console.log(process.env.RESEND_API);
+  console.log(process.env.SendtoEmail);
+  console.log(process.env.fromEmail);
 
   const templates = {
     enquiry: `
