@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import admin from 'firebase-admin';
+import admin from "firebase-admin";
 import { sendEmail } from "@/utlis/email";
 import { retryOperation } from "@/utlis/retryHandler";
 import { db } from "@/app/firebaseConfig";
@@ -25,7 +25,7 @@ function getClassFromAge(age) {
 
 async function checkPhoneExists(phoneNumber) {
   const querySnapshot = await db
-    .collectionGroup("parentContacts") 
+    .collectionGroup("parentContacts")
     .where("parentContact", "==", phoneNumber)
     .get();
 
@@ -44,10 +44,14 @@ async function createNewParent(phone, studentDetail) {
 
   await parentRef.set({
     isManualPaidUser: true,
-    manualExpirationDate: admin.firestore.Timestamp.fromDate(new Date("2025-02-14")),
+    manualExpirationDate: admin.firestore.Timestamp.fromDate(
+      new Date("2025-02-14")
+    ),
   });
 
-  const parentContactRef = db.collection(`Parents/${parentId}/parentContacts`).doc(phone);
+  const parentContactRef = db
+    .collection(`Parents/${parentId}/parentContacts`)
+    .doc(phone);
   await parentContactRef.set({
     parentContact: phone,
     parentName: "Default",
@@ -64,13 +68,17 @@ async function createNewParent(phone, studentDetail) {
 async function createNewUserForExistingParent(parentId, studentDetail) {
   try {
     const userIdsRef = db.collection(`Parents/${parentId}/UserIds`);
-    const existingUsersQuery = userIdsRef.where("userName", "==", studentDetail.userName)
+    const existingUsersQuery = userIdsRef
+      .where("userName", "==", studentDetail.userName)
       .where("class", "==", studentDetail.class);
 
     const querySnapshot = await existingUsersQuery.get();
 
     if (!querySnapshot.empty) {
-      console.log("Duplicate payment detected for user:", querySnapshot.docs[0].data());
+      console.log(
+        "Duplicate payment detected for user:",
+        querySnapshot.docs[0].data()
+      );
 
       const data = {
         parentId: parentId,
@@ -130,6 +138,16 @@ export async function POST(req) {
       return new Response("Missing required fields", { status: 400 });
     }
 
+    return NextResponse.json(
+      {
+        message: "working till here",
+        phone,
+        childName,
+        age,  
+      },
+      { status: 200 }
+    );
+
     const studentDetail = {
       userName: childName,
       class: getClassFromAge(age),
@@ -137,10 +155,14 @@ export async function POST(req) {
       schoolId: db.collection("Schools").doc("hc3ED2P35H7SABAonaV7"),
     };
 
-    const { exists, parentId } = await retryOperation(() => checkPhoneExists(phone));
+    const { exists, parentId } = await retryOperation(() =>
+      checkPhoneExists(phone)
+    );
 
     if (exists) {
-      const userId = await retryOperation(() => createNewUserForExistingParent(parentId, studentDetail));
+      const userId = await retryOperation(() =>
+        createNewUserForExistingParent(parentId, studentDetail)
+      );
 
       return NextResponse.json(
         {
@@ -151,8 +173,9 @@ export async function POST(req) {
         { status: 200 }
       );
     } else {
-      
-      const { parentId, userId } = await retryOperation(() => createNewParent(phone, studentDetail));
+      const { parentId, userId } = await retryOperation(() =>
+        createNewParent(phone, studentDetail)
+      );
 
       const data = {
         parentId: parentId,
@@ -164,7 +187,8 @@ export async function POST(req) {
 
       return NextResponse.json(
         {
-          message: "Phone does not exist. New parent and user created successfully.",
+          message:
+            "Phone does not exist. New parent and user created successfully.",
           parentId: parentId,
         },
         { status: 200 }
