@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import admin from "firebase-admin";
-import { sendEmail } from "@/utlis/email";
-import { retryOperation } from "@/utlis/retryHandler";
+// import { sendEmail } from "@/utlis/email";
+// import { retryOperation } from "@/utlis/retryHandler";
 import { db } from "@/app/firebaseConfig";
 
 // Helper function to determine class based on age
@@ -87,7 +87,7 @@ async function createNewUserForExistingParent(parentId, studentDetail) {
         status: "Already Done",
       };
 
-      await retryOperation(() => sendEmail(data, "registrationFaliure"));
+      // await retryOperation(() => sendEmail(data, "registrationFaliure"));
       return {
         success: false,
         message: "Duplicate payment detected. User already exists.",
@@ -105,7 +105,7 @@ async function createNewUserForExistingParent(parentId, studentDetail) {
       status: "success",
     };
 
-    await retryOperation(() => sendEmail(data, "registrationSuccess"));
+    // await retryOperation(() => sendEmail(data, "registrationSuccess"));
     return {
       success: true,
       message: "User added successfully.",
@@ -138,15 +138,15 @@ export async function POST(req) {
       return new Response("Missing required fields", { status: 400 });
     }
 
-    return NextResponse.json(
-      {
-        message: "working till here",
-        phone,
-        childName,
-        age,  
-      },
-      { status: 200 }
-    );
+    // return NextResponse.json(
+    //   {
+    //     message: "working till here",
+    //     phone,
+    //     childName,
+    //     age,
+    //   },
+    //   { status: 200 }
+    // );
 
     const studentDetail = {
       userName: childName,
@@ -155,13 +155,19 @@ export async function POST(req) {
       schoolId: db.collection("Schools").doc("hc3ED2P35H7SABAonaV7"),
     };
 
-    const { exists, parentId } = await retryOperation(() =>
-      checkPhoneExists(phone)
-    );
+    // const { exists, parentId } = await retryOperation(() =>
+    //   checkPhoneExists(phone)
+    // );
+    const { exists, parentId } = await checkPhoneExists(phone);
 
     if (exists) {
-      const userId = await retryOperation(() =>
-        createNewUserForExistingParent(parentId, studentDetail)
+      // const userId = await retryOperation(() =>
+      //   createNewUserForExistingParent(parentId, studentDetail)
+      // );
+
+      const userId = await createNewUserForExistingParent(
+        parentId,
+        studentDetail
       );
 
       return NextResponse.json(
@@ -173,9 +179,10 @@ export async function POST(req) {
         { status: 200 }
       );
     } else {
-      const { parentId, userId } = await retryOperation(() =>
-        createNewParent(phone, studentDetail)
-      );
+      // const { parentId, userId } = await retryOperation(() =>
+      //   createNewParent(phone, studentDetail)
+      // );
+      const { parentId, userId } = await createNewParent(phone, studentDetail);
 
       const data = {
         parentId: parentId,
@@ -183,7 +190,7 @@ export async function POST(req) {
         status: "success",
       };
 
-      await retryOperation(() => sendEmail(data, "registrationSuccess"));
+      // await retryOperation(() => sendEmail(data, "registrationSuccess"));
 
       return NextResponse.json(
         {
@@ -201,7 +208,7 @@ export async function POST(req) {
       status: "false",
       message: error,
     };
-    await retryOperation(() => sendEmail(data, "registrationFaliure"));
+    // await retryOperation(() => sendEmail(data, "registrationFaliure"));
 
     return new Response("Internal Server Error", { status: 500 });
   }
