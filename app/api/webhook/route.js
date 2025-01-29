@@ -155,20 +155,31 @@ export async function POST(req) {
       schoolId: db.collection("Schools").doc("hc3ED2P35H7SABAonaV7"),
     };
 
+    // return NextResponse.json(
+    //   {
+    //     message: "working till here",
+    //     phone,
+    //     childName,
+    //     age,
+    //   },
+    //   { status: 200 }
+    // );
+
+    // const { exists, parentId } = await retryOperation(() =>
+    //   checkPhoneExists(phone)
+    // );
+    const { exists, parentId } = await checkPhoneExists(phone);
+
     return NextResponse.json(
       {
         message: "working till here",
         phone,
         childName,
         age,
+        exists,
       },
       { status: 200 }
     );
-
-    // const { exists, parentId } = await retryOperation(() =>
-    //   checkPhoneExists(phone)
-    // );
-    const { exists, parentId } = await checkPhoneExists(phone);
 
     if (exists) {
       // const userId = await retryOperation(() =>
