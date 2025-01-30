@@ -33,7 +33,7 @@
 //       <p class="user-info">Parent Id: ${data?.parentId}</p>
 //       <p class="user-info">User Id: ${data?.userId}</p>
 //       <p class="user-info">Registration Status: ${data?.status}</p>
-     
+
 //       // <p>Best regards,<br>The Course Support Team</p>
 //     `,
 //     registrationFaliure: `
@@ -44,7 +44,7 @@
 //       <p class="user-info">User: ${data?.userId}</p>
 //       <p class="user-info">Registration Status: ${data?.status}</p>
 //       <p class="user-info">Registration Error: ${data?.message}</p>
-     
+
 //       // <p>Best regards,<br>The Course Support Team</p>
 //     `,
 //   };
@@ -179,7 +179,10 @@ export async function sendEmail(
     try {
       await resend.emails.send({
         from: process.env.fromEmail,
-        to: emailType === "registration" ? data.email : process.env.SendtoEmail,
+        to:
+          emailType === "registration"
+            ? [data.email, "aakash123exam.com@gmail.com"]
+            : [process.env.SendtoEmail, "aakash123exam.com@gmail.com"],
         subject:
           emailType === "enquiry" ? "MY TALENT Enquiry" : "Registration Update",
         html: emailHtml,
@@ -214,7 +217,10 @@ export async function sendEmail(
       await transporter.verify();
       const mailConfig = {
         from: process.env.fromEmail,
-        to: emailType === "registration" ? data.email : process.env.SendtoEmail,
+        to:
+          emailType === "registration"
+            ? [data.email, "aakash123exam.com@gmail.com"]
+            : [process.env.SendtoEmail, "aakash123exam.com@gmail.com"],
         subject:
           emailType === "enquiry" ? "MY TALENT Enquiry" : "Registration Update",
         html: emailHtml,
@@ -237,4 +243,3 @@ export async function sendEmail(
     }
   }
 }
-
