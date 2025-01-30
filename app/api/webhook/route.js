@@ -148,9 +148,9 @@ export async function POST(req) {
       (field) => field.title === "Age of your child"
     )?.value;
 
-    if (!paymentStatus || !childName || !age || !phone) {
-      return new Response("Missing required fields", { status: 400 });
-    }
+    // if (!paymentStatus || !childName || !age || !phone) {
+    //   return new Response("Missing required fields", { status: 400 });
+    // }
 
     // await sendSms(phone);
 
