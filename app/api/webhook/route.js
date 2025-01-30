@@ -148,18 +148,19 @@ export async function POST(req) {
       (field) => field.title === "Age of your child"
     )?.value;
 
-    // if (!paymentStatus || !childName || !age || !phone) {
-    //   return new Response("Missing required fields", { status: 400 });
-    // }
+    console.log(childName, age, phone);
+    if (!childName || !age || !phone) {
+      return new Response("Missing required fields", { status: 400 });
+    }
 
     // await sendSms(phone);
 
-    return NextResponse.json(
-      {
-        message: "true",
-      },
-      { status: 200 }
-    );
+    // return NextResponse.json(
+    //   {
+    //     message: "true",
+    //   },
+    //   { status: 200 }
+    // );
 
     const studentDetail = {
       userName: childName,
