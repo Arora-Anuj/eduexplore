@@ -12,13 +12,14 @@ export default function CompetationDisplay() {
           Explore Our Exciting{" "}
           <Image
             src={comp1}
+            
             alt="comp"
-            className=" absolute -top-10 left-0 sm:left-[20%] "
+            className=" w-10 absolute -top-10 left-0 sm:left-[20%] "
           />
           <Image
             src={comp2}
             alt="comp"
-            className=" absolute -top-10 right-0 sm:right-[20%]"
+            className="w-10  absolute -top-10 right-0 sm:right-[20%]"
           />
         </div>
         <div className="text-[#d63970] text-[26px] font-bold font-['Publica Sans'] leading-normal">
