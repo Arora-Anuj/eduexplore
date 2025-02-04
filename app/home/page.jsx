@@ -11,7 +11,7 @@ import starkid from "@/public/asset/starkid.png";
 // import WhyJoin from "@/components/WhyJoin";
 // import Footer from "@/components/Footer";
 // import Faq from "@/components/Faq";
-import Challenges from "@/components/Challenges";
+// import Challenges from "@/components/Challenges";
 export default function page() {
   return (
     <div className=" min-w-full bg-[#1B1D30] min-h-[100vh]">
