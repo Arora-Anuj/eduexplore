@@ -2,16 +2,16 @@ import Image from "next/image";
 import React from "react";
 import star from "@/public/asset/star-logo.png";
 import starkid from "@/public/asset/starkid.png";
-// import CompetitionRegistration from "@/components/CompetationRegistration";
-// import TalentPage from "@/components/TalentPage";
-// import Recomendation from "@/components/Recomendation";
-// import CompetationDisplay from "@/components/CompetationDisplay";
-// import HowToRegister from "@/components/HowToRegister";
-// import PerksOfJoining from "@/components/PerksOfJoining";
-// import WhyJoin from "@/components/WhyJoin";
-// import Footer from "@/components/Footer";
-// import Faq from "@/components/Faq";
-// import Challenges from "@/components/Challenges";
+import CompetitionRegistration from "@/components/HomePageComponent/CompetationRegistration";
+import TalentPage from "@/components/HomePageComponent/TalentPage";
+import Recomendation from "@/components/HomePageComponent/Recomendation";
+import CompetationDisplay from "@/components/HomePageComponent/CompetationDisplay";
+import HowToRegister from "@/components/HomePageComponent/HowToRegister";
+import PerksOfJoining from "@/components/HomePageComponent/PerksOfJoining";
+import WhyJoin from "@/components/HomePageComponent/WhyJoin";
+import Faq from "@/components/HomePageComponent/Faq";
+import Footer from "@/components/HomePageComponent/Footer";
+
 export default function page() {
   return (
     <div className=" min-w-full bg-[#1B1D30] min-h-[100vh]">
@@ -44,17 +44,17 @@ export default function page() {
           </div>
         </div>
         <div className=" flex flex-col items-center justify-center">
-          {/* <CompetitionRegistration />
-        <TalentPage />
+         <CompetitionRegistration />
+       <TalentPage />
 
           <Recomendation />
-            <CompetationDisplay />
+           <CompetationDisplay />
          <HowToRegister />
            <PerksOfJoining />
           <WhyJoin />
-         <Challenges/>
+         {/* <Challenges/> */}
           <Faq/>
-          <Footer />  */}
+          <Footer /> 
         </div>
       </div>
     </div>
