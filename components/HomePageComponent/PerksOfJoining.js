@@ -18,20 +18,20 @@ export default function PerksOfJoining() {
         </div>
         <div className="my-10 flex flex-wrap items-center justify-evenly w-full gap-y-7">
           <div className=" bg-[#1B1D30] w-10/12 sm:w-[30%] items-center justify-center flex flex-col gap-2 p-4 rounded-2xl text-center">
-            <Image alt="perks of joining" src={join1} />
-            <p className=" text-white font-bold">Medals for Winner</p>
-          </div>
-          <div className=" bg-[#1B1D30] w-10/12 sm:w-[30%] items-center justify-center flex flex-col gap-2 p-4 rounded-2xl text-center">
-            <Image alt="perks of joining" src={join2} />
-            <p className=" text-white font-bold">Medals for Winner</p>
-          </div>
-          <div className=" bg-[#1B1D30] w-10/12 sm:w-[30%] items-center justify-center flex flex-col gap-2 p-4 rounded-2xl text-center">
             <Image alt="perks of joining" src={join3} />
             <p className=" text-white font-bold">Medals for Winner</p>
           </div>
           <div className=" bg-[#1B1D30] w-10/12 sm:w-[30%] items-center justify-center flex flex-col gap-2 p-4 rounded-2xl text-center">
             <Image alt="perks of joining" src={certficate} />
             <p className=" text-white font-bold">Certificate for All</p>
+          </div>
+          <div className=" bg-[#1B1D30] w-10/12 sm:w-[30%] items-center justify-center flex flex-col gap-2 p-4 rounded-2xl text-center">
+            <Image alt="perks of joining" src={join2} />
+            <p className=" text-white font-bold">Featured in Weekly showcase</p>
+          </div>
+          <div className=" bg-[#1B1D30] w-10/12 sm:w-[30%] items-center justify-center flex flex-col gap-2 p-4 rounded-2xl text-center">
+            <Image alt="perks of joining" src={join1} />
+            <p className=" text-white font-bold">Experts Feedback</p>
           </div>
         </div>
         <button className="my-10 bg-[#5259AA] font-bold text-white py-4 px-8 rounded-lg text-lg">
