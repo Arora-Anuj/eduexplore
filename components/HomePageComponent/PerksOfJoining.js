@@ -6,7 +6,7 @@ import certficate from "@/public/asset/certficate.png";
 import Image from "next/image";
 export default function PerksOfJoining() {
   return (
-    <div className=" bg-white min-w-full ">
+    <div className=" bg-[#EEEFFC] min-w-full ">
       <div className=" flex flex-col items-center justify-center mt-10">
         <div>
           <span className="text-[#1b1d30] text-[26px] font-medium font-['Publica Sans'] leading-normal">
