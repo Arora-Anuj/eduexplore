@@ -6,7 +6,7 @@ import inst from "@/public/asset/inst.png";
 import Image from "next/image";
 export default function Footer() {
   return (
-    <div className=" bg-white min-w-full">
+    <div className=" bg-[#EEEFFC] min-w-full">
       <div className=" p-3 my-10">
         <div className=" flex items-center gap-1 ">
           <Image src={starLogo} height={40} alt="star" />

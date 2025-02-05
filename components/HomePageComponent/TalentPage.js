@@ -6,7 +6,7 @@ import talent3 from "@/public/asset/talent3.png";
 
 export default function TalentPage() {
   return (
-    <div className=" bg-white min-w-full mt-10 p-3">
+    <div className=" bg-[#EEEFFC] min-w-full mt-10 p-3">
       <div className="text-center mt-10">
         <span className="text-[#1b1d30] text-[26px] font-bold font-['Publica Sans'] leading-normal">
           Turning{" "}

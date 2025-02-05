@@ -6,7 +6,7 @@ import comp2 from "@/public/asset/comp2.png";
 
 export default function CompetationDisplay() {
   return (
-    <div className=" bg-white min-w-full ">
+    <div className=" bg-[#EEEFFC] min-w-full ">
       <div className=" text-center mt-20 mb-10">
         <div className="relative text-black text-[26px] font-bold font-['Publica Sans'] leading-normal">
           Explore Our Exciting{" "}
