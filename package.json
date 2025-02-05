@@ -22,7 +22,7 @@
     "react-dom": "^18",
     "react-toastify": "^10.0.5",
     "resend": "^3.4.0",
-    "swiper": "^11.1.4",
+    "swiper": "^11.2.2",
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
