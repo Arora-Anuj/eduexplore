@@ -10,7 +10,7 @@ export default function CompetitionRegistration() {
       {/* <button className="absolute left-0 -top-10 sm:-left-12 sm:-top-6 w-[150px] bg-[#D73970] rounded-xl py-1 px-3 text-white font-bold">
         Over 10,000+ registrations
       </button> */}
-      <Image src={msg1} width={140} alt="msg1" className="absolute left-5 -top-4 sm:-left-12 sm:-top-6" />
+      <Image src={msg1} width={140} alt="msg1" className="absolute left-0 -top-4 sm:-left-10 sm:-top-6" />
       <div className="flex flex-col items-center justify-center">
         <Image src={group} alt="groupimage" height={280} width={280} />
         <p className="text-white font-medium mt-8 text-xl">
@@ -23,11 +23,11 @@ export default function CompetitionRegistration() {
         <p className="text-white text-lg mt-10 text-center">
           Participate in any competition for just ₹259!
         </p>
-        {/* <button className="absolute top-40 right-0  sm:-right-10 w-[150px] bg-[#D73970] rounded-xl py-1 px-3 text-white font-bold">
+        {/* <button className="absolute top-40 right-0  sm:-right-5 w-[150px] bg-[#D73970] rounded-xl py-1 px-3 text-white font-bold">
           Rated 4.4 / 5
         </button> */}
         <Image src={msg2} width={120} alt="msg2" className="absolute top-44 right-5  sm:-right-10 " />
-        <button className="absolute bottom-[39%] text-white text-[22px] font-semibold font-['Poppins'] w-[250px] bg-[#D73970]  rounded-2xl">
+        <button className="absolute bottom-[42%] text-white text-[22px] font-semibold font-['Poppins'] w-[250px] bg-[#D73970] rounded-lg">
           98% Satisfaction Rate among parents
         </button>
       </div>
