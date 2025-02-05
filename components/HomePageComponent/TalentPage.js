@@ -26,7 +26,7 @@ export default function TalentPage() {
           Talents into Opportunities!
         </span>
       </div>
-      <div className=" w-full mx-auto h-auto sm:w-[500px] sm:h-[500px]">
+      <div className=" w-full mx-auto h-auto sm:w-[500px] sm:h-[500px] mb-10">
 
       <Swiper
         slidesPerView={"auto"}
