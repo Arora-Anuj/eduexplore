@@ -1,4 +1,4 @@
-import { Outfit } from "next/font/google";
+import { Outfit ,Inter } from "next/font/google";
 import "./globals.css";
 
 

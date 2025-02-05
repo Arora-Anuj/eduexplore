@@ -16,16 +16,16 @@ export default function page() {
   return (
     <div className=" min-w-full bg-[#1B1D30] min-h-[100vh]">
       <div className="">
-        <div className=" flex items-center justify-center py-[27px]">
+        <div className=" flex items-center justify-center py-[10px]">
           <Image src={star} height={60} alt="star" />
-          <Image src={starkid} height={13} alt="starkid" />
+          <Image src={starkid} height={20} alt="starkid" />
         </div>
-        <div className=" mx-auto text-center font-bold p-3">
-          <div className=" font-bold space-y-10 ">
-            <span className="text-white text-[33px] font-bold font-['Publica Sans'] leading-9">
+        <div className=" mx-auto text-center font-bold px-2">
+          <div className=" font-bold  ">
+            <span className="text-white text-[28px] font-bold font-['Publica Sans'] leading-9">
               Your{" "}
             </span>
-            <span className="text-[#d63970] text-[33px] font-bold font-['Publica Sans'] leading-9">
+            <span className="text-[#d63970] text-[28px] font-bold font-['Publica Sans'] leading-9">
               Child’s Talent{" "}
             </span>
             <span className="text-white text-[33px] font-bold font-['Publica Sans'] leading-9">
@@ -33,7 +33,7 @@ export default function page() {
             </span>
           </div>
 
-          <div className="mt-10 ">
+          <div className="mt-5 ">
             <span className="text-white text-[20px] font-light font-['Caros'] leading-[18px]">
               Join India's Most Trusted Platform to discover and showcase young
               talents through Competitions{" "}
