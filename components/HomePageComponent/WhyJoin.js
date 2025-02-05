@@ -14,27 +14,27 @@ export default function WhyJoin() {
         </div>
 
         <div className=" flex flex-wrap items-center justify-center gap-2 p-1 font-bold text-black my-10">
-          <div className=" bg-[#00AFAA] px-4 py-2 rounded-xl">
+          <div className=" bg-[#00AFAA] px-3 py-2 rounded-xl">
             {" "}
             Showcase Talent
           </div>
-          <div className=" bg-[#D73970] px-4 py-2 rounded-xl">
+          <div className=" bg-[#D73970] px-3 py-2 rounded-xl">
             {" "}
             Get Feedback
           </div>
-          <div className=" bg-[#FFC56F] px-4 py-2 rounded-xl"> Learn</div>
-          <div className=" bg-[#FFC56F] px-4 py-2 rounded-xl">
+          <div className=" bg-[#FFC56F] px-3 py-2 rounded-xl"> Learn</div>
+          <div className=" bg-[#FFC56F] px-3 py-2 rounded-xl">
             {" "}
             Build Confidence
           </div>
-          <div className=" bg-[#00AFAA] px-4 py-2 rounded-xl"> Reward</div>
-          <div className=" bg-[#D73970] px-4 py-2 rounded-xl"> Challenges</div>
-          <div className=" bg-[#D73970] px-4 py-2 rounded-xl"> Grow</div>
-          <div className=" bg-[#FFC56F] px-4 py-2 rounded-xl">
+          <div className=" bg-[#00AFAA] px-3 py-2 rounded-xl"> Reward</div>
+          <div className=" bg-[#D73970] px-3 py-2 rounded-xl"> Challenges</div>
+          <div className=" bg-[#D73970] px-3 py-2 rounded-xl"> Grow</div>
+          <div className=" bg-[#FFC56F] px-3 py-2 rounded-xl">
             {" "}
             Gain Regognition
           </div>
-          <div className=" bg-[#00AFAA] px-4 py-2 rounded-xl"> New Skills</div>
+          <div className=" bg-[#00AFAA] px-3 py-2 rounded-xl"> New Skills</div>
         </div>
       </div>
     </>
