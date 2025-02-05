@@ -31,7 +31,7 @@ export default function TalentPage() {
       <Swiper
         slidesPerView={"auto"}
         centeredSlides={true}
-        spaceBetween={0}
+        spaceBetween={12}
         pagination={{
           clickable: true,
         }}
@@ -39,7 +39,7 @@ export default function TalentPage() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="w-11/12 sm:w-[350px] rounded-lg">
+          <div className="w-full sm:w-[350px] rounded-lg">
             <Image src={talent3} className="w-full" alt="talent" />
             <div className=" w-full overflow-clip leading-5 bg-[#00AFAA] rounded-b-lg p-4 text-center">
               <span className="text-white  font-medium font-['Caros']">
@@ -56,7 +56,7 @@ export default function TalentPage() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-11/12 sm:w-[350px] rounded-lg">
+          <div className="w-full sm:w-[350px] rounded-lg">
             <Image src={talent2} className="w-full" height={300} alt="talent" />
             <div className="w-full leading-5 bg-[#D73970] rounded-b-lg p-4 text-center">
               <span className="text-white  font-medium font-['Caros']">
@@ -70,7 +70,7 @@ export default function TalentPage() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-11/12 sm:w-[350px] rounded-lg">
+          <div className="w-full sm:w-[350px] rounded-lg">
             <Image src={talent1} className="w-full" height={300} alt="talent" />
             <div className="w-full leading-5 bg-[#FFC56F] rounded-b-lg p-4 text-center">
               <span className="text-white  font-medium font-['Caros']">
