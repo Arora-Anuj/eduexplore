@@ -18,14 +18,14 @@ export default function Recomendation() {
   return (
     <div className=" text-center">
       <div className={` my-10 ${publicSans.className}`}>
-        <span className="text-white text-[26px] font-medium font-['Publica Sans'] leading-normal">
+        <span className="text-white text-[26px] font-semibold  leading-normal">
           Hear It from
         </span>
-        <span className="text-[#d63970] text-[26px] font-medium font-['Publica Sans'] leading-normal">
+        <span className="text-[#d63970] text-[26px] font-semibold  leading-normal">
           {" "}
           the Parents:
         </span>
-        <div className="text-white text-[26px] font-medium font-['Publica Sans'] leading-normal">
+        <div className="text-white text-[26px] font-semibold  leading-normal">
           {" "}
           Their Stories, Their Trust!
         </div>
