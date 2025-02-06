@@ -12,7 +12,7 @@ export default function WhyJoin() {
             who want to:
           </span>
         </div> 
-
+   
         <div className=" flex flex-col items-center justify-center gap-y-2 font-medium text-black my-10">
 
           <div className=" text-center flex items-center justify-center  w-[95vw]  gap-2">
