@@ -10,12 +10,12 @@ export default function WhyJoin() {
     <>
       <div className=" flex flex-col min-w-full items-center justify-center my-10">
         <div className={`${publicSans.className} mt-10 text-center px-3 md:px-0`}>
-          <span className="text-white text-[26px] font-medium font-['Publica Sans'] leading-[25px]">
-            StarKid is perfect for those{" "}
-          </span>
-          <span className="text-[#d63970] text-[26px] font-medium font-['Publica Sans'] leading-[25px]">
-            who want to:
-          </span>
+          <p className="text-white text-[26px] font-semibold  leading-[30px]">
+            StarKid is perfect for {" "}
+          </p>
+          <p className="text-[#d63970] text-[26px] font-semibold  leading-[30px]">
+           those who want to:
+          </p>
         </div>
 
         <div className=" flex flex-col items-center justify-center gap-y-2 font-medium text-black my-10">
