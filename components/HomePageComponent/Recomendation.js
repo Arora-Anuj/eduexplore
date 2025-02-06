@@ -3,11 +3,21 @@ import recom from "@/public/asset/recom.png";
 import wh1 from "@/public/asset/wh1.png";
 import wh2 from "@/public/asset/wh2.png";
 import Image from "next/image";
-
+import { Poppins, Public_Sans } from "next/font/google";
+const publicSans = Public_Sans({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+  variable: "--font-publica",
+});
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+  variable: "--font-poppins",
+});
 export default function Recomendation() {
   return (
     <div className=" text-center">
-      <div className=" my-10">
+      <div className={` my-10 ${publicSans.className}`}>
         <span className="text-white text-[26px] font-medium font-['Publica Sans'] leading-normal">
           Hear It from
         </span>
@@ -49,7 +59,7 @@ export default function Recomendation() {
           />
         </div>
       </div>
-      <button className="my-10 bg-[#5259AA] font-bold text-white py-4 px-8 rounded-lg text-lg">
+      <button className={`${poppins.className} my-10 bg-[#5259AA] font-bold text-white py-4 px-8 rounded-lg text-lg`}>
         REGISTER NOW
       </button>
     </div>
