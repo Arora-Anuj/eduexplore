@@ -6,23 +6,6 @@ const outfit = Outfit({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
   variable: "--font-outfit",
 });
-// const publicaSans = Public_Sans({
-//   subsets: ["latin"],
-//   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
-// });
-// const roboto = Roboto({
-//   subsets: ["latin"],
-//   weight: ["100","300", "400", "500",  "700", "900"],
-// });
-// const inter = Inter({
-//   subsets: ["latin"],
-//   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
-// });
-// const pacifico = Pacifico({
-//   subsets: ["latin"],
-//   weight: "400",
-//   variable:"--font-pacifico"
-// });
 
 export const metadata = {
   title: "StarKid",

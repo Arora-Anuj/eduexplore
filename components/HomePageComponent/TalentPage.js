@@ -13,12 +13,17 @@ import "swiper/css/pagination";
 
 import "../../app/globals.css";
 
-// import required modules
 import { Pagination } from "swiper/modules";
+import { Public_Sans } from "next/font/google";
+const publicSans = Public_Sans({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+  variable: "--font-publica",
+});
 export default function TalentPage() {
   return (
     <div className=" bg-[#EEEFFC] w-full mt-10 p-3">
-      <div className="text-center my-10">
+      <div className={`text-center my-10 ${publicSans.className}`}>
         <span className="text-[#1b1d30] text-[26px] font-bold font-['Publica Sans'] leading-normal">
           Turning{" "}
         </span>
