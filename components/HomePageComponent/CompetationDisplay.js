@@ -3,11 +3,16 @@ import React from "react";
 import comp from "@/public/asset/comp.png";
 import comp1 from "@/public/asset/comp1.png";
 import comp2 from "@/public/asset/comp2.png";
-
+import { Public_Sans } from "next/font/google";
+const publicSans = Public_Sans({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+  variable: "--font-publica",
+});
 export default function CompetationDisplay() {
   return (
     <div className=" bg-[#EEEFFC] min-w-full ">
-      <div className=" text-center mt-20 mb-10">
+      <div className={`text-center mt-20 mb-10 ${publicSans.className}`}>
         <div className="relative text-black text-[26px] font-bold font-['Publica Sans'] leading-normal">
           Explore Our Exciting{" "}
           <Image
