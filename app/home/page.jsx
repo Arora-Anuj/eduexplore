@@ -11,6 +11,14 @@ import PerksOfJoining from "@/components/HomePageComponent/PerksOfJoining";
 import WhyJoin from "@/components/HomePageComponent/WhyJoin";
 import Faq from "@/components/HomePageComponent/Faq";
 import Footer from "@/components/HomePageComponent/Footer";
+import {  Public_Sans } from "next/font/google";
+
+
+const publicaSans = Public_Sans({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+  variable: "--font-publica",
+});
 
 export default function page() {
   return (
@@ -21,19 +29,19 @@ export default function page() {
           <Image src={starkid} height={20} alt="starkid" />
         </div>
         <div className=" mx-auto text-center font-bold px-2">
-          <div className=" font-bold  ">
-            <span className="text-white text-[28px] font-bold font-['Publica Sans'] leading-9">
+          <div className={`${publicaSans.className} font-medium `}>
+            <span className="text-white text-[33px] font-bold leading-9">
               Your{" "}
             </span>
-            <span className="text-[#d63970] text-[28px] font-bold font-['Publica Sans'] leading-9">
+            <span className="text-[#d63970] text-[33px] font-bold leading-9">
               Child’s Talent{" "}
             </span>
-            <span className="text-white text-[33px] font-bold font-['Publica Sans'] leading-9">
+            <div className="text-white text-[30px] font-bold leading-9">
               Deserves the Spotlight!
-            </span>
+            </div>
           </div>
 
-          <div className="mt-5 ">
+          <p className="mt-5 ">
             <span className="text-white text-[20px] font-light font-['Caros'] leading-[18px]">
               Join India's Most Trusted Platform to discover and showcase young
               talents through Competitions{" "}
@@ -41,20 +49,21 @@ export default function page() {
             <span className="text-white text-[20px]  font-['Caros'] leading-[18px] font-semibold">
               guided by Experts
             </span>
-          </div>
+          </p>
         </div>
+
         <div className=" flex flex-col items-center justify-center">
-         <CompetitionRegistration />
-       <TalentPage />
+          <CompetitionRegistration />
+          <TalentPage />
 
           <Recomendation />
-           <CompetationDisplay />
-         <HowToRegister />
-           <PerksOfJoining />
+          <CompetationDisplay />
+          <HowToRegister />
+          <PerksOfJoining />
           <WhyJoin />
-         {/* <Challenges/> */}
-          <Faq/>
-          <Footer /> 
+          {/* <Challenges/> */}
+          <Faq />
+          <Footer />
         </div>
       </div>
     </div>
@@ -85,7 +94,7 @@ export default function page() {
 //           clickable: true,
 //         }}
 //         // modules={[Pagination]}
-//         className="mySwiper" 
+//         className="mySwiper"
 //       >
 //         <SwiperSlide>Slide 1</SwiperSlide>
 //         <SwiperSlide>Slide 2</SwiperSlide>
@@ -101,4 +110,3 @@ export default function page() {
 //   );
 
 // }
-

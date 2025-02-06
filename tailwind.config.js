@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 
-
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,16 +7,16 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-
-    container:{
-      center:true,
-      padding:"15px",
+    container: {
+      center: true,
+      padding: "15px",
     },
     // screens: {
     //   '425': '425px',
     // },
-    fontFamily:{
-      primary:'var(--font-outfit)',
+    fontFamily: {
+      primary: "var(--font-outfit)",
+      // pacifico: ["var-(--font-pacifico)"],
     },
     extend: {
       backgroundImage: {
@@ -25,17 +24,24 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      animation:{
+      animation: {
         // "loop-scroll":"loop-scroll 50s linear infinite",
-        "loop-scroll":"loop-scroll 50s linear infinite",
+        "loop-scroll": "loop-scroll 50s linear infinite",
       },
-      keyframes:{
-        "loop-scroll":{
-          from:{transform :"translateX(0)"},
+      keyframes: {
+        "loop-scroll": {
+          from: { transform: "translateX(0)" },
           // to:{transform :"translateX(-100%)"}
-          to:{transform :"translateX(-100%)"}
-        }
-      }
+          to: { transform: "translateX(-100%)" },
+        },
+      },
+      // fontFamily: {
+      //   roboto: ["Roboto", "sans-serif"],
+      //   poppins: ["Poppins", "sans-serif"],
+      //   inter: ["Inter", "sans-serif"],
+      //   publicSans: ["Public Sans", "sans-serif"],
+      //   ds: ["Pacifico", "sans-serif"],
+      // },
     },
   },
   plugins: [],
