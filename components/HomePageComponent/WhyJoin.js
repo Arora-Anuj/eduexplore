@@ -11,7 +11,7 @@ export default function WhyJoin() {
           <span className="text-[#d63970] text-[26px] font-medium font-['Publica Sans'] leading-[25px]">
             who want to:
           </span>
-        </div>
+        </div> 
 
         <div className=" flex flex-col items-center justify-center gap-y-2 font-medium text-black my-10">
 
