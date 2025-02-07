@@ -9,17 +9,18 @@ export default function WhyJoin() {
   return (
     <>
       <div className=" flex flex-col min-w-full items-center justify-center my-10">
-        <div className={`${publicSans.className} mt-10 text-center px-3 md:px-0`}>
-          <p className="text-white text-[26px] font-semibold  leading-[30px]">
+        <div className={`${publicSans.className} mt-10 text-center px-3 `}>
+          <p className="text-white text-[26px] md:text-[30px] font-semibold  leading-[30px]">
             StarKid is perfect for {" "}
           </p>
-          <p className="text-[#d63970] text-[26px] font-semibold  leading-[30px]">
+          <p className="text-[#d63970] text-[26px] md:text-[30px] font-semibold  leading-[30px]">
            those who want to:
           </p>
         </div>
 
         <div className=" flex flex-col items-center justify-center gap-y-2 font-medium text-black my-10">
-          <div className=" text-center flex items-center justify-center  w-[95vw]  gap-2">
+          <div className=" text-center flex items-center justify-center  w-[95vw] md:w-[60vw]  gap-2">
+
             <div className=" bg-[#00AFAA] px-2 py-1 rounded-lg flex-auto ">
               Showcase Talent
             </div>
@@ -30,13 +31,20 @@ export default function WhyJoin() {
               {" "}
               Learn
             </div>
-          </div>
-
-          <div className="text-center flex items-center justify-center w-[95vw]  gap-2 ">
-            <div className=" bg-[#FFC56F] px-2 py-1 rounded-lg flex-auto">
+            <div className=" hidden md:flex items-center justify-center bg-[#FFC56F] px-2 py-1 rounded-lg flex-auto">
               Build Confidence
             </div>
-            <div className=" bg-[#00AFAA] px-2 py-1 rounded-lg flex-auto">
+            <div className="hidden md:flex items-center justify-center bg-[#00AFAA] px-2 py-1 rounded-lg flex-auto">
+              {" "}
+              Reward
+            </div>
+          </div>
+
+          <div className="text-center flex items-center justify-center w-[95vw] md:hidden gap-2 ">
+            <div className="  bg-[#FFC56F] px-2 py-1 rounded-lg flex-auto">
+              Build Confidence
+            </div>
+            <div className="  bg-[#00AFAA] px-2 py-1 rounded-lg flex-auto">
               {" "}
               Reward
             </div>
@@ -45,7 +53,7 @@ export default function WhyJoin() {
             </div>
           </div>
 
-          <div className=" text-center flex items-center justify-center w-[95vw]  gap-2">
+          <div className=" text-center flex items-center justify-center w-[95vw] md:w-[60vw]  gap-2">
             <div className=" bg-[#D73970] px-2 py-1 rounded-lg flex-auto ">
               {" "}
               Grow
@@ -55,6 +63,9 @@ export default function WhyJoin() {
             </div>
             <div className=" bg-[#00AFAA] px-2 py-1 rounded-lg flex-auto ">
               New Skills
+            </div>
+            <div className=" hidden md:flex items-center justify-center bg-[#D73970] px-2 py-1 rounded-lg flex-auto">
+              Challenge Themselves
             </div>
           </div>
         </div>

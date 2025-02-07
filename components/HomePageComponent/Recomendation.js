@@ -30,8 +30,8 @@ export default function Recomendation() {
           Their Stories, Their Trust!
         </div>
       </div>
-      <div className=" min-w-full flex gap-10  flex-wrap items-center justify-evenly">
-        <div className=" relative w-10/12 sm:w-[350px]">
+      <div className="w-screen flex gap-10  flex-wrap items-center justify-evenly">
+        <div className=" relative w-10/12 sm:w-[280px]">
           <Image src={wh1} alt="wh1" className=" w-full" />
           <Image
             src={recom}
@@ -40,7 +40,7 @@ export default function Recomendation() {
             className="absolute -top-5 -right-5"
           />
         </div>
-         <div className=" relative w-10/12 sm:w-[350px]">
+        <div className=" relative w-10/12 sm:w-[280px]">
           <Image src={wh2} alt="wh1" className=" w-full" />
           <Image
             src={recom}
@@ -49,7 +49,7 @@ export default function Recomendation() {
             className="absolute -top-5 -right-5"
           />
         </div>
-         <div className=" relative w-10/12 sm:w-[350px]">
+        <div className=" relative w-10/12 sm:w-[280px]">
           <Image src={wh2} alt="wh1" className=" w-full" />
           <Image
             src={recom}
@@ -59,7 +59,9 @@ export default function Recomendation() {
           />
         </div>
       </div>
-      <button className={`${poppins.className} my-10 bg-[#5259AA] font-bold text-white py-4 px-8 rounded-lg text-lg`}>
+      <button
+        className={`${poppins.className} my-10 bg-[#5259AA] font-bold text-white py-4 px-8 rounded-lg text-lg`}
+      >
         REGISTER NOW
       </button>
     </div>
