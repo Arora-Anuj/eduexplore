@@ -22,7 +22,7 @@ const publicSans = Public_Sans({
 });
 export default function TalentPage() {
   return (
-    <div className=" bg-[#EEEFFC] w-full mt-10 p-3">
+    <div className=" bg-[#EEEFFC] w-full mt-10 p-3 md:hidden">
       <div className={`text-center my-10 ${publicSans.className}`}>
         <span className="text-[#1b1d30] text-[26px] font-bold font-['Publica Sans'] leading-normal">
           Turning{" "}
@@ -31,7 +31,7 @@ export default function TalentPage() {
           Talents into Opportunities!
         </span>
       </div>
-      <div className=" w-full mx-auto h-auto sm:w-[500px] sm:h-[500px] mb-10">
+      <div className=" w-full mx-auto h-auto md:w-[500px] md:h-[500px] mb-10">
 
       <Swiper
         slidesPerView={"auto"}
