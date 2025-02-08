@@ -35,7 +35,7 @@ export default function page() {
   return (
     <div className=" min-w-full bg-[#1B1D30] min-h-[100vh]">
       <div className="">
-        <div className=" flex items-center justify-center md:justify-start py-[10px]">
+        <div className=" flex items-center justify-center md:justify-start py-[10px] md:ml-5">
           <Image src={star} height={50} alt="star" />
           <Image src={starkid} height={20} alt="starkid" />
         </div>
@@ -55,7 +55,7 @@ export default function page() {
             </div>
 
             <p className="mt-5 px-2">
-              <span className="text-white  font-light font-['Caros'] leading-[18px]">
+              <span className="text-white text-lg  font-light font-['Caros'] leading-[18px]">
                 Join India's Most Trusted Platform to discover and showcase
                 young talents through Competitions{" "}
               </span>
@@ -64,7 +64,7 @@ export default function page() {
               </span>
             </p>
 
-            {/* <div>
+            <div className="hidden md:block">
               <p
                 className={`text-white font-medium mt-8 text-xl ${inter.className}`}
               >
@@ -79,7 +79,7 @@ export default function page() {
               <p className="text-white text-lg mt-10 text-center">
                 Participate in any competition for just ₹259!
               </p>
-            </div> */}
+            </div>
           </div>
           <HeroSection />
         </div>
