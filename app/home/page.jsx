@@ -34,9 +34,9 @@ const inter = {
 export default function page() {
   return (
     <div className=" min-w-full bg-[#1B1D30] min-h-[100vh]">
-      <div className=" md:p-3">
+      <div className="">
         <div className=" flex items-center justify-center md:justify-start py-[10px]">
-          <Image src={star} height={60} alt="star" />
+          <Image src={star} height={50} alt="star" />
           <Image src={starkid} height={20} alt="starkid" />
         </div>
 
@@ -54,17 +54,17 @@ export default function page() {
               </div>
             </div>
 
-            <p className="mt-5 ">
-              <span className="text-white text-[20px] font-light font-['Caros'] leading-[18px]">
+            <p className="mt-5 px-2">
+              <span className="text-white  font-light font-['Caros'] leading-[18px]">
                 Join India's Most Trusted Platform to discover and showcase
                 young talents through Competitions{" "}
               </span>
-              <span className="text-white text-[20px]  font-['Caros'] leading-[18px] font-semibold">
+              <span className="text-white   font-['Caros'] leading-[18px] font-semibold">
                 guided by Experts
               </span>
             </p>
 
-            <div>
+            {/* <div>
               <p
                 className={`text-white font-medium mt-8 text-xl ${inter.className}`}
               >
@@ -79,7 +79,7 @@ export default function page() {
               <p className="text-white text-lg mt-10 text-center">
                 Participate in any competition for just ₹259!
               </p>
-            </div>
+            </div> */}
           </div>
           <HeroSection />
         </div>
@@ -99,9 +99,8 @@ export default function page() {
             <HowToRegister />
           </div>
           <div className=" flex flex-col md:flex-col-reverse md:p-0">
-
-          <PerksOfJoining />
-          <WhyJoin />
+            <PerksOfJoining />
+            <WhyJoin />
           </div>
           {/* <Challenges/> */}
           <Faq />
