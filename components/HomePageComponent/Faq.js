@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import up from "@/public/asset/up.png"
-import down from "@/public/asset/down.png"
+import up from "@/public/asset/up.png";
+import down from "@/public/asset/down.png";
 import Image from "next/image";
 // import { ChevronDown, ChevronUp } from 'lucide-react';
 
@@ -24,17 +24,31 @@ export default function Faq() {
   };
 
   return (
-    <div className="w-full flex items-center justify-center flex-col text-black">
-      <h2 className="text-2xl font-bold mb-6 text-white mt-10 text-center">
+    <div className="w-full md:bg-[#EEEFFC] flex items-center justify-center flex-col text-black md:w-screen">
+      <h2 className="text-2xl font-bold mb-6 text-white mt-10 text-center md:text-[#1B1D30] ">
         Frequently asked questions <span className="text-[#D73970]">(FAQ)</span>
       </h2>
-      <div className=" w-full items-center justify-center flex flex-col gap-3 mb-10">
+      <div className=" w-full items-center justify-center flex flex-col gap-3 mb-10 md:mb-24">
         {faqs.map((faq, index) => (
-          <div key={index} className="bg-[#CBCDE6] p-4 rounded-lg w-[80%] ">
+          <div key={index} className="bg-[#CBCDE6] p-4 rounded-lg w-[90%] md:w-[80%]">
             <div className="w-full flex justify-between items-center text-sm sm:text-lg font-semibold">
               {faq.question}
               {/* <button onClick={() => toggleFAQ(index)}> */}
-                {openIndex === index ? <Image src={up} alt="up" width={20} onClick={() => toggleFAQ(index)}/> : <Image src={down} alt="down" width={20} onClick={() => toggleFAQ(index)}/>}
+              {openIndex === index ? (
+                <Image
+                  src={up}
+                  alt="up"
+                  width={20}
+                  onClick={() => toggleFAQ(index)}
+                />
+              ) : (
+                <Image
+                  src={down}
+                  alt="down"
+                  width={20}
+                  onClick={() => toggleFAQ(index)}
+                />
+              )}
               {/* </button> */}
             </div>
             {openIndex === index && <p className="mt-2">{description}</p>}
