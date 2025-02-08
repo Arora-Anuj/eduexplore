@@ -39,12 +39,12 @@ export default function Footer() {
     //   </div>
     // </div>
     <div className="relative bg-[#EEEFFC] md:bg-[#1B1D30] md:text-white flex flex-col md:flex-row w-screen items-center justify-center md:justify-evenly md:items-start text-[#1B1D30] mt-20 md:mt-0 md:py-0 py-20">
-      <div className="-top-[8%] md:-top-[12%] left-[calc(50%-50px)] absolute z-50 bg-[#EEEFFC] md:bg-[#1B1D30] p-3 rounded-full">
+      <div className="-top-[8%] md:-top-[12%] left-[calc(50%-62px)] absolute z-50 bg-[#EEEFFC] md:bg-[#1B1D30] p-3 rounded-full">
         <Image src={brand} alt="brand" className="w-[100px]" />
       </div>
       <div className=" flex flex-col md:flex-row-reverse  md:justify-evenly md:w-8/12">
 
-        <div className=" flex flex-col items-center justify-start pt-32 gap-3 md:w-6/12 md:mt-0">
+        <div className=" flex flex-col items-center justify-start md:pt-32 gap-3 md:w-6/12 md:mt-0">
 
           <p> StarKid: Where Talent Shines Bright! ✨</p>
           <p className="mt-2 text-sm">Let’s Get Social!</p>

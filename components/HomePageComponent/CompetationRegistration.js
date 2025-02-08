@@ -91,7 +91,7 @@ export default function CompetitionRegistration() {
 
         <div className=" flex items-center justify-center flex-col ">
           <p
-            className={`text-white font-medium mt-4 text-xl ${inter.className}`}
+            className={`text-white font-medium mt-5 text-xl ${inter.className}`}
           >
             Last few spots left!
           </p>
@@ -118,7 +118,7 @@ export default function CompetitionRegistration() {
           className="absolute top-[32%] right-0 sm:-right-10 "
         />
         <button
-          className={`absolute bottom-[38%] text-white text-[18px] font-normal ${poppins.className} w-[250px] bg-[#D73970] rounded-lg`}
+          className={`absolute bottom-[40%] text-white text-[18px] font-normal ${poppins.className} w-[250px] bg-[#D73970] rounded-lg`}
         >
           98% Satisfaction Rate among parents
         </button>
