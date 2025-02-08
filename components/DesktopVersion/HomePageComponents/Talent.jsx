@@ -13,8 +13,7 @@ const publicSans = Public_Sans({
 export default function Talent() {
   return (
     <>
-      return (
-      <div className="hidden md:block text-center bg-[#EEEFFC] py-20 ">
+      <div className="hidden md:block text-center bg-[#EEEFFC] py-10 ">
         <div className={`text-center mb-5  ${publicSans.className}`}>
           <span className="text-[#1b1d30] text-[26px] font-bold font-['Publica Sans'] leading-normal">
             Turning{" "}
@@ -64,13 +63,7 @@ export default function Talent() {
             </div>
           </div>
         </div>
-        {/* <button
-            className={`${poppins.className} my-10 bg-[#5259AA] font-bold text-white py-4 px-8 rounded-lg text-lg`}
-          >
-            REGISTER NOW
-          </button> */}
       </div>
-      );
     </>
   );
 }
