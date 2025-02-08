@@ -28,7 +28,7 @@ export default function Faq() {
       <h2 className="text-2xl font-bold mb-6 text-white mt-10 text-center md:text-[#1B1D30] ">
         Frequently asked questions <span className="text-[#D73970]">(FAQ)</span>
       </h2>
-      <div className=" w-full items-center justify-center flex flex-col gap-3 mb-10">
+      <div className=" w-full items-center justify-center flex flex-col gap-3 mb-10 md:mb-24">
         {faqs.map((faq, index) => (
           <div key={index} className="bg-[#CBCDE6] p-4 rounded-lg w-[90%] md:w-[80%]">
             <div className="w-full flex justify-between items-center text-sm sm:text-lg font-semibold">
