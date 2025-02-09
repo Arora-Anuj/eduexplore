@@ -11,7 +11,8 @@ import PerksOfJoining from "@/components/HomePageComponent/PerksOfJoining";
 import WhyJoin from "@/components/HomePageComponent/WhyJoin";
 import Faq from "@/components/HomePageComponent/Faq";
 import Footer from "@/components/HomePageComponent/Footer";
-import { Poppins, Public_Sans } from "next/font/google";
+import { Inter, Poppins, Public_Sans } from "next/font/google";
+import localFont from "next/font/local"
 import HeroSection from "@/components/DesktopVersion/HomePageComponents/HeroSection";
 import Talent from "@/components/DesktopVersion/HomePageComponents/Talent";
 
@@ -25,15 +26,19 @@ const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
   variable: "--font-poppins",
 });
-const inter = {
+const inter = Inter({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
   variable: "--font-inter",
-};
+});
+const caros =  localFont({
+  src:"../../public/fonts/Caros.otf"
+})
 
 export default function page() {
   return (
     <div className=" min-w-full bg-[#1B1D30] min-h-[100vh]">
+    {/* <p className={`${caros.className} font-bold text-3xl text-white`}> Lorem isadfl aldkfj aldfj ald fcaor sfont  </p> */}
       <div className="">
         <div className=" flex items-center justify-center md:justify-start py-[10px] md:ml-5">
           <Image src={star} height={50} alt="star" />
@@ -54,7 +59,7 @@ export default function page() {
               </div>
             </div>
 
-            <p className="mt-5 px-2">
+            <p className={`${caros.className} mt-5 px-2`}>
               <span className="text-white text-lg  font-light font-['Caros'] leading-[18px]">
                 Join India's Most Trusted Platform to discover and showcase
                 young talents through Competitions{" "}
@@ -76,7 +81,7 @@ export default function page() {
               >
                 REGISTER NOW
               </button>
-              <p className="text-white text-lg mt-10 text-center">
+              <p className={`${caros.className} text-white text-lg mt-10 text-center`}>
                 Participate in any competition for just ₹259!
               </p>
             </div>
