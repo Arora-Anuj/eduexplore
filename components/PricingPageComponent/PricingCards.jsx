@@ -55,7 +55,7 @@ export default function PricingCards() {
       </div>
       <div className="relative bg-[#EEEFFC] w-[100%] sm:w-[300px] md:w-[40%] md:h-[450px] rounded-xl p-5 md:p-10 ">
 
-      <p className="absolute top-[2%] md:top-[4%] bg-[#D73970] p-1 sm:p-2 rounded-xl text-[8px]  sm:text-xs text-white" >Recommended</p>
+      <p className="absolute top-[4%] md:top-[4%] bg-[#D73970] p-1 sm:p-2 rounded-xl text-[8px]  sm:text-xs text-white" >Recommended</p>
 
         <div className=" flex justify-evenly sm:flex-col">
           <div className="leftside flex flex-col w-[45%] py-5">
