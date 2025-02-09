@@ -33,16 +33,16 @@ export default function PricingCards() {
           <div className="  h-[1px] sm:w-[100%] bg-[#1B1D30] opacity-20 hidden sm:block"></div>
 
           <div className="rightside w-[55%] sm:w-full sm:justify-start flex items-start justify-center py-5">
-            <ul className="space-y-2 text-xs md:text-base w-full">
+            <ul className="space-y-2 text-xs md:text-base w-[90%]">
               <li className="flex items-center gap-2 text-start">
                 {" "}
                 <Image src={tick} alt="tick" width={13} /> Feedback from experts
               </li>
-              <li className="flex items-center gap-2">
+              <li className="flex items-center gap-2 text-start">
                 {" "}
                 <Image src={tick} alt="tick" width={13} /> Digital Certificate
               </li>
-              <li className="flex items-center gap-2">
+              <li className="flex items-center gap-2 text-start">
                 <Image src={tick} alt="tick" width={13} /> Medal for Winners
               </li>
               <li className=" flex items-center gap-2 h-12 lg:h-7">
