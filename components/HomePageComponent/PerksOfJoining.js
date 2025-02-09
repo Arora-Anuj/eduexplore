@@ -27,9 +27,9 @@ const caros =  localFont({
   src:"../../public/fonts/Caros.otf"
 })
 
-export default function PerksOfJoining() {
+export default function PerksOfJoining({pricing}) {
   return (
-    <div className=" bg-[#EEEFFC] w-screen hidden md:block">
+    <div className= {`bg-[#EEEFFC] w-screen ${pricing ?"hidden md:block" :null}`}>
       <div className=" flex flex-col items-center justify-center mt-10">
         <div className={`${publicaSans.className}`} >
           <span className="text-[#1b1d30] text-[26px] font-medium font-['Publica Sans'] leading-normal">

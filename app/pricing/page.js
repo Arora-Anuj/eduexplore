@@ -35,7 +35,7 @@ export default function page() {
         <Recomendation />
       </div>
       <div className=" bg-blue-500">
-        <PerksOfJoining />
+        <PerksOfJoining pricing={true} />
         <WhyJoin />
       </div>
       <div className=" bg-[#1B1D30] pb-10 md:pb-20">
