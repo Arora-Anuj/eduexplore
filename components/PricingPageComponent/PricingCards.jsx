@@ -1,7 +1,21 @@
+import { Mulish } from "next/font/google";
+import localFont from "next/font/local";
 import { FaCheckCircle } from "react-icons/fa";
+
+
+const mulish = Mulish({
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700", "800"],
+  variable: "--font-mlish",
+});
+
+const caros =  localFont({
+  src:"../../public/fonts/Caros.otf"
+})
+
 export default function PricingCards() {
   return (
-    <div className="flex flex-col sm:flex-row items-center justify-center mt-5 gap-3">
+    <div className={`${caros.className} flex flex-col sm:flex-row items-center justify-center mt-5 gap-3`}>
       <div className="bg-[#EEEFFC] w-[100%]  sm:w-[300px] md:w-[40%] md:h-[450px] rounded-xl p-5 md:p-10 ">
         <div className=" flex justify-evenly sm:flex-col">
           <div className="leftside flex flex-col w-[45%] py-5">
@@ -15,7 +29,7 @@ export default function PricingCards() {
           <div className=" w-[1px] h-[150px] bg-[#1B1D30] opacity-20 sm:hidden"></div>
           <div className="  h-[1px] sm:w-[100%] bg-[#1B1D30] opacity-20 hidden sm:block"></div>
 
-          <div className=" rightside w-[55%] sm:w-full sm:justify-start flex items-start justify-center py-5">
+          <div className="rightside w-[55%] sm:w-full sm:justify-start flex items-start justify-center py-5">
             <ul className="space-y-2 text-xs md:text-base">
               <li className="flex items-center gap-2">
                 {" "}
@@ -39,7 +53,10 @@ export default function PricingCards() {
           Participate Now
         </button>
       </div>
-      <div className="bg-[#EEEFFC] w-[100%] sm:w-[300px] md:w-[40%] md:h-[450px] rounded-xl p-5 md:p-10 ">
+      <div className="relative bg-[#EEEFFC] w-[100%] sm:w-[300px] md:w-[40%] md:h-[450px] rounded-xl p-5 md:p-10 ">
+
+      <p className="absolute top-[2%] md:top-[4%] bg-[#D73970] p-1 sm:p-2 rounded-xl text-[8px]  sm:text-xs text-white" >Recommended</p>
+
         <div className=" flex justify-evenly sm:flex-col">
           <div className="leftside flex flex-col w-[45%] py-5">
             <div className=" flex justify-between items-start flex-col h-[120px] ">
