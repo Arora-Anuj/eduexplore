@@ -11,12 +11,20 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import "../../app/globals.css";
+
 import { Public_Sans } from "next/font/google";
+import localFont from "next/font/local";
+
 const publicSans = Public_Sans({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
   variable: "--font-publica",
 });
+
+const caros =  localFont({
+  src:"../../public/fonts/Caros.otf"
+})
+
 export default function TalentPage() {
   return (
     <div className=" bg-[#EEEFFC] w-full mt-10 p-3 md:hidden">
@@ -28,7 +36,7 @@ export default function TalentPage() {
           Talents into Opportunities!
         </span>
       </div>
-      <div className=" w-full mx-auto h-auto md:w-[500px] md:h-[500px] mb-10">
+      <div className={`${caros.className} w-full mx-auto h-auto md:w-[500px] md:h-[500px] mb-10`}>
 
       <Swiper
         slidesPerView={"auto"}
