@@ -1,7 +1,8 @@
 import { Mulish } from "next/font/google";
 import localFont from "next/font/local";
 import { FaCheckCircle } from "react-icons/fa";
-
+import tick from "@/public/asset/tick.png";
+import Image from "next/image";
 
 const mulish = Mulish({
   subsets: ["latin"],
@@ -9,13 +10,15 @@ const mulish = Mulish({
   variable: "--font-mlish",
 });
 
-const caros =  localFont({
-  src:"../../public/fonts/Caros.otf"
-})
+const caros = localFont({
+  src: "../../public/fonts/Caros.otf",
+});
 
 export default function PricingCards() {
   return (
-    <div className={`${caros.className} flex flex-col sm:flex-row items-center justify-center mt-5 gap-3`}>
+    <div
+      className={`${caros.className} flex flex-col sm:flex-row items-center justify-center mt-5 gap-3`}
+    >
       <div className="bg-[#EEEFFC] w-[100%]  sm:w-[300px] md:w-[40%] md:h-[450px] rounded-xl p-5 md:p-10 ">
         <div className=" flex justify-evenly sm:flex-col">
           <div className="leftside flex flex-col w-[45%] py-5">
@@ -30,20 +33,20 @@ export default function PricingCards() {
           <div className="  h-[1px] sm:w-[100%] bg-[#1B1D30] opacity-20 hidden sm:block"></div>
 
           <div className="rightside w-[55%] sm:w-full sm:justify-start flex items-start justify-center py-5">
-            <ul className="space-y-2 text-xs md:text-base">
-              <li className="flex items-center gap-2">
+            <ul className="space-y-2 text-xs md:text-base w-full">
+              <li className="flex items-center gap-2 text-start">
                 {" "}
-                <FaCheckCircle size={14} /> Feedback from experts
+                <Image src={tick} alt="tick" width={13} /> Feedback from experts
               </li>
               <li className="flex items-center gap-2">
                 {" "}
-                <FaCheckCircle size={14} /> Digital Certificate
+                <Image src={tick} alt="tick" width={13} /> Digital Certificate
               </li>
               <li className="flex items-center gap-2">
-                <FaCheckCircle size={14} /> Medal for Winners
+                <Image src={tick} alt="tick" width={13} /> Medal for Winners
               </li>
               <li className=" flex items-center gap-2 h-12 lg:h-7">
-                {/* <FaCheckCircle /> Medal for Winners  */}
+                {/* <Image  src={tick}  alt="tick" width={13}/> Medal for Winners  */}
               </li>
             </ul>
           </div>
@@ -54,8 +57,9 @@ export default function PricingCards() {
         </button>
       </div>
       <div className="relative bg-[#EEEFFC] w-[100%] sm:w-[300px] md:w-[40%] md:h-[450px] rounded-xl p-5 md:p-10 ">
-
-      <p className="absolute top-[4%] md:top-[4%] bg-[#D73970] p-1 sm:p-2 rounded-xl text-[8px]  sm:text-xs text-white" >Recommended</p>
+        <p className="absolute top-[4%] md:top-[4%] bg-[#D73970] p-1 sm:p-2 rounded-xl text-[8px]  sm:text-xs text-white">
+          Recommended
+        </p>
 
         <div className=" flex justify-evenly sm:flex-col">
           <div className="leftside flex flex-col w-[45%] py-5">
@@ -73,19 +77,18 @@ export default function PricingCards() {
             <ul className="space-y-2 text-xs md:text-base w-[90%] ">
               <li className="flex items-center gap-2">
                 {" "}
-                <FaCheckCircle className=" w-3 " /> Feedback from experts
+                <Image src={tick} alt="tick" width={13} /> Feedback from experts
               </li>
               <li className="flex items-center gap-2 font-bold">
                 {" "}
-                <FaCheckCircle /> Physical Certificate
+                <Image src={tick} alt="tick" width={13} /> Physical Certificate
               </li>
               <li className="flex items-center gap-2">
-                <FaCheckCircle /> Medal for Winners
+                <Image src={tick} alt="tick" width={13} /> Medal for Winners
               </li>
               <li className=" flex items-center gap-2 text-wrap">
-                <FaCheckCircle className=" w-5 md:w-auto "/>
-                <p>Chance to be featured
-                in our weekly showcase</p>
+                <Image src={tick} alt="tick" width={13} />
+                <p>Chance to be featured in our weekly showcase</p>
               </li>
               {/* <p className="flex items-center gap-2 text-wrap">
                 in our weekly showcase
