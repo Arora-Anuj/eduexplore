@@ -4,6 +4,7 @@ import comp from "@/public/asset/comp.png";
 import comp1 from "@/public/asset/comp1.png";
 import comp2 from "@/public/asset/comp2.png";
 import { Public_Sans } from "next/font/google";
+
 const publicSans = Public_Sans({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],

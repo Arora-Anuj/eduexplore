@@ -1,33 +1,34 @@
 import React from "react";
-import starkid from "@/public/asset/star2.png";
-import starLogo from "@/public/asset/logo2.png";
 import brand from "@/public/asset/brand.png";
-import inst from "@/public/asset/inst.png";
 import Image from "next/image";
 import { BiLogoFacebook, BiLogoInstagram, BiLogoTwitter } from "react-icons/bi";
+import localFont from "next/font/local";
 
-export default function Footer() {
+const caros = localFont({
+  src: "../../public/fonts/Caros.otf",
+});
+
+export default function Footer({pricing}) {
   return (
-    <div className="relative bg-[#EEEFFC] md:bg-[#1B1D30] md:text-white flex flex-col md:flex-row w-screen items-center justify-center md:justify-evenly md:items-start text-[#1B1D30] mt-20 md:mt-0 md:py-0 py-20">
-      <div className="-top-[8%] md:-top-[12%] left-[calc(50%-62px)] absolute z-50 bg-[#EEEFFC] md:bg-[#1B1D30] p-3 rounded-full">
+    <div
+      className={` ${caros.className} relative bg-[#EEEFFC] ${pricing ?"md:bg-[#EEEFFC]" : "md:bg-[#1B1D30]"}  ${!pricing ?"md:text-[#EEEFFC]" : "md:text-[#1B1D30]"} flex flex-col md:flex-row w-screen items-center justify-center md:justify-evenly md:items-start  mt-20 md:mt-0 md:py-0 py-20`}
+    >
+      <div className={`-top-[8%] md:-top-[12%] left-[calc(50%-62px)] bg-[#EEEFFC] absolute z-50 ${pricing ?"md:bg-[#EEEFFC]" : "md:bg-[#1B1D30]"} p-3 rounded-full`}>
         <Image src={brand} alt="brand" className="w-[100px]" />
       </div>
       <div className=" flex flex-col md:flex-row-reverse  md:justify-evenly md:w-8/12">
-
         <div className=" flex flex-col items-center justify-start md:pt-32 gap-3 md:w-6/12 md:mt-0">
-
-          <p> StarKid: Where Talent Shines Bright! ✨</p>
+          <p className="text-center w-[80%]" > StarKid: Where Talent Shines Bright! ✨</p>
           <p className="mt-2 text-sm">Let’s Get Social!</p>
 
           <div className=" flex gap-3">
             <BiLogoTwitter size={20} />
             <BiLogoFacebook size={20} />
             <BiLogoInstagram size={20} />
-            
           </div>
         </div>
 
-        <div className=" md:h-[412px] md:w-[1px] w-screen h-[1px] mt-5 md:mt-0 bg-black md:bg-white"></div>
+        <div className={` md:h-[412px] md:w-[1px] w-screen h-[1px] mt-5 md:mt-0 bg-black ${!pricing ?"md:bg-[#EEEFFC]" : "md:bg-[#1B1D30]"}`}></div>
 
         <div className="mt-10  flex items-center flex-col justify-center text-center md:text-start  font-semibold md:w-6/12 md:pb-20">
           {/* <h3 className="text-md font-semibold uppercase text-[#6D6D6D] md:text-start">
@@ -72,10 +73,9 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-
       </div>
 
-      <div className=" md:h-[412px] md:w-[1px] w-screen h-[1px] mt-5 md:mt-0 bg-black md:bg-white"></div>
+      <div className={` md:h-[412px] md:w-[1px] w-screen h-[1px] mt-5 md:mt-0 bg-black ${!pricing ?"md:bg-[#EEEFFC]" : "md:bg-[#1B1D30]"}`}></div>
 
       <div className="mt-5 flex flex-col items-center justify-center font-semibold md:w-4/12 md:pb-20">
         <ul className="mt-3 space-y-2 text-sm md:text-lg md:py-5 md:flex md:flex-col md:items-start text-center md:w-5/12">

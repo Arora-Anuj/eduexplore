@@ -3,13 +3,16 @@ import React from "react";
 import hero from "@/public/asset/hero.png";
 import msg1 from "@/public/asset/msg1.png";
 import msg2 from "@/public/asset/msg2.png";
-import { Poppins } from "next/font/google";
+import { Inter, Poppins, Public_Sans } from "next/font/google";
+import localFont from "next/font/local";
 
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
   variable: "--font-poppins",
 });
+
+
 export default function HeroSection() {
   return (
     <>

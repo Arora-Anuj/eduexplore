@@ -81,7 +81,7 @@ export default function HowToRegister() {
         </div>
         {/* desktop view */}
       </div>
-      <div className=" md:flex flex-col hidden gap-2 items-center justify-center mb-10">
+      <div className={`${poppins.className} md:flex flex-col hidden gap-2 items-center justify-center mb-10`}>
         <div className=" flex flex-col gap-2 items-center justify-center ">
           <Image src={reg4} alt="reg4" width={100} />
           <p className=" font-semibold">Click on 'Register Now'</p>
