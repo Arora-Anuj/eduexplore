@@ -6,6 +6,7 @@ import Recomendation from "@/components/HomePageComponent/Recomendation";
 import TalentPage from "@/components/HomePageComponent/TalentPage";
 import Pricing from "@/components/PricingPageComponent/Pricing";
 import Stats from "@/components/PricingPageComponent/Stats";
+import WhyJoin from "@/components/PricingPageComponent/WhyJoin";
 import star from "@/public/asset/star-logo.png";
 import starkid from "@/public/asset/starkid.png";
 import Image from "next/image";
@@ -35,12 +36,13 @@ export default function page() {
       </div>
       <div className=" bg-blue-500">
         <PerksOfJoining />
+        <WhyJoin />
       </div>
       <div className=" bg-[#1B1D30] pb-10 md:pb-20">
-        <Faq />
+        <Faq pricing={true}/>
       </div>
       <div className=" bg-blue-500 -mt-20">
-        <Footer />
+        <Footer pricing={true} />
       </div>
     </div>
   );

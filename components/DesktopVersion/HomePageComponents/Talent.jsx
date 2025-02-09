@@ -4,11 +4,17 @@ import talent1 from "@/public/asset/talent1.png";
 import talent2 from "@/public/asset/talent2.png";
 import talent3 from "@/public/asset/talent3.png";
 import { Public_Sans } from "next/font/google";
+import localFont from "next/font/local";
+
+
 const publicSans = Public_Sans({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
   variable: "--font-publica",
 });
+const caros =  localFont({
+  src:"../../../public/fonts/Caros.otf"
+})
 
 export default function Talent() {
   return (
@@ -22,7 +28,7 @@ export default function Talent() {
             Talents into Opportunities!
           </span>
         </div>
-        <div className="w-screen flex gap-10  flex-wrap items-center justify-around">
+        <div className={`${caros.className} w-screen flex gap-10  flex-wrap items-center justify-around`}>
           <div className="w-11/12 sm:w-[300px] rounded-lg">
             <Image src={talent3} className="w-full" alt="talent" />
             <div className=" w-full overflow-clip leading-5 bg-[#00AFAA] rounded-b-lg p-4 text-center">
