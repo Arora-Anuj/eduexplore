@@ -12,8 +12,8 @@ const publicSans = Public_Sans({
 });
 export default function CompetationDisplay() {
   return (
-    <div className=" bg-[#EEEFFC] xs:min-w-full md:min-w-[55%]">
-      <div className={`text-center pt-20 md:mt-5 mb-10 ${publicSans.className}`}>
+    <div className=" bg-[#EEEFFC] xs:min-w-full md:min-w-[55%] md:h-[700px]">
+      <div className={`text-center pt-20 md:mt-5 md:pt-0 mb-10 ${publicSans.className}`}>
         <div className="relative text-black text-[26px] font-bold font-['Publica Sans'] leading-normal">
           Explore Our Exciting{" "}
           <Image
@@ -34,7 +34,7 @@ export default function CompetationDisplay() {
       </div>
 
       <div className="w-srceen sm:w-full  flex items-center justify-center pb-10">
-        <Image src={comp} alt="comp" className=" w-11/12 sm:w-6/12 "  />
+        <Image src={comp} alt="comp" className=" w-11/12 sm:w-[auto] sm:h-[500px]"  />
       </div>
     </div>
   );
