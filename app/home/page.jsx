@@ -91,7 +91,7 @@ export default function page() {
           <HeroSection />
         </div>
 
-        <div className=" flex flex-col items-center justify-center">
+        <div className=" flex flex-col items-center  justify-center">
           <CompetitionRegistration />
 
           <TalentPage />
@@ -105,7 +105,7 @@ export default function page() {
 
             <HowToRegister />
           </div>
-          <div className=" flex flex-col md:flex-col-reverse md:p-0">
+          <div className=" flex flex-col md:flex-col-reverse md:p-0 w-full">
             <PerksOfJoining />
             <WhyJoin />
           </div>

@@ -19,7 +19,7 @@ const caros =  localFont({
 export default function Talent() {
   return (
     <>
-      <div className="hidden md:block text-center bg-[#EEEFFC] py-10 ">
+      <div className="hidden md:block text-center w-full bg-[#EEEFFC] py-10 ">
         <div className={`text-center mb-5  ${publicSans.className}`}>
           <span className="text-[#1b1d30] text-[26px] font-bold font-['Publica Sans'] leading-normal">
             Turning{" "}
