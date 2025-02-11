@@ -36,7 +36,7 @@ export default function Faq({pricing}) {
   };
 
   return (
-    <div className={`w-full ${!pricing ?"md:bg-[#EEEFFC]" : "md:bg-[#1B1D30]"} flex items-center justify-center flex-col text-black md:w-screen`}>
+    <div className={`w-full ${!pricing ?"md:bg-[#EEEFFC]" : "md:bg-[#1B1D30]"} flex items-center justify-center flex-col text-black`}>
       <h2 className={`${publicaSans.className} text-2xl font-bold mb-6 text-white mt-10 text-center md:text-[#1B1D30]`}>
         Frequently asked questions <span className="text-[#D73970]">(FAQ)</span>
       </h2>

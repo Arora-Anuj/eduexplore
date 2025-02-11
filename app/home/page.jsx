@@ -100,7 +100,7 @@ export default function page() {
           {/*  */}
           <Recomendation />
 
-          <div className=" md:bg-[#EEEFFC] w-screen felx-col md:flex md:flex-row-reverse items-center justify-around">
+          <div className=" md:bg-[#EEEFFC] w-full felx-col md:flex md:flex-row-reverse items-center justify-around">
             <CompetationDisplay />
 
             <HowToRegister />

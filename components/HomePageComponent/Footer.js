@@ -11,7 +11,7 @@ const caros = localFont({
 export default function Footer({pricing}) {
   return (
     <div
-      className={` ${caros.className} relative bg-[#EEEFFC] ${pricing ?"md:bg-[#EEEFFC]" : "md:bg-[#1B1D30]"}  ${!pricing ?"md:text-[#EEEFFC]" : "md:text-[#1B1D30]"} flex flex-col md:flex-row w-screen items-center justify-center md:justify-evenly md:items-start  mt-20 md:mt-0 md:py-0 py-20`}
+      className={` ${caros.className} relative bg-[#EEEFFC] ${pricing ?"md:bg-[#EEEFFC]" : "md:bg-[#1B1D30]"}  ${!pricing ?"md:text-[#EEEFFC]" : "md:text-[#1B1D30]"} flex flex-col md:flex-row w-full items-center justify-center md:justify-evenly md:items-start  mt-20 md:mt-0 md:py-0 py-20`}
     >
       <div className={`-top-[8%] md:-top-[12%] left-[calc(50%-62px)] bg-[#EEEFFC] absolute z-50 ${pricing ?"md:bg-[#EEEFFC]" : "md:bg-[#1B1D30]"} p-3 rounded-full`}>
         <Image src={brand} alt="brand" className="w-[100px]" />
@@ -28,7 +28,7 @@ export default function Footer({pricing}) {
           </div>
         </div>
 
-        <div className={` md:h-[412px] md:w-[1px] w-screen h-[1px] mt-5 md:mt-0 bg-black ${!pricing ?"md:bg-[#EEEFFC]" : "md:bg-[#1B1D30]"}`}></div>
+        <div className={` md:h-[412px] md:w-[1px] w-full h-[1px] mt-5 md:mt-0 bg-black ${!pricing ?"md:bg-[#EEEFFC]" : "md:bg-[#1B1D30]"}`}></div>
 
         <div className="mt-10  flex items-center flex-col justify-center text-center md:text-start  font-semibold md:w-6/12 md:pb-20">
           {/* <h3 className="text-md font-semibold uppercase text-[#6D6D6D] md:text-start">
@@ -75,7 +75,7 @@ export default function Footer({pricing}) {
         </div>
       </div>
 
-      <div className={` md:h-[412px] md:w-[1px] w-screen h-[1px] mt-5 md:mt-0 bg-black ${!pricing ?"md:bg-[#EEEFFC]" : "md:bg-[#1B1D30]"}`}></div>
+      <div className={` md:h-[412px] md:w-[1px] w-full h-[1px] mt-5 md:mt-0 bg-black ${!pricing ?"md:bg-[#EEEFFC]" : "md:bg-[#1B1D30]"}`}></div>
 
       <div className="mt-5 flex flex-col items-center justify-center font-semibold md:w-4/12 md:pb-20">
         <ul className="mt-3 space-y-2 text-sm md:text-lg md:py-5 md:flex md:flex-col md:items-start text-center md:w-5/12">

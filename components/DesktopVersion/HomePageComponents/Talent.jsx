@@ -28,7 +28,7 @@ export default function Talent() {
             Talents into Opportunities!
           </span>
         </div>
-        <div className={`${caros.className} w-screen flex gap-10  flex-wrap items-center justify-around`}>
+        <div className={`${caros.className} w-full flex gap-10  flex-wrap items-center justify-around`}>
           <div className="w-11/12 sm:w-[300px] rounded-lg">
             <Image src={talent3} className="w-full" alt="talent" />
             <div className=" w-full overflow-clip leading-5 bg-[#00AFAA] rounded-b-lg p-4 text-center">

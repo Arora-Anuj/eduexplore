@@ -15,7 +15,7 @@ const caros =  localFont({
 
 export default function Stats() {
   return (
-    <div className=" bg-[#5259AA] text-center text-white flex flex-col gap-y-20 md:flex-row items-center justify-evenly w-screen py-10 md:py-14">
+    <div className=" bg-[#5259AA] text-center text-white flex flex-col gap-y-20 md:flex-row items-center justify-evenly w-full py-10 md:py-14">
       <div className=" w-full md:w-4/12 flex flex-col gap-1 md:gap-2 md:text-lg items-center justify-center">
         <p className={`text-3xl font-bold md:text-4xl ${poppins.className}`}>98%</p>
         <p className={`${caros.className}`} >Satisfaction Rate among Parents</p>
