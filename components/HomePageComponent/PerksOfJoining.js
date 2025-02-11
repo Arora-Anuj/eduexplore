@@ -31,7 +31,7 @@ export default function PerksOfJoining({pricing}) {
   return (
     <div className= {`bg-[#EEEFFC] w-full ${pricing ?"hidden md:block" :null}`}>
       <div className=" flex flex-col items-center justify-center mt-10">
-        <div className={`${publicaSans.className}`} >
+        <div className={`${publicaSans.className} leading-[24px] tracking-[-0.41px]`} >
           <span className="text-[#1b1d30] text-[26px] font-medium font-['Publica Sans'] leading-normal">
             Perks of Joining{" "}
           </span>
@@ -40,19 +40,19 @@ export default function PerksOfJoining({pricing}) {
           </span>
         </div>
         <div className={` ${caros.className} my-5 flex flex-wrap items-center justify-evenly w-full gap-y-7`}>
-          <div className=" bg-[#1B1D30] w-10/12 sm:w-[200px] sm:h-[250px] items-center justify-center flex flex-col gap-2 p-4 rounded-2xl text-center">
+          <div className=" bg-[#1B1D30] w-7/12 sm:w-[200px] sm:h-[250px] items-center justify-center flex flex-col gap-2 p-4 rounded-2xl text-center">
             <Image alt="perks of joining" src={join3} />
             <p className=" text-white font-bold">Medals for Winner</p>
           </div>
-          <div className=" bg-[#1B1D30] w-10/12 sm:w-[200px] sm:h-[250px] items-center justify-center flex flex-col gap-2 p-4 rounded-2xl text-center">
+          <div className=" bg-[#1B1D30] w-7/12 sm:w-[200px] sm:h-[250px] items-center justify-center flex flex-col gap-2 p-4 rounded-2xl text-center">
             <Image alt="perks of joining" src={certficate} />
             <p className=" text-white font-bold">Certificate for All</p>
           </div>
-          <div className=" bg-[#1B1D30] w-10/12 sm:w-[200px] sm:h-[250px] items-center justify-center flex flex-col gap-2 p-4 rounded-2xl text-center">
+          <div className=" bg-[#1B1D30] w-7/12 sm:w-[200px] sm:h-[250px] items-center justify-center flex flex-col gap-2 p-4 rounded-2xl text-center">
             <Image alt="perks of joining" src={join2} />
             <p className=" text-white font-bold">Featured in Weekly showcase</p>
           </div>
-          <div className=" bg-[#1B1D30] w-10/12 sm:w-[200px] sm:h-[250px] items-center justify-center flex flex-col gap-2 p-4 rounded-2xl text-center">
+          <div className=" bg-[#1B1D30] w-7/12 sm:w-[200px] sm:h-[250px] items-center justify-center flex flex-col gap-2 p-4 rounded-2xl text-center">
             <Image alt="perks of joining" src={join1} />
             <p className=" text-white font-bold">Experts Feedback</p>
           </div>
