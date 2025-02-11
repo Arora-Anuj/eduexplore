@@ -4,21 +4,21 @@ import comp from "@/public/asset/comp.png";
 import comp1 from "@/public/asset/comp1.png";
 import comp2 from "@/public/asset/comp2.png";
 import { Public_Sans } from "next/font/google";
+import localFont from "next/font/local";
 
-const publicSans = Public_Sans({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
-  variable: "--font-publica",
+const publicaSans = localFont({
+  src: "../../public/fonts/PublicaSans.otf",
 });
 export default function CompetationDisplay() {
   return (
     <div className="pt-[51px] bg-[#EEEFFC] xs:min-w-full md:min-w-[55%] md:h-[700px]">
-      <div className={` leading-[24px] tracking-[-0.41px] text-center  md:mt-5 md:pt-0 mb-10 ${publicSans.className}`}>
+      <div
+        className={` leading-[24px] tracking-[-0.41px] text-center  md:mt-5 md:pt-0 mb-10 ${publicaSans.className}`}
+      >
         <p className=" leading-[24px] tracking-[-0.41px] relative text-black text-[26px] font-bold font-['Publica Sans'] leading-normal">
           Explore Our Exciting{" "}
           <Image
             src={comp1}
-            
             alt="comp"
             className=" md:hidden w-[55px] h-[55px] absolute -top-10 left-2 sm:left-[20%] "
           />
@@ -34,7 +34,11 @@ export default function CompetationDisplay() {
       </div>
 
       <div className="w-srceen sm:w-full  flex items-center justify-center pb-10">
-        <Image src={comp} alt="comp" className=" w-11/12 sm:w-[auto] sm:h-[500px]"  />
+        <Image
+          src={comp}
+          alt="comp"
+          className=" w-11/12 sm:w-[auto] sm:h-[500px]"
+        />
       </div>
     </div>
   );

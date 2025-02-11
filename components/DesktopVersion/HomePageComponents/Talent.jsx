@@ -6,21 +6,18 @@ import talent3 from "@/public/asset/talent3.png";
 import { Public_Sans } from "next/font/google";
 import localFont from "next/font/local";
 
-
-const publicSans = Public_Sans({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
-  variable: "--font-publica",
+const publicaSans = localFont({
+  src: "../../../public/fonts/PublicaSans.otf",
 });
-const caros =  localFont({
-  src:"../../../public/fonts/Caros.otf"
-})
+const caros = localFont({
+  src: "../../../public/fonts/Caros.otf",
+});
 
 export default function Talent() {
   return (
     <>
       <div className="hidden md:block text-center w-full bg-[#EEEFFC] py-10 ">
-        <div className={`text-center mb-5  ${publicSans.className}`}>
+        <div className={`text-center mb-5  ${publicaSans.className}`}>
           <span className="text-[#1b1d30] text-[26px] font-bold font-['Publica Sans'] leading-normal">
             Turning{" "}
           </span>
@@ -28,7 +25,9 @@ export default function Talent() {
             Talents into Opportunities!
           </span>
         </div>
-        <div className={`${caros.className} w-full flex gap-10  flex-wrap items-center justify-around`}>
+        <div
+          className={`${caros.className} w-full flex gap-10  flex-wrap items-center justify-around`}
+        >
           <div className="w-11/12 sm:w-[300px] rounded-lg">
             <Image src={talent3} className="w-full" alt="talent" />
             <div className=" w-full overflow-clip leading-5 bg-[#00AFAA] rounded-b-lg p-4 text-center">

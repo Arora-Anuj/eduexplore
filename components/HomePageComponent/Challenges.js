@@ -5,6 +5,11 @@ import talent1 from "@/public/asset/talent1.png";
 import winner from "@/public/asset/winner.png";
 import trophy from "@/public/asset/trophy.png";
 import Link from "next/link";
+import localFont from "next/font/local";
+
+const publicaSans = localFont({
+  src: "../../public/fonts/PublicaSans.otf",
+});
 
 const challenges = [
   {
@@ -43,14 +48,14 @@ export default function Challenges() {
     <>
       <div className=" pt-[21px] bg-[#EEEFFC] w-full flex flex-col items-center justify-center md:hidden">
         <div className="  text-center w-11/12">
-          <span class="text-[#1b1d30] text-[26px] font-medium leading-[25px]">
+          <span className={`text-[#1b1d30] text-[26px] font-medium leading-[25px] ${publicaSans.className}`}>
             Take a look at the
           </span>
-          <span class="text-[#d63970] text-[26px] font-medium leading-[25px]">
+          <span className={`text-[#d63970] text-[26px] font-medium leading-[25px] ${publicaSans.className}`}>
             {" "}
             Most Exciting Challenges
           </span>
-          <span class="text-[#1b1d30] text-[26px] font-medium leading-[25px]">
+          <span className={`text-[#1b1d30] text-[26px] font-medium leading-[25px] ${publicaSans.className}`}>
             {" "}
             and Previous Competition Winners
           </span>

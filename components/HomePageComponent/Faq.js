@@ -7,10 +7,8 @@ import Image from "next/image";
 import localFont from "next/font/local";
 import { Public_Sans } from "next/font/google";
 
-const publicaSans = Public_Sans({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
-  variable: "--font-publica",
+const publicaSans = localFont({
+  src: "../../public/fonts/PublicaSans.otf",
 });
 const caros = localFont({
   src: "../../public/fonts/Caros.otf",
@@ -51,7 +49,12 @@ export default function Faq({ pricing }) {
             className={` ${caros.className} bg-[#CBCDE6] p-4 rounded-lg w-[90%] md:w-[80%]`}
           >
             <div className="w-full flex justify-between items-start gap-2 text-sm sm:text-lg font-semibold">
-              <p onClick={() => toggleFAQ(index)} className=" text-[13px] font-semibold">{faq.question}</p>
+              <p
+                onClick={() => toggleFAQ(index)}
+                className=" text-[13px] font-semibold"
+              >
+                {faq.question}
+              </p>
               {/* <button onClick={() => toggleFAQ(index)}> */}
               {openIndex === index ? (
                 <Image
@@ -70,7 +73,11 @@ export default function Faq({ pricing }) {
               )}
               {/* </button> */}
             </div>
-            {openIndex === index && <p className="mt-2 font-normal text-xs -tracking-[2%] leading-normal ">{description}</p>}
+            {openIndex === index && (
+              <p className="mt-2 font-normal text-xs -tracking-[2%] leading-normal ">
+                {description}
+              </p>
+            )}
           </div>
         ))}
       </div>

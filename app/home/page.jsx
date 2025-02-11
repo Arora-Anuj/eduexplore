@@ -18,10 +18,8 @@ import Talent from "@/components/DesktopVersion/HomePageComponents/Talent";
 import Challenges from "@/components/HomePageComponent/Challenges";
 import Link from "next/link";
 
-const publicaSans = Public_Sans({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
-  variable: "--font-publica",
+const publicaSans = localFont({
+  src: "../../public/fonts/PublicaSans.otf",
 });
 const poppins = Poppins({
   subsets: ["latin"],
@@ -40,7 +38,7 @@ const caros = localFont({
 export default function page() {
   return (
     <div className=" min-w-full bg-[#1B1D30] min-h-[100vh]">
-      {/* <p className={`${caros.className} font-bold text-3xl text-white`}> Lorem isadfl aldkfj aldfj ald fcaor sfont  </p> */}
+      {/* <p className={`${publicaSans.className} font-bold text-3xl text-white`}> Lorem isadfl aldkfj aldfj ald fcaor sfont  </p> */}
       <div className="">
         <div className=" flex items-center justify-center md:justify-start py-[10px] md:ml-5">
           <Image src={star} height={40} width={40} alt="star" />
@@ -52,25 +50,19 @@ export default function page() {
             <p
               className={`${publicaSans.className}text-white text-[33px] font-medium leading-9 `}
             >
-              <span className=" text-white ">
-                Your{" "}
-              </span>
-              <span className="text-[#d63970]">
-                Child’s Talent{" "}
-              </span>
-              <span className="text-white">
-                Deserves the Spotlight!
-              </span>
+              <span className={`${publicaSans.className}  text-white `}>Your </span>
+              <span className={`${publicaSans.className} text-[#d63970]`}>Child’s Talent </span>
+              <span className={`${publicaSans.className} text-white`}>Deserves the Spotlight!</span>
             </p>
 
-            <p className={`${caros.className} text-white text-[15px] font-light font-['Caros'] leading-[18px] mt-[12px]`}>
+            <p
+              className={`${caros.className} text-white text-[15px] font-light font-['Caros'] leading-[18px] mt-[12px]`}
+            >
               <span className="text-white">
                 Join India's Most Trusted Platform to discover and showcase
                 young talents through Competitions{" "}
               </span>
-              <span className="text-white font-medium">
-                guided by Experts
-              </span>
+              <span className="text-white font-medium">guided by Experts</span>
             </p>
 
             {/* desktop site */}
@@ -117,7 +109,7 @@ export default function page() {
             <PerksOfJoining />
             <WhyJoin />
           </div>
-          <Challenges/>
+          <Challenges />
           <Faq />
           <Footer />
         </div>
