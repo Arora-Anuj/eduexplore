@@ -30,7 +30,7 @@ export default function Recomendation() {
           Their Stories, Their Trust!
         </div>
       </div>
-      <div className="w-screen flex gap-10  flex-wrap items-center justify-evenly">
+      <div className="w-full flex gap-10  flex-wrap items-center justify-evenly">
         <div className=" relative w-10/12 sm:w-[280px]">
           <Image src={wh1} alt="wh1" className=" w-full" />
           <Image

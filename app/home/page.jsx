@@ -15,6 +15,8 @@ import { Inter, Poppins, Public_Sans } from "next/font/google";
 import localFont from "next/font/local"
 import HeroSection from "@/components/DesktopVersion/HomePageComponents/HeroSection";
 import Talent from "@/components/DesktopVersion/HomePageComponents/Talent";
+import Challenges from "@/components/HomePageComponent/Challenges";
+import Link from "next/link";
 
 const publicaSans = Public_Sans({
   subsets: ["latin"],
@@ -71,16 +73,16 @@ export default function page() {
 
             <div className="hidden md:block">
               <p
-                className={`text-white font-medium mt-8 text-xl ${inter.className}`}
+                className={`text-white font-medium my-8 text-xl ${inter.className}`}
               >
                 Last few spots left!
               </p>
-
-              <button
+            
+              <Link href={"/pricing"}
                 className={`${poppins.className} mt-4 bg-[#5259AA] font-bold text-white py-4 px-8 rounded-lg text-lg`}
               >
                 REGISTER NOW
-              </button>
+              </Link>
               <p className={`${caros.className} text-white text-lg mt-10 text-center`}>
                 Participate in any competition for just ₹259!
               </p>
@@ -98,7 +100,7 @@ export default function page() {
           {/*  */}
           <Recomendation />
 
-          <div className=" md:bg-[#EEEFFC] w-screen felx-col md:flex md:flex-row-reverse items-center justify-around">
+          <div className=" md:bg-[#EEEFFC] w-full felx-col md:flex md:flex-row-reverse items-center justify-around">
             <CompetationDisplay />
 
             <HowToRegister />
