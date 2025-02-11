@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import talent1 from "@/public/asset/talent1.png";
-import img from "@/public/asset/img.png";
+import winner from "@/public/asset/winner.png";
 import trophy from "@/public/asset/trophy.png";
 import Link from "next/link";
 
@@ -40,55 +40,29 @@ const challenges = [
 
 export default function Challenges() {
   return (
-    <div className="min-w-full mx-auto p-6 text-center bg-[#EEEFFC]">
-      <h2 className="text-xl font-bold">
-        Take a look at the{" "}
-        <span className="text-pink-500">Most Exciting Challenges</span> and
-        Previous Competition Winners
-      </h2>
-      <div className="mt-6">
-        {challenges.map((challenge, index) => (
-          <div key={index} className="flex flex-col items-center ">
-            <div
-              className={`flex w-[320px] h-[137px] ${
-                index % 2 === 1 ? "flex-row-reverse" : ""
-              }`}
-            >
-              <Image
-                src={challenge.image}
-                className="w-[185px] h-[137px] "
-                alt={challenge.title}
-              />
-              <div
-                className={`p-4 w-[calc(320px-185px)] h-[137px] flex flex-col gap-10 justify-between ${
-                  challenge.bgColor
-                } ${
-                  index % 2 === 1 ? "text-left" : "text-right"
-                } text-white shadow-md`}
-              >
-                <div className=" text-xs">
-                  <span className=" text-sm font-semibold py-1 px-2 rounded-2xl ">
-                    {challenge.category}
-                  </span>
-                  <h3 className=" font-bold">{challenge.title}</h3>
-                  <p className=" mt-1">{challenge.description}</p>
-                  {/* <p className="mt-2 font-semibold">🏆 {challenge.winner}</p> */}
-                </div>
-                <div className=" flex justify-between items-end">
-                  <div className=" flex gap-2 items-center">
-                    <Image src={img} alt="img" width={20} height={20} />
-                    <p className=" font-semibold text-lg">{challenge.winner}</p>
-                  </div>
-                  <Image src={trophy} alt="trophy" width={30} />
-                </div>
-              </div>
-            </div>
-          </div>
-        ))}
+    <>
+      <div className=" pt-[21px] bg-[#EEEFFC] w-full flex flex-col items-center justify-center md:hidden">
+        <div className="  text-center w-11/12">
+          <span class="text-[#1b1d30] text-[26px] font-medium leading-[25px]">
+            Take a look at the
+          </span>
+          <span class="text-[#d63970] text-[26px] font-medium leading-[25px]">
+            {" "}
+            Most Exciting Challenges
+          </span>
+          <span class="text-[#1b1d30] text-[26px] font-medium leading-[25px]">
+            {" "}
+            and Previous Competition Winners
+          </span>
+        </div>
+        <Image src={winner} alt="winner" className=" w-auto h-[450px] mt-[20px]" />
+        <Link
+          href={"/pricing"}
+          className={` my-[30px] bg-[#5259AA] font-bold text-white py-4 px-8 rounded-lg text-lg`}
+        >
+          REGISTER NOW
+        </Link>
       </div>
-      <Link href={"/pricing"} className="mt-6 bg-indigo-600 text-white py-2 px-6 rounded-lg">
-        REGISTER NOW
-      </Link>
-    </div>
+    </>
   );
 }

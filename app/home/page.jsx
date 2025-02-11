@@ -12,7 +12,7 @@ import WhyJoin from "@/components/HomePageComponent/WhyJoin";
 import Faq from "@/components/HomePageComponent/Faq";
 import Footer from "@/components/HomePageComponent/Footer";
 import { Inter, Poppins, Public_Sans } from "next/font/google";
-import localFont from "next/font/local"
+import localFont from "next/font/local";
 import HeroSection from "@/components/DesktopVersion/HomePageComponents/HeroSection";
 import Talent from "@/components/DesktopVersion/HomePageComponents/Talent";
 import Challenges from "@/components/HomePageComponent/Challenges";
@@ -33,61 +33,69 @@ const inter = Inter({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
   variable: "--font-inter",
 });
-const caros =  localFont({
-  src:"../../public/fonts/Caros.otf"
-})
+const caros = localFont({
+  src: "../../public/fonts/Caros.otf",
+});
 
 export default function page() {
   return (
     <div className=" min-w-full bg-[#1B1D30] min-h-[100vh]">
-    {/* <p className={`${caros.className} font-bold text-3xl text-white`}> Lorem isadfl aldkfj aldfj ald fcaor sfont  </p> */}
+      {/* <p className={`${caros.className} font-bold text-3xl text-white`}> Lorem isadfl aldkfj aldfj ald fcaor sfont  </p> */}
       <div className="">
         <div className=" flex items-center justify-center md:justify-start py-[10px] md:ml-5">
-          <Image src={star} height={50} alt="star" />
-          <Image src={starkid} height={20} alt="starkid" />
+          <Image src={star} height={40} width={40} alt="star" />
+          <Image src={starkid} height={13} width={60} alt="starkid" />
         </div>
 
         <div className=" flex flex-col md:flex-row md:mb-16">
-          <div className=" md:w-5/12 mx-auto text-center flex flex-col justify-evenly font-bold px-2">
-            <div className={`${publicaSans.className} font-medium `}>
-              <span className="text-white text-[33px] font-bold leading-9">
+          <div className=" md:w-5/12 mx-auto text-center flex flex-col justify-evenly px-2">
+            <p
+              className={`${publicaSans.className}text-white text-[33px] font-medium leading-9 `}
+            >
+              <span className=" text-white ">
                 Your{" "}
               </span>
-              <span className="text-[#d63970] text-[33px] font-bold leading-9">
+              <span className="text-[#d63970]">
                 Child’s Talent{" "}
               </span>
-              <div className="text-white text-[30px] font-bold leading-9">
+              <span className="text-white">
                 Deserves the Spotlight!
-              </div>
-            </div>
+              </span>
+            </p>
 
-            <p className={`${caros.className} mt-5 px-2`}>
-              <span className="text-white text-lg  font-light font-['Caros'] leading-[18px]">
+            <p className={`${caros.className} text-white text-[15px] font-light font-['Caros'] leading-[18px] mt-[12px]`}>
+              <span className="text-white">
                 Join India's Most Trusted Platform to discover and showcase
                 young talents through Competitions{" "}
               </span>
-              <span className="text-white   font-['Caros'] leading-[18px] font-semibold">
+              <span className="text-white font-medium">
                 guided by Experts
               </span>
             </p>
+
+            {/* desktop site */}
 
             <div className="hidden md:block">
               <p
                 className={`text-white font-medium my-8 text-xl ${inter.className}`}
               >
-                Last few spots left!
+                Last few spots left !
               </p>
-            
-              <Link href={"/pricing"}
+
+              <Link
+                href={"/pricing"}
                 className={`${poppins.className} mt-4 bg-[#5259AA] font-bold text-white py-4 px-8 rounded-lg text-lg`}
               >
                 REGISTER NOW
               </Link>
-              <p className={`${caros.className} text-white text-lg mt-10 text-center`}>
+              <p
+                className={`${caros.className} text-white text-lg mt-10 text-center`}
+              >
                 Participate in any competition for just ₹259!
               </p>
             </div>
           </div>
+          {/* mobile view */}
           <HeroSection />
         </div>
 
@@ -109,7 +117,7 @@ export default function page() {
             <PerksOfJoining />
             <WhyJoin />
           </div>
-          {/* <Challenges/> */}
+          <Challenges/>
           <Faq />
           <Footer />
         </div>

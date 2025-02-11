@@ -279,7 +279,7 @@ body {
 }
 
 .swiper-slide {
-  width: 85%;
+  /* width: 85%; */
 }
 
 /* .swiper-slide:nth-child(2n) {
