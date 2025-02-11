@@ -4,6 +4,7 @@ import Image from "next/image";
 import talent1 from "@/public/asset/talent1.png";
 import img from "@/public/asset/img.png";
 import trophy from "@/public/asset/trophy.png";
+import Link from "next/link";
 
 const challenges = [
   {
@@ -85,9 +86,9 @@ export default function Challenges() {
           </div>
         ))}
       </div>
-      <button className="mt-6 bg-indigo-600 text-white py-2 px-6 rounded-lg">
+      <Link href={"/pricing"} className="mt-6 bg-indigo-600 text-white py-2 px-6 rounded-lg">
         REGISTER NOW
-      </button>
+      </Link>
     </div>
   );
 }
