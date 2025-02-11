@@ -16,10 +16,8 @@ import "../../app/globals.css";
 import { Public_Sans } from "next/font/google";
 import localFont from "next/font/local";
 
-const publicSans = Public_Sans({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
-  variable: "--font-publica",
+const publicaSans = localFont({
+  src: "../../public/fonts/PublicaSans.otf",
 });
 
 const caros = localFont({
@@ -30,10 +28,10 @@ export default function TalentPage() {
   return (
     <div className=" bg-[#EEEFFC] w-full mt-[36px]  md:hidden">
       <div className="text-center my-[26px]">
-        <span class="text-[#1b1d30] text-[26px] font-medium  leading-[24.5px]">
+        <span className={`text-[#1b1d30] text-[26px] font-medium  leading-[24.5px] ${publicaSans.className}`}>
           Turning{" "}
         </span>
-        <span class="text-[#d63970] text-[26px] font-medium  leading-[24.5px]">
+        <span className={`text-[#d63970] text-[26px] font-medium  leading-[24.5px] ${publicaSans.className}`}>
           Talents into Opportunities!
         </span>
       </div>
@@ -53,7 +51,7 @@ export default function TalentPage() {
             delay: 2000, // 2 seconds delay
             disableOnInteraction: false, // Keep autoplay even after user interaction
           }}
-          modules={[Autoplay]}
+          // modules={[Autoplay]}
           className="mySwiper"
         >
           <SwiperSlide>
@@ -65,14 +63,14 @@ export default function TalentPage() {
                 alt="talent"
               />
               <div className=" w-full overflow-clip text-xs leading-normal bg-[#00AFAA] rounded-b-[20px]  text-center">
-                <p className="py-[15px] px-[20px]">
-                  <span className="text-white   font-medium font-['Caros']">
+                <p className={`py-[15px] px-[20px] ${caros.className}`}>
+                  <span className={`text-white   font-medium ${caros.className}`}>
                     Aryan’s public speaking experience with us gave him the
                   </span>{" "}
-                  <span className="text-[#1b1d30]  font-semibold font-['Caros']">
+                  <span className={`text-[#1b1d30]  font-semibold ${caros.className}`}>
                     confidence to participate in a national-level
                   </span>{" "}
-                  <span className="text-white  font-medium font-['Caros']">
+                  <span className={`text-white  font-medium ${caros.className}`}>
                     debate competition
                   </span>
                 </p>
@@ -88,11 +86,11 @@ export default function TalentPage() {
                 alt="talent"
               />
               <div className=" w-full overflow-clip text-xs leading-normal bg-[#d63970] rounded-b-[20px] py-[15px] px-[20px] text-center">
-                <span className="text-white  font-medium font-['Caros']">
+                <span className={`text-white  font-medium ${caros.className}`}>
                   The competitions have improved kid's focus and discipline ,
                   helping them{" "}
                 </span>
-                <span className="text-[#1b1d30]  font-semibold font-['Caros']">
+                <span className={`text-[#1b1d30]  font-semibold ${caros.className}`}>
                   Perform better in school exams
                 </span>{" "}
               </div>
@@ -108,11 +106,11 @@ export default function TalentPage() {
               />
               <div className=" w-full overflow-clip text-xs leading-normal bg-[#ffc56f] rounded-b-[20px]  text-center">
                 <p className="py-[15px] px-[20px]">
-                  <span className="text-white  font-medium font-['Caros'] ">
+                  <span className={`text-white  font-medium ${caros.className}`}>
                     StarKid's creative contests boosted Ananya's confidence and
                     led her to become
                   </span>{" "}
-                  <span className="text-[#1b1d30]  font-semibold font-['Caros'] ">
+                  <span className={`text-[#1b1d30]  font-semibold ${caros.className} `}>
                     the Head of her school's Creative Club
                   </span>{" "}
                 </p>

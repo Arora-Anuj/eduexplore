@@ -4,11 +4,12 @@ import wh1 from "@/public/asset/wh1.png";
 import wh2 from "@/public/asset/wh2.png";
 import Image from "next/image";
 import { Poppins, Public_Sans } from "next/font/google";
-const publicSans = Public_Sans({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
-  variable: "--font-publica",
+import localFont from "next/font/local";
+
+const publicaSans = localFont({
+  src: "../../public/fonts/PublicaSans.otf",
 });
+
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
@@ -18,16 +19,16 @@ export default function Recomendation() {
   return (
     <div className=" text-center">
       <div
-        className={` my-10 ${publicSans.className} leading-[24.5px] tracking-[-0.41px]`}
+        className={` my-10 ${publicaSans.className} leading-[24.5px] tracking-[-0.41px]`}
       >
-        <span className="text-white text-[26px] font-semibold ">
+        <span className={`text-white text-[26px] font-semibold  ${publicaSans.className} `}>
           Hear It from
         </span>
-        <span className="text-[#d63970] text-[26px] font-semibold ">
+        <span className={`text-[#d63970] text-[26px] font-semibold  ${publicaSans.className} `}>
           {" "}
           the Parents:
         </span>
-        <div className="text-white text-[26px] font-semibold ">
+        <div className={`text-white text-[26px] font-semibold  ${publicaSans.className} `}>
           {" "}
           Their Stories, Their Trust!
         </div>
