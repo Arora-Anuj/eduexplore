@@ -46,14 +46,14 @@ export default function page() {
             height={40}
             width={40}
             alt="star"
-            className=" md:w-[60px] h-[60px] "
+            className=" md:w-[60px] md:h-[60px] "
           />
           <Image
             src={starkid}
             height={13}
             width={60}
             alt="starkid"
-            className=" md:w-[100px] h-[22px] "
+            className=" md:w-[100px] md:h-[22px] "
           />
         </div>
 
