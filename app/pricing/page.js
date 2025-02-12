@@ -9,8 +9,13 @@ import Stats from "@/components/PricingPageComponent/Stats";
 import WhyJoin from "@/components/PricingPageComponent/WhyJoin";
 import star from "@/public/asset/star-logo.png";
 import starkid from "@/public/asset/starkid.png";
+import localFont from "next/font/local";
 import Image from "next/image";
 import React from "react";
+
+const publicaSans = localFont({
+  src: "../../public/fonts/PublicaSans.otf",
+});
 
 export default function page() {
   return (

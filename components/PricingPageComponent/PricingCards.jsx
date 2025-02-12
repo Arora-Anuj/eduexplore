@@ -23,7 +23,7 @@ export default function PricingCards() {
         <div className=" flex justify-evenly lg:flex-col">
           <div className="leftside flex flex-col w-[45%] lg:w-8/12 py-5 lg:mt-[61px]">
             <div className=" flex justify-between items-start flex-col ">
-              <p className=" text-3xl font-bold lg:text-6xl lg:leading-[66px]">₹295</p>
+              <p className={`${mulish.className} text-3xl font-bold lg:text-6xl lg:leading-[66px]`}>₹295</p>
               <p className="  text-start text-xs  leading-[14px] mt-[45px] lg:text-[25px] lg:font-medium lg:leading-[30px]">
                 Single competition participation
               </p>
@@ -81,7 +81,7 @@ export default function PricingCards() {
         <div className=" flex justify-evenly lg:flex-col mt-2">
           <div className="leftside flex flex-col w-[45%] lg:w-8/12 py-5 lg:mt-[61px]">
             <div className=" flex justify-between items-start flex-col ">
-              <p className=" text-3xl font-bold lg:text-6xl lg:leading-[66px]">₹500 <span className="text-[15px] text-gray-400 line-through font-light lg:text-4xl">₹600</span> </p>
+              <p className={`${mulish.className} text-3xl font-bold lg:text-6xl lg:leading-[66px]`}>₹500 <span className="text-[15px] text-gray-400 line-through font-light lg:text-4xl">₹600</span> </p>
               <p className="  text-start text-xs  leading-[14px] mt-[45px] lg:text-[25px] lg:font-medium lg:leading-[30px]">
                 Two competition participation
               </p>
