@@ -74,7 +74,7 @@ export default function PricingCards() {
 
 
 
-      <div className=" relative bg-[#EEEFFC] w-[332px] h-[190px]  lg:w-[491px] lg:h-[598px] rounded-xl px-[21px] lg:px-[47px]  ">
+      <div className=" relative bg-[#EEEFFC] w-[332px] h-[200px]  lg:w-[491px] lg:h-[598px] rounded-xl px-[21px] lg:px-[47px]  ">
         <p className="absolute top-[4%]  lg:top-[6%] bg-[#D73970] py-[2px] px-[13px]  rounded-xl text-[8px]  text-white lg:text-base lg:leading-[15px] lg:px-[23px] lg:py-[10px]">
           Recommended
         </p>
