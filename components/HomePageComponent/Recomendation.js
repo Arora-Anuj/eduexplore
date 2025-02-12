@@ -21,20 +21,20 @@ export default function Recomendation() {
       <div
         className={` my-10 ${publicaSans.className} leading-[24.5px] tracking-[-0.41px]`}
       >
-        <span className={`text-white text-[26px] font-semibold  ${publicaSans.className} `}>
+        <span className={`text-white text-[26px]  md:text-[52px] md:font-medium md:leading-[53px] font-semibold  ${publicaSans.className} `}>
           Hear It from
         </span>
-        <span className={`text-[#d63970] text-[26px] font-semibold  ${publicaSans.className} `}>
+        <span className={`text-[#d63970] text-[26px]  md:text-[52px] md:font-medium md:leading-[53px] font-semibold  ${publicaSans.className} `}>
           {" "}
-          the Parents:
+          the Parents: <span className="hidden md:inline"> Their Stories,</span>
         </span>
-        <div className={`text-white text-[26px] font-semibold  ${publicaSans.className} `}>
+        <div className={`text-white text-[26px]  md:text-[52px] md:font-medium md:leading-[53px] font-semibold  ${publicaSans.className} `}>
           {" "}
-          Their Stories, Their Trust!
+         <span className="md:hidden"> Their Stories,</span> Their Trust!
         </div>
       </div>
-      <div className="w-full flex gap-2  flex-wrap items-center justify-evenly">
-        <Image src={wh1} alt="wh1" width={253} height={186} />
+      <div className="w-full flex gap-[32px]  flex-wrap items-center justify-center">
+        <Image src={wh1} alt="wh1" width={253} height={186} className=" md:w-[400px] md:h-[357px] "  />
         {/* <div className=" relative w-10/12 sm:w-[280px]">
           <Image
             src={recom}
@@ -43,7 +43,7 @@ export default function Recomendation() {
             className="absolute -top-5 -right-5"
           />
         </div> */}
-        <Image src={wh2} alt="wh1" width={253} height={186} />
+        <Image src={wh2} alt="wh1" width={253} height={186} className=" md:w-[400px] md:h-[357px] " />
         {/* <div className=" relative w-10/12 sm:w-[280px]">
           <Image
             src={recom}
@@ -52,7 +52,7 @@ export default function Recomendation() {
             className="absolute -top-5 -right-5"
           />
         </div> */}
-        <Image src={wh2} alt="wh1" width={253} height={186} />
+        <Image src={wh2} alt="wh1" width={253} height={186} className=" md:w-[400px] md:h-[357px] " />
         {/* <div className=" relative w-10/12 sm:w-[280px]">
           <Image
             src={recom}
@@ -67,9 +67,9 @@ export default function Recomendation() {
       >
         REGISTER NOW
       </button> */}
-      <div className="my-[25px] text-center w-[253px] h-12 px-7 py-[13px] bg-[#5259aa] rounded-[10px] justify-center items-center gap-2.5 inline-flex">
+      <div className="mb-[30px] mt-[50px] text-center px-7 py-[13px] bg-[#5259aa] rounded-[10px] justify-center items-center gap-2.5 inline-flex">
         <div
-          className={`${poppins.className} text-center text-white text-[17px] font-bold font-['Poppins'] leading-snug`}
+          className={`${poppins.className} text-center text-white text-[17px] md:text-[25px] font-bold font-['Poppins'] leading-snug`}
         >
           REGISTER NOW
         </div>
