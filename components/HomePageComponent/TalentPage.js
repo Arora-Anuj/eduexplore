@@ -40,9 +40,9 @@ export default function TalentPage() {
         className={`${caros.className} w-full mx-auto h-auto md:w-[500px] md:h-[500px] mb-10`}
       >
         <Swiper
-          slidesPerView={1.2}
+          slidesPerView={1.4}
           centeredSlides={"true"}
-          spaceBetween={16}
+          spaceBetween={20}
           pagination={{
             clickable: true,
           }}
@@ -51,11 +51,11 @@ export default function TalentPage() {
             delay: 2000, // 2 seconds delay
             disableOnInteraction: false, // Keep autoplay even after user interaction
           }}
-          // modules={[Autoplay]}
+          modules={[Autoplay]}
           className="mySwiper"
         >
           <SwiperSlide>
-            <div className="w-[320px] h-[260px] sm:w-[350px] rounded-[10px]">
+            <div className="w-[300px] h-[280px]  rounded-[10px]">
               <Image
                 src={talent3}
                 className="w-full"
@@ -78,7 +78,7 @@ export default function TalentPage() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="w-[320px] h-[260px] sm:w-[350px] rounded-[10px]">
+            <div className="w-[300px] h-[280px]  rounded-[10px]">
               <Image
                 src={talent2}
                 className="w-full"
@@ -97,7 +97,7 @@ export default function TalentPage() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="w-[320px] h-[260px] sm:w-[350px] rounded-[10px]">
+            <div className="w-[300px] h-[280px]  rounded-[10px]">
               <Image
                 src={talent1}
                 className="w-full"
