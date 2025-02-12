@@ -38,7 +38,9 @@ export default function Faq({ pricing }) {
       } flex items-center justify-center flex-col text-black`}
     >
       <h2
-        className={`${publicaSans.className} text-[26px] font-medium mb-6 text-white mt-10 text-center md:text-[#1B1D30]`}
+        className={`${publicaSans.className} text-[26px] font-medium mb-6 text-white mt-10 text-center ${
+        pricing ? "md:text-[#EEEFFC]" : "md:text-[#1B1D30]"
+      } `}
       >
         Frequently asked questions <span className="text-[#D73970]">(FAQ)</span>
       </h2>
