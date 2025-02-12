@@ -11,9 +11,9 @@ const publicaSans = localFont({
 });
 export default function CompetationDisplay() {
   return (
-    <div className="pt-[51px] bg-[#EEEFFC] xs:min-w-full md:min-w-[55%] md:h-[700px]">
+    <div className="pt-[51px] bg-[#EEEFFC] xs:min-w-full md:min-w-[55%] md:h-[700px] md:mb-[60px]">
       <div
-        className={` leading-[24px] tracking-[-0.41px] text-center  md:mt-5 md:pt-0 mb-10 ${publicaSans.className}`}
+        className={` leading-[24px] tracking-[-0.41px] text-center  md:mt-5 md:pt-0 mb-10  ${publicaSans.className}`}
       >
         <p className=" leading-[24px] tracking-[-0.41px] relative text-black text-[26px] font-bold font-['Publica Sans'] leading-normal">
           Explore Our Exciting{" "}

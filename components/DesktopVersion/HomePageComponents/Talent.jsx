@@ -16,19 +16,19 @@ const caros = localFont({
 export default function Talent() {
   return (
     <>
-      <div className="hidden md:block text-center w-full bg-[#EEEFFC] py-10 ">
-        <div className={`text-center mb-5  ${publicaSans.className}`}>
-          <span className="text-[#1b1d30] text-[26px] font-bold font-['Publica Sans'] leading-normal">
+      <div className="hidden md:block text-center w-full bg-[#EEEFFC] pt-10">
+        <div className={`text-center mb-[66px]  ${publicaSans.className}`}>
+          <span className="text-[#1b1d30] text-[26px] lg:text-[52px] font-bold font-['Publica Sans'] leading-normal">
             Turning{" "}
           </span>
-          <span className="text-[#d63970] text-[26px] font-bold font-['Publica Sans'] leading-normal">
+          <span className="text-[#d63970] text-[26px] lg:text-[52px] font-bold font-['Publica Sans'] leading-normal">
             Talents into Opportunities!
           </span>
         </div>
         <div
-          className={`${caros.className} w-full flex gap-10  flex-wrap items-center justify-around`}
+          className={`${caros.className} w-full flex gap-[40px]  flex-wrap items-center justify-center`}
         >
-          <div className="w-11/12 sm:w-[300px] rounded-lg">
+          <div className="w-11/12 md:w-[385px] h-[375px] rounded-lg">
             <Image src={talent3} className="w-full" alt="talent" />
             <div className=" w-full overflow-clip leading-5 bg-[#00AFAA] rounded-b-lg p-4 text-center">
               <span className="text-white  font-medium font-['Caros']">
@@ -43,7 +43,7 @@ export default function Talent() {
               </span>
             </div>
           </div>
-          <div className="w-full sm:w-[300px] rounded-lg">
+          <div className="w-full md:w-[385px] h-[375px] rounded-lg">
             <Image src={talent2} className="w-full" height={300} alt="talent" />
             <div className="w-full leading-5 bg-[#D73970] rounded-b-lg p-4 text-center">
               <span className="text-white  font-medium font-['Caros']">
@@ -55,7 +55,7 @@ export default function Talent() {
               </span>{" "}
             </div>
           </div>
-          <div className="w-full sm:w-[300px] rounded-lg">
+          <div className="w-full md:w-[385px] h-[375px] rounded-lg">
             <Image src={talent1} className="w-full" height={300} alt="talent" />
             <div className="w-full leading-5 bg-[#FFC56F] rounded-b-lg p-4 text-center">
               <span className="text-white  font-medium font-['Caros']">
