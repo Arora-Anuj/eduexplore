@@ -40,8 +40,8 @@ export default function WhyJoin() {
         <div
           className={` ${caros.className} my-5 flex flex-col items-center justify-center w-full gap-y-7`}
         >
-          <div className=" flex h-[113px] w-[90%] bg-[#1B1D30] text-white px-3 py-2">
-            <Image src={join3} alt="join1" className=" h-full w-[40%] " />
+          <div className=" flex justify-between items-center h-auto w-[90%] bg-[#1B1D30] text-white px-3 py-2">
+            <Image src={join3} alt="join1" className=" h-[107px] w-[118px] " />
             <div className=" flex flex-col gap-1 items-end justify-center text-end ">
               <p className=" w-[80%] font-bold">Medals for Winner</p>
               <p className=" w-[70%] text-[9px] ">
@@ -50,8 +50,8 @@ export default function WhyJoin() {
               </p>
             </div>
           </div>
-          <div className=" flex h-[113px] w-[90%] bg-[#1B1D30] text-white px-3 py-2">
-            <Image src={certficate} alt="join1" className=" h-full w-[40%] " />
+          <div className=" flex justify-between items-center h-auto w-[90%] bg-[#1B1D30] text-white px-3 py-2">
+            <Image src={certficate} alt="join1" className=" h-[107px] w-[118px] " />
             <div className=" flex flex-col gap-1 items-end justify-center text-end ">
               <p className=" w-[80%] font-bold">Certificates for all</p>
               <p className=" w-[70%] text-[9px] ">
@@ -60,8 +60,8 @@ export default function WhyJoin() {
               </p>
             </div>
           </div>
-          <div className=" flex h-[113px] w-[90%] bg-[#1B1D30] text-white px-3 py-2">
-            <Image src={join2} alt="join1" className=" h-full w-[40%] " />
+          <div className=" flex justify-between items-center h-auto w-[90%] bg-[#1B1D30] text-white px-3 py-2">
+            <Image src={join2} alt="join1" className=" h-[107px] w-[118px] " />
             <div className=" flex flex-col gap-1 items-end justify-center text-end ">
               <p className=" w-[80%] font-bold">Featured in Weekly Showcase</p>
               <p className=" w-[70%] text-[9px] ">
