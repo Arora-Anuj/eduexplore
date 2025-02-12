@@ -40,7 +40,7 @@ export default function TalentPage() {
         className={`${caros.className} w-full mx-auto h-auto md:w-[500px] md:h-[500px] mb-10`}
       >
         <Swiper
-          slidesPerView={1.2}
+          slidesPerView={1.4}
           centeredSlides={"true"}
           spaceBetween={20}
           pagination={{
@@ -51,7 +51,7 @@ export default function TalentPage() {
             delay: 2000, // 2 seconds delay
             disableOnInteraction: false, // Keep autoplay even after user interaction
           }}
-          // modules={[Autoplay]}
+          modules={[Autoplay]}
           className="mySwiper"
         >
           <SwiperSlide>
