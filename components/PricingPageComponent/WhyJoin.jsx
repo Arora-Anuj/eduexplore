@@ -7,10 +7,8 @@ import Image from "next/image";
 import localFont from "next/font/local";
 import { Inter, Poppins, Public_Sans } from "next/font/google";
 
-const publicaSans = Public_Sans({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
-  variable: "--font-publica",
+const publicaSans = localFont({
+  src: "../../public/fonts/PublicaSans.otf",
 });
 const poppins = Poppins({
   subsets: ["latin"],
@@ -33,7 +31,7 @@ export default function WhyJoin() {
       <div className=" flex flex-col items-center justify-center mt-10">
         <div className={`${publicaSans.className} text-center font-bold`}>
           <span className="text-[#1b1d30] text-[26px]  font-['Publica Sans'] leading-normal">
-            What Makes {" "}
+            What Makes{" "}
           </span>
           <span className="text-[#d63970] text-[26px]  font-['Publica Sans'] leading-normal">
             StarKid Unique?
@@ -42,44 +40,46 @@ export default function WhyJoin() {
         <div
           className={` ${caros.className} my-5 flex flex-col items-center justify-center w-full gap-y-7`}
         >
-          <div className=" flex h-[113px] w-[90%] bg-[#1B1D30] text-white px-3 py-2">
-            <Image src={join3} alt="join1" className=" h-full w-[40%] " />
-            <div className=" flex flex-col gap-1 items-end justify-center text-end " >
-              <p className=" w-[80%] font-bold" >Medals for Winner</p>
-              <p className=" w-[70%] text-[9px] " >
+          <div className=" flex justify-between items-center h-auto w-[90%] bg-[#1B1D30] text-white px-3 py-2">
+            <Image src={join3} alt="join1" className=" h-[107px] w-[118px] " />
+            <div className=" flex flex-col gap-1 items-end justify-center text-end ">
+              <p className=" w-[80%] font-bold">Medals for Winner</p>
+              <p className=" w-[70%] text-[9px] ">
                 A tangible reward for the skills and effort you put into every
                 competition.
               </p>
             </div>
           </div>
-          <div className=" flex h-[113px] w-[90%] bg-[#1B1D30] text-white px-3 py-2">
-            <Image src={certficate} alt="join1" className=" h-full w-[40%] " />
-            <div className=" flex flex-col gap-1 items-end justify-center text-end " >
-              <p className=" w-[80%] font-bold" >Certificates for all</p>
-              <p className=" w-[70%] text-[9px] " >
-              Every child receives a certificate to celebrate their effort and creativity!
+          <div className=" flex justify-between items-center h-auto w-[90%] bg-[#1B1D30] text-white px-3 py-2">
+            <Image src={certficate} alt="join1" className=" h-[107px] w-[118px] " />
+            <div className=" flex flex-col gap-1 items-end justify-center text-end ">
+              <p className=" w-[80%] font-bold">Certificates for all</p>
+              <p className=" w-[70%] text-[9px] ">
+                Every child receives a certificate to celebrate their effort and
+                creativity!
               </p>
             </div>
           </div>
-          <div className=" flex h-[113px] w-[90%] bg-[#1B1D30] text-white px-3 py-2">
-            <Image src={join2} alt="join1" className=" h-full w-[40%] " />
-            <div className=" flex flex-col gap-1 items-end justify-center text-end " >
-              <p className=" w-[80%] font-bold" >Featured in Weekly Showcase</p>
-              <p className=" w-[70%] text-[9px] " >
-              Stand out and let your talent shine as we highlight top participants
+          <div className=" flex justify-between items-center h-auto w-[90%] bg-[#1B1D30] text-white px-3 py-2">
+            <Image src={join2} alt="join1" className=" h-[107px] w-[118px] " />
+            <div className=" flex flex-col gap-1 items-end justify-center text-end ">
+              <p className=" w-[80%] font-bold">Featured in Weekly Showcase</p>
+              <p className=" w-[70%] text-[9px] ">
+                Stand out and let your talent shine as we highlight top
+                participants
               </p>
             </div>
           </div>
           <div className=" flex h-[113px] w-[90%] bg-[#1B1D30] text-white px-3 py-2">
             <Image src={join1} alt="join1" className=" h-full w-[40%] " />
-            <div className=" flex flex-col gap-1 items-end justify-center text-end " >
-              <p className=" w-[80%] font-bold" >  Expert Feedback</p>
-              <p className=" w-[70%] text-[9px] " >
-              Get valuable insights from professionals to help your child improve and grow!
+            <div className=" flex flex-col gap-1 items-end justify-center text-end ">
+              <p className=" w-[80%] font-bold"> Expert Feedback</p>
+              <p className=" w-[70%] text-[9px] ">
+                Get valuable insights from professionals to help your child
+                improve and grow!
               </p>
             </div>
           </div>
-
         </div>
       </div>
     </div>

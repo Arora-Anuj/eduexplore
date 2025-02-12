@@ -11,15 +11,15 @@ const caros = localFont({
 export default function Footer({pricing}) {
   return (
     <div
-      className={` ${caros.className} relative bg-[#EEEFFC] ${pricing ?"md:bg-[#EEEFFC]" : "md:bg-[#1B1D30]"}  ${!pricing ?"md:text-[#EEEFFC]" : "md:text-[#1B1D30]"} flex flex-col md:flex-row w-full items-center justify-center md:justify-evenly md:items-start  mt-20 md:mt-0 md:py-0 py-20`}
+      className={` ${caros.className} relative bg-[#EEEFFC] ${pricing ?"md:bg-[#EEEFFC]" : "md:bg-[#1B1D30]"}  ${!pricing ?"md:text-[#EEEFFC]" : "md:text-[#1B1D30]"} flex flex-col md:flex-row w-full items-center justify-center md:justify-evenly md:items-start  mt-20 md:mt-0 md:py-0 pt-20`}
     >
-      <div className={`-top-[8%] md:-top-[12%] left-[calc(50%-62px)] bg-[#EEEFFC] absolute z-50 ${pricing ?"md:bg-[#EEEFFC]" : "md:bg-[#1B1D30]"} p-3 rounded-full`}>
+      <div className={`-top-[8%] md:-top-[12%] left-[calc(50%-55px)] bg-[#EEEFFC] absolute z-50 ${pricing ?"md:bg-[#EEEFFC]" : "md:bg-[#1B1D30]"} p-[5px] lg:p-[10px] rounded-full`}>
         <Image src={brand} alt="brand" className="w-[100px]" />
       </div>
-      <div className=" flex flex-col md:flex-row-reverse  md:justify-evenly md:w-8/12">
+      <div className=" flex flex-col md:flex-row-reverse  md:justify-evenly md:w-8/12 w-full">
         <div className=" flex flex-col items-center justify-start md:pt-32 gap-3 md:w-6/12 md:mt-0">
-          <p className="text-center w-[80%]" > StarKid: Where Talent Shines Bright! ✨</p>
-          <p className="mt-2 text-sm">Let’s Get Social!</p>
+          <p className="text-center w-[50%] text-base  md:text-[22px] font-medium leading-tight" > StarKid: Where Talent Shines Bright! ✨</p>
+          <p className="mt-2 text-base  md:text-[22px] font-medium leading-snug">Let’s Get Social!</p>
 
           <div className=" flex gap-3">
             <BiLogoTwitter size={20} />
@@ -28,17 +28,17 @@ export default function Footer({pricing}) {
           </div>
         </div>
 
-        <div className={` md:h-[412px] md:w-[1px] w-full h-[1px] mt-5 md:mt-0 bg-black ${!pricing ?"md:bg-[#EEEFFC]" : "md:bg-[#1B1D30]"}`}></div>
+        <div className={` md:h-[460px] md:w-[1px] w-full h-[1px] mt-5 md:mt-0 bg-[#1B1D30] opacity-50 ${!pricing ?"md:bg-[#EEEFFC]" : "md:bg-[#1B1D30]"}`}></div>
 
-        <div className="mt-10  flex items-center flex-col justify-center text-center md:text-start  font-semibold md:w-6/12 md:pb-20">
+        <div className="mt-[41px] md:mt-[90px] flex items-center flex-col justify-center text-center md:text-start  font-semibold md:w-6/12 md:pb-20">
           {/* <h3 className="text-md font-semibold uppercase text-[#6D6D6D] md:text-start">
             Company
           </h3> */}
           {/* <ul className="text-md font-semibold uppercase text-[#6D6D6D] "> */}
           {/* </ul> */}
 
-          <ul className="mt-3 space-y-3 text-sm md:text-lg">
-            <li className="text-2xl font-semibold uppercase mb-5 text-[#6D6D6D] ">
+          <ul className="space-y-[18px] md:space-y-[25px] text-sm md:text-[22px]">
+            <li className="text-[17px] md:text-[25px] font-meditum uppercase mb-5 text-[#6D6D6D] ">
               <span>Company</span>
             </li>
             <li>
@@ -75,11 +75,11 @@ export default function Footer({pricing}) {
         </div>
       </div>
 
-      <div className={` md:h-[412px] md:w-[1px] w-full h-[1px] mt-5 md:mt-0 bg-black ${!pricing ?"md:bg-[#EEEFFC]" : "md:bg-[#1B1D30]"}`}></div>
+      <div className={` md:h-[460px] md:w-[1px] w-full h-[1px] mt-5 md:mt-0 bg-[#1B1D30] opacity-50 ${!pricing ?"md:bg-[#EEEFFC]" : "md:bg-[#1B1D30]"}`}></div>
 
-      <div className="mt-5 flex flex-col items-center justify-center font-semibold md:w-4/12 md:pb-20">
-        <ul className="mt-3 space-y-2 text-sm md:text-lg md:py-5 md:flex md:flex-col md:items-start text-center md:w-5/12">
-          <li className="text-2xl font-semibold uppercase mb-5 text-[#6D6D6D] ">
+      <div className="my-[41px] md:mt-[60px]  flex flex-col items-center justify-center font-semibold md:w-4/12 md:pb-20">
+        <ul className=" gap-y-[18px] md:space-y-[25px] text-sm md:text-[22px] font-semibold md:text-lg md:py-5 md:flex md:flex-col md:items-start text-center md:w-5/12">
+          <li className="text-[17px] md:text-[25px]  uppercase mb-5 text-[#6D6D6D] ">
             <span>Products</span>
           </li>
           <li>

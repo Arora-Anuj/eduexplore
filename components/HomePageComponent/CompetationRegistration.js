@@ -65,6 +65,7 @@ import msg1 from "@/public/asset/msg1.png";
 import msg2 from "@/public/asset/msg2.png";
 import Image from "next/image";
 import { Inter, Poppins } from "next/font/google";
+import localFont from "next/font/local";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -76,20 +77,38 @@ const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
   variable: "--font-poppins",
 });
+const caros = localFont({
+  src: "../../public/fonts/Caros.otf",
+});
 
 export default function CompetitionRegistration() {
   return (
-    <div className=" mt-10 p-3 md:hidden">
-      {/* <Image
-        src={msg1}
-        width={140}
-        alt="msg1"
-        className="absolute left-0 -top-4 sm:-left-10 sm:-top-6"
-      /> */}
+    <div className=" mt-[51px] md:hidden">
       <div className="relative flex flex-col items-center justify-center">
-        <Image src={group} alt="groupimage" height={230} width={230} />
+        <Image src={group} alt="groupimage" height={306} width={356} />
+        <div className=" flex items-center justify-center flex-col mt-[19px] ">
+          <p
+            className={`text-white text-lg font-medium leading-snug ${inter.className}`}
+          >
+            Last few spots left!
+          </p>
 
-        <div className=" flex items-center justify-center flex-col ">
+          {/* <button
+            className={`${poppins.className} mt-2 bg-[#5259AA] font-semibold text-white py-3 px-5 rounded-lg text-base`}
+          >
+            REGISTER NOW
+          </button> */}
+          <div className={`mt-[7px] w-[205px] h-12 px-5 py-[13px] bg-[#5259aa] rounded-[10px] justify-center items-center gap-2.5 inline-flex`}>
+            <div className={`Label text-center text-white text-[17px] font-bold ${poppins.className} leading-snug`}>
+              REGISTER NOW
+            </div>
+          </div>
+          <div className={`text-white text-[15px] font-normal ${caros.className} mt-[7px] leading-snug`}>
+            Participate in any competition for just ₹259!
+          </div>
+        </div>
+
+        {/* <div className=" flex items-center justify-center flex-col ">
           <p
             className={`text-white font-medium mt-5 text-xl ${inter.className}`}
           >
@@ -116,12 +135,12 @@ export default function CompetitionRegistration() {
           width={100}
           alt="msg2"
           className="absolute top-[32%] right-0 sm:-right-10 "
-        />
-        <button
+        /> */}
+        {/* <button
           className={`absolute bottom-[40%] text-white text-[18px] font-normal ${poppins.className} w-[250px] bg-[#D73970] rounded-lg`}
         >
           98% Satisfaction Rate among parents
-        </button>
+        </button> */}
       </div>
     </div>
   );
