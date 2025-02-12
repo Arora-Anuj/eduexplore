@@ -42,7 +42,7 @@ export default function TalentPage() {
         <Swiper
           slidesPerView={1.2}
           centeredSlides={"true"}
-          spaceBetween={16}
+          spaceBetween={20}
           pagination={{
             clickable: true,
           }}
@@ -55,7 +55,7 @@ export default function TalentPage() {
           className="mySwiper"
         >
           <SwiperSlide>
-            <div className="w-[320px] h-[260px] sm:w-[350px] rounded-[10px]">
+            <div className="w-[300px] h-[280px]  rounded-[10px]">
               <Image
                 src={talent3}
                 className="w-full"
@@ -78,7 +78,7 @@ export default function TalentPage() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="w-[320px] h-[260px] sm:w-[350px] rounded-[10px]">
+            <div className="w-[300px] h-[280px]  rounded-[10px]">
               <Image
                 src={talent2}
                 className="w-full"
@@ -97,7 +97,7 @@ export default function TalentPage() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="w-[320px] h-[260px] sm:w-[350px] rounded-[10px]">
+            <div className="w-[300px] h-[280px]  rounded-[10px]">
               <Image
                 src={talent1}
                 className="w-full"
