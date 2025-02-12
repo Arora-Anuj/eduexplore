@@ -51,7 +51,7 @@ export default function Faq({ pricing }) {
             <div className="w-full flex justify-between items-start gap-2 text-sm sm:text-lg font-semibold">
               <p
                 onClick={() => toggleFAQ(index)}
-                className=" text-[13px] font-semibold"
+                className=" text-[13px] lg:text-xl font-semibold cursor-pointer"
               >
                 {faq.question}
               </p>
@@ -74,7 +74,7 @@ export default function Faq({ pricing }) {
               {/* </button> */}
             </div>
             {openIndex === index && (
-              <p className="mt-2 font-normal text-xs -tracking-[2%] leading-normal ">
+              <p className="mt-2 font-normal text-xs lg:text-xl -tracking-[2%] leading-normal ">
                 {description}
               </p>
             )}
