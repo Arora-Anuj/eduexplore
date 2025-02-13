@@ -40,9 +40,9 @@ export default function Faq({ pricing, success }) {
       <h2
         className={`${
           publicaSans.className
-        } text-[24px] font-medium mb-6 text-[#EEEFFC] mt-10 w-[90%] md:w-[80%] leading-[25px] tracking-[-0.41px] ${
+        } text-[24px] font-medium mb-6  mt-10 w-[90%] md:w-[80%] leading-[25px] tracking-[-0.41px] ${
           pricing ? "md:text-[#EEEFFC]" : "md:text-[#1B1D30]"
-        } ${success ? "text-[#1B1D30]" : null} `}
+        } ${success ? "text-[#1B1D30]" : "text-[#EEEFFC]"} `}
       >
         Frequently asked questions <span className="text-[#D73970]">(FAQ)</span>
       </h2>
