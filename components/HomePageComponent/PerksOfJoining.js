@@ -34,10 +34,10 @@ export default function PerksOfJoining({ pricing }) {
         <div
           className={`${publicaSans.className} leading-[24px] tracking-[-0.41px]`}
         >
-          <span className="text-[#1b1d30] text-[26px] md:text-[32px] lg:text-[52px] font-medium font-['Publica Sans'] leading-normal">
+          <span className="text-[#1b1d30] text-[26px] md:text-[32px] lg:text-[52px] font-bold font-['Publica Sans'] leading-normal">
             Perks of Joining{" "}
           </span>
-          <span className="text-[#d63970] text-[26px] md:text-[32px] lg:text-[52px] font-medium font-['Publica Sans'] leading-normal">
+          <span className="text-[#d63970] text-[26px] md:text-[32px] lg:text-[52px] font-bold font-['Publica Sans'] leading-normal">
             StarKid:
           </span>
         </div>

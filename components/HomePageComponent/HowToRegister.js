@@ -26,10 +26,10 @@ export default function HowToRegister() {
     <div className=" min-w-full md:min-w-[45%] flex md:flex-col items-center justify-center p-3">
       <div className="px-[37px] my-[32px] flex flex-col items-center justify-center">
         <p
-          className={`${publicaSans.className} leading-[28px] tracking-[-0.41px] text-[#d63970] text-center text-[26px] font-medium`}
+          className={`${publicaSans.className} leading-[28px] tracking-[-0.41px] text-[#d63970] text-center text-[26px] font-bold`}
         >
           How to Register
-          <span className="text-white md:text-black text-[26px] font-medium ">
+          <span className="text-white md:text-black text-[26px] font-bold ">
             {" "}
             in Just 3 Simple Steps?
           </span>

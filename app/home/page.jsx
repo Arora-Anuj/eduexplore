@@ -93,7 +93,7 @@ export default function page() {
                 and showcase young talents through{" "}
               </span>
               <span
-                className={` block ${caros.className}  text-white font-medium md:text-[16px] xl:text-[25px] md:leading-[30px] md:tracking-[-0.41px]`}
+                className={` block ${caros.className}  text-white font-bold md:text-[16px] xl:text-[25px] md:leading-[30px] md:tracking-[-0.41px]`}
               >
                 <span
                   className={`${caros.className} font-light md:text-[16px] xl:text-[25px] md:leading-[30px] md:tracking-[-0.41px]`}
