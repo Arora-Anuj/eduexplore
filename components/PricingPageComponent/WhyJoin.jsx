@@ -29,11 +29,11 @@ export default function WhyJoin() {
   return (
     <div className=" bg-[#EEEFFC] w-full block md:hidden">
       <div className=" flex flex-col items-center justify-center mt-10">
-        <div className={`${publicaSans.className} text-center font-bold`}>
-          <span className="text-[#1b1d30] text-[26px]  font-['Publica Sans'] leading-normal">
+        <div className={`${publicaSans.className} text-center font-bold w-9/12`}>
+          <span className="text-[#1b1d30] text-[26px]  font-['Publica Sans'] leading-[24.5px] tracking-[-0.408px]">
             What Makes{" "}
           </span>
-          <span className="text-[#d63970] text-[26px]  font-['Publica Sans'] leading-normal">
+          <span className="text-[#d63970] text-[26px]  font-['Publica Sans'] leading-[24.5px] tracking-[-0.408px]">
             StarKid Unique?
           </span>
         </div>
