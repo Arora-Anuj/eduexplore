@@ -13,9 +13,9 @@ export default function CompetationDisplay() {
   return (
     <div className="pt-[51px] bg-[#EEEFFC] xs:min-w-full md:min-w-[55%] md:h-[700px] md:mb-[60px]">
       <div
-        className={` leading-[24px] tracking-[-0.41px] text-center  md:mt-5 md:pt-0 mb-10  ${publicaSans.className}`}
+        className={` leading-[24px]  text-center  md:mt-5 md:pt-0 mb-10  ${publicaSans.className}`}
       >
-        <p className=" leading-[24px] tracking-[-0.41px] relative text-black text-[26px] font-bold font-['Publica Sans'] leading-normal">
+        <p className=" leading-[24px] tracking-wide  relative text-black text-[26px] font-bold font-['Publica Sans']">
           Explore Our Exciting{" "}
           <Image
             src={comp1}
@@ -27,9 +27,9 @@ export default function CompetationDisplay() {
             alt="comp"
             className="w-[59px] md:hidden  absolute -top-10 right-0 sm:right-[20%]"
           />
-        </p>
-        <p className="leading-[28px] tracking-[-0.41px] text-[#d63970] text-[26px] font-bold font-['Publica Sans'] leading-normal">
+        <span className=" block leading-[28px]  text-[#d63970] text-[26px] font-bold font-['Publica Sans']">
           Live Competitions
+        </span>
         </p>
       </div>
 

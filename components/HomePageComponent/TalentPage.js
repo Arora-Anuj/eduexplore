@@ -28,10 +28,10 @@ export default function TalentPage() {
   return (
     <div className=" bg-[#EEEFFC] w-full mt-[36px]  md:hidden">
       <div className="text-center my-[26px]">
-        <span className={`text-[#1b1d30] text-[26px] font-medium  leading-[24.5px] ${publicaSans.className}`}>
+        <span className={`text-[#1b1d30] text-[26px] font-bold  leading-[24.5px] ${publicaSans.className}`}>
           Turning{" "}
         </span>
-        <span className={`text-[#d63970] text-[26px] font-medium  leading-[24.5px] ${publicaSans.className}`}>
+        <span className={`text-[#d63970] text-[26px] font-bold  leading-[24.5px] ${publicaSans.className}`}>
           Talents into Opportunities!
         </span>
       </div>
