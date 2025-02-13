@@ -38,7 +38,7 @@ export default function Faq({ pricing }) {
       } flex items-center justify-center flex-col text-black`}
     >
       <h2
-        className={`${publicaSans.className} text-[26px] font-medium mb-6 text-white mt-10 w-[90%] ${
+        className={`${publicaSans.className} text-[24px] font-medium mb-6 text-white mt-10 w-[90%] leading-[25px] tracking-[-0.41px] ${
         pricing ? "md:text-[#EEEFFC]" : "md:text-[#1B1D30]"
       } `}
       >
