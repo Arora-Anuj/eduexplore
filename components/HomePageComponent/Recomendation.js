@@ -33,7 +33,7 @@ export default function Recomendation() {
          <span className="md:hidden"> Their Stories,</span> Their Trust!
         </div>
       </div>
-      <div className="w-full flex gap-[32px]  flex-wrap items-center justify-center">
+      <div className="w-full flex gap-[5px]  flex-wrap items-center justify-center">
         <Image src={wh1} alt="wh1" width={253} height={186} className=" md:w-[400px] md:h-[357px] "  />
         {/* <div className=" relative w-10/12 sm:w-[280px]">
           <Image
@@ -67,7 +67,7 @@ export default function Recomendation() {
       >
         REGISTER NOW
       </button> */}
-      <div className="mb-[30px] mt-[50px] text-center px-7 py-[13px] bg-[#5259aa] rounded-[10px] justify-center items-center gap-2.5 inline-flex">
+      <div className="mb-[30px] mt-[25px] text-center px-7 py-[13px] bg-[#5259aa] rounded-[10px] justify-center items-center gap-2.5 inline-flex">
         <div
           className={`${poppins.className} text-center text-white text-[17px] md:text-[25px] font-bold font-['Poppins'] leading-snug`}
         >

@@ -22,8 +22,8 @@ const caros = localFont({
 export default function WhyJoin() {
   return (
     <>
-      <div className=" flex flex-col min-w-full items-center justify-center mt-10 ">
-        <div className={`${publicaSans.className} mt-10 text-center px-3 `}>
+      <div className=" flex flex-col min-w-full items-center justify-center  ">
+        <div className={`${publicaSans.className} mt-[33px] text-center px-3 `}>
           <p className="text-white text-[26px] md:text-[30px] lg:lg:text-[52px] lg:leading-[50px] font-semibold  leading-[30px]">
             StarKid is perfect for{" "}
           </p>
@@ -74,7 +74,7 @@ export default function WhyJoin() {
               Grow
             </div>
             <div className=" bg-[#FFC56F] px-2 py-[8px] rounded-lg flex-auto text-[15px] lg:text-[22px] font-semibold leading-tight  ">
-              Gain Regognition
+              Gain Recognition
             </div>
             <div className=" bg-[#00AFAA] px-2 py-[8px] rounded-lg flex-auto text-[15px] lg:text-[22px] font-semibold leading-tight  ">
               New Skills
