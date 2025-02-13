@@ -4,6 +4,24 @@ import StepsToJoin from "@/components/PaymentSuccessfullComponent/StepsToJoin";
 import Successfull from "@/components/PaymentSuccessfullComponent/Successfull";
 import React from "react";
 
+import { Inter, Poppins } from "next/font/google";
+import localFont from "next/font/local";
+const publicaSans = localFont({
+  src: "../../public/fonts/PublicaSans.otf",
+});
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+  variable: "--font-poppins",
+});
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+  variable: "--font-inter",
+});
+const caros = localFont({
+  src: "../../public/fonts/Caros.otf",
+});
 export default function page() {
   return (
     <>
@@ -11,7 +29,10 @@ export default function page() {
         <Successfull />
         <JoinGroup />
         <StepsToJoin />
-        <Faq />
+        <div className=" bg-[#EEEFFC]">
+
+        <Faq success={true} />
+        </div>
       </div>
     </>
   );

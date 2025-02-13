@@ -24,7 +24,7 @@ const faqs = [
 const description =
   "Unfortunately, we do not offer refunds once the registration process is completed. However, if you face any issues, feel free to reach out to us, and we’ll try our best to assist you.";
 
-export default function Faq({ pricing }) {
+export default function Faq({ pricing, success }) {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleFAQ = (index) => {
@@ -35,12 +35,14 @@ export default function Faq({ pricing }) {
     <div
       className={`w-full ${
         !pricing ? "md:bg-[#EEEFFC]" : "md:bg-[#1B1D30]"
-      } flex items-center justify-center flex-col text-black`}
+      }  flex items-center justify-center flex-col text-black`}
     >
       <h2
-        className={`${publicaSans.className} text-[24px] font-medium mb-6 text-white mt-10 w-[90%] leading-[25px] tracking-[-0.41px] ${
-        pricing ? "md:text-[#EEEFFC]" : "md:text-[#1B1D30]"
-      } `}
+        className={`${
+          publicaSans.className
+        } text-[24px] font-medium mb-6 text-[#EEEFFC] mt-10 w-[90%] md:w-[80%] leading-[25px] tracking-[-0.41px] ${
+          pricing ? "md:text-[#EEEFFC]" : "md:text-[#1B1D30]"
+        } ${success ? "text-[#1B1D30]" : null} `}
       >
         Frequently asked questions <span className="text-[#D73970]">(FAQ)</span>
       </h2>
