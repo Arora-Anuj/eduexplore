@@ -9,39 +9,39 @@ export default function Successfull() {
       <Image
         src={check}
         alt="check"
-        className=" w-[100px] h-[100px] mt-[89px] "
+        className=" w-[100px] h-[100px] mt-[89px] lg:w-[180px] lg:h-[180px] "
       />
-      <h1 className="mt-[30px] text-white text-3xl font-medium  leading-[33px]">
+      <h1 className="mt-[30px] text-white text-3xl font-medium  leading-[33px] lg:text-[50px] lg:leading-[55px]">
         Payment Successful
       </h1>
-      <h3 className=" mt-[6px] text-white text-[17px] font-light leading-[18px]">
+      <h3 className=" mt-[6px] text-white text-[17px] font-light leading-[18px] lg:text-[28px] lg:leading-[18px]">
         Successfully paid ₹500
       </h3>
 
-      <div className=" w-[90%] mt-[60px] ">
+      <div className=" w-[90%] mt-[60px] lg:w-[909px] ">
         <p className="text-start text-white text-base font-normal font-['Caros'] leading-[18px]">
           Payment Details
         </p>
         <div className="rounded-[10px] bg-[#cbcde6] flex justify-between items-center py-[21px] px-[14px] mt-[11px]">
-          <div className=" flex flex-col gap-y-[11px] text-start">
-            <p className="text-[#1b1d30]/70 text-sm font-normal font-['Caros'] leading-[18px]">
+          <div className=" flex flex-col gap-y-[11px] lg:gap-y-[49px] text-start">
+            <p className="text-[#1b1d30]/70 text-sm lg:text-[26px] font-normal font-['Caros'] leading-[18px]">
               Transaction ID
             </p>
-            <p className="text-[#1b1d30]/70 text-sm font-normal font-['Caros'] leading-[18px]">
+            <p className="text-[#1b1d30]/70 text-sm lg:text-[26px] font-normal font-['Caros'] leading-[18px]">
               Date
             </p>
-            <p className="text-[#1b1d30]/70 text-sm font-normal font-['Caros'] leading-[18px]">
+            <p className="text-[#1b1d30]/70 text-sm lg:text-[26px] font-normal font-['Caros'] leading-[18px]">
               Transaction Type
             </p>
           </div>
-          <div className=" flex flex-col gap-y-[11px] text-end">
-            <p className="text-[#1b1d30]/70 text-sm font-semibold font-['Caros'] leading-[18px]">
+          <div className=" flex flex-col gap-y-[11px] lg:gap-y-[49px] text-end">
+            <p className="text-[#1b1d30]/70 text-sm lg:text-[26px] font-semibold font-['Caros'] leading-[18px]">
               4231 2598 3214
             </p>
-            <p className="text-[#1b1d30]/70 text-sm font-semibold font-['Caros'] leading-[18px]">
+            <p className="text-[#1b1d30]/70 text-sm lg:text-[26px] font-semibold font-['Caros'] leading-[18px]">
               10 February 2025
             </p>
-            <p className="text-[#1b1d30]/70 text-sm font-semibold font-['Caros'] leading-[18px]">
+            <p className="text-[#1b1d30]/70 text-sm lg:text-[26px] font-semibold font-['Caros'] leading-[18px]">
               Credit Card
             </p>
           </div>
@@ -50,10 +50,10 @@ export default function Successfull() {
 
       {/* <div className=" w-full bg-[#5259aa] rounded-[30px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]" /> */}
       <div className="  w-[90%] flex justify-between items-center py-[10px] px-[15px] mt-[10px] bg-[#5259aa] rounded-[30px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">
-        <h3 className="text-[#eeeffc] text-base font-semibold font-['Caros'] leading-[18px]">
+        <h3 className="text-[#eeeffc] text-base lg:text-[28px] font-semibold font-['Caros'] leading-[18px]">
           Total
         </h3>
-        <h3 className="text-white text-[17px] font-semibold font-['Caros'] leading-[18px]">
+        <h3 className="text-white text-[17px] lg:text-[3xl] font-semibold font-['Caros'] leading-[18px]">
           ₹500
         </h3>
       </div>
