@@ -66,6 +66,7 @@ import msg2 from "@/public/asset/msg2.png";
 import Image from "next/image";
 import { Inter, Poppins } from "next/font/google";
 import localFont from "next/font/local";
+import Link from "next/link";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -99,9 +100,9 @@ export default function CompetitionRegistration() {
             REGISTER NOW
           </button> */}
           <div className={`mt-[7px] w-[205px] h-12 px-5 py-[13px] bg-[#5259aa] rounded-[10px] justify-center items-center gap-2.5 inline-flex`}>
-            <div className={`Label text-center text-white text-[17px] font-bold ${poppins.className} leading-snug`}>
+            <Link href={"/pricing"} className={`Label text-center text-white text-[17px] font-bold ${poppins.className} leading-snug`}>
               REGISTER NOW
-            </div>
+            </Link>
           </div>
           <div className={`text-white text-[15px] font-normal ${caros.className} mt-[7px] leading-snug`}>
             Participate in any competition for just ₹259!

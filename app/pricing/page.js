@@ -6,6 +6,7 @@ import Recomendation from "@/components/HomePageComponent/Recomendation";
 import TalentPage from "@/components/HomePageComponent/TalentPage";
 import Pricing from "@/components/PricingPageComponent/Pricing";
 import Stats from "@/components/PricingPageComponent/Stats";
+// import SwipeRecomendation from "@/components/PricingPageComponent/SwipeRecomendation";
 import WhyJoin from "@/components/PricingPageComponent/WhyJoin";
 import star from "@/public/asset/star-logo.png";
 import starkid from "@/public/asset/starkid.png";
@@ -38,6 +39,7 @@ export default function page() {
       </div>
       <div className=" bg-[#1B1D30] pt-5">
         <Recomendation />
+        {/* <SwipeRecomendation /> */}
       </div>
       <div className=" bg-blue-500">
         <PerksOfJoining pricing={true} />

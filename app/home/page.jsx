@@ -121,7 +121,7 @@ export default function page() {
               </Link> */}
               <Link href={"/pricing"}
                 
-                className="mt-[12px] px-5 py-[13px] bg-[#5259aa] rounded-[10px] justify-center items-center gap-2.5 inline-flex"
+                className=" cursor-pointer mt-[12px] px-5 py-[13px] bg-[#5259aa] rounded-[10px] justify-center items-center gap-2.5 inline-flex"
               >
                 <div
                   

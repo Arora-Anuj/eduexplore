@@ -5,6 +5,7 @@ import wh2 from "@/public/asset/wh2.png";
 import Image from "next/image";
 import { Poppins, Public_Sans } from "next/font/google";
 import localFont from "next/font/local";
+import Link from "next/link";
 
 const publicaSans = localFont({
   src: "../../public/fonts/PublicaSans.otf",
@@ -68,11 +69,11 @@ export default function Recomendation() {
         REGISTER NOW
       </button> */}
       <div className="mb-[30px] mt-[25px] text-center px-7 py-[13px] bg-[#5259aa] rounded-[10px] justify-center items-center gap-2.5 inline-flex">
-        <div
+        <Link href={"/pricing"}
           className={`${poppins.className} text-center text-white text-[17px] md:text-[25px] font-bold font-['Poppins'] leading-snug`}
         >
           REGISTER NOW
-        </div>
+        </Link>
       </div>
     </div>
   );

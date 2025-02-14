@@ -6,6 +6,7 @@ import certficate from "@/public/asset/certficate.png";
 import Image from "next/image";
 import localFont from "next/font/local";
 import { Inter, Poppins, Public_Sans } from "next/font/google";
+import Link from "next/link";
 
 const publicaSans = localFont({
   src: "../../public/fonts/PublicaSans.otf",
@@ -61,11 +62,11 @@ export default function PerksOfJoining({ pricing }) {
             <p className=" text-white font-bold">Experts Feedback</p>
           </div>
         </div>
-        <button
+        <Link href={"/pricing"}
           className={` ${poppins.className} mb-10 bg-[#5259AA] font-bold text-white py-4 px-8 rounded-lg text-lg`}
         >
           REGISTER NOW
-        </button>
+        </Link>
       </div>
     </div>
   );
