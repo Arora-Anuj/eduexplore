@@ -31,11 +31,6 @@ export default function Footer({pricing}) {
         <div className={` md:h-[460px] md:w-[1px] w-full h-[1px] mt-5 md:mt-0 bg-[#1B1D30] opacity-50 ${!pricing ?"md:bg-[#EEEFFC]" : "md:bg-[#1B1D30]"}`}></div>
 
         <div className="mt-[41px] md:mt-[90px] flex items-center flex-col justify-center text-center md:text-start  font-semibold md:w-6/12 md:pb-20">
-          {/* <h3 className="text-md font-semibold uppercase text-[#6D6D6D] md:text-start">
-            Company
-          </h3> */}
-          {/* <ul className="text-md font-semibold uppercase text-[#6D6D6D] "> */}
-          {/* </ul> */}
 
           <ul className="space-y-[18px] md:space-y-[25px] text-sm md:text-[22px]">
             <li className="text-[17px] md:text-[25px] font-meditum uppercase mb-5 text-[#6D6D6D] ">

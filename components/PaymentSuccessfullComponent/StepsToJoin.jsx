@@ -14,16 +14,6 @@ import localFont from "next/font/local";
 const publicaSans = localFont({
   src: "../../public/fonts/PublicaSans.otf",
 });
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
-  variable: "--font-poppins",
-});
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
-  variable: "--font-inter",
-});
 const caros = localFont({
   src: "../../public/fonts/Caros.otf",
 });
