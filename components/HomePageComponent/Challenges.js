@@ -6,9 +6,15 @@ import winner from "@/public/asset/winner.png";
 import trophy from "@/public/asset/trophy.png";
 import Link from "next/link";
 import localFont from "next/font/local";
+import { Poppins } from "next/font/google";
 
 const publicaSans = localFont({
   src: "../../public/fonts/PublicaSans.otf",
+});
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+  variable: "--font-poppins",
 });
 
 export default function Challenges() {
@@ -32,7 +38,7 @@ export default function Challenges() {
         <Image src={chal} alt="winner" className=" w-[90%] h-[390px] mt-[20px] hidden md:block" />
         <Link
           href={"/pricing"}
-          className={` my-[30px] bg-[#5259AA] font-bold text-white py-4 px-8 rounded-lg text-lg`}
+          className={`${poppins.className} my-[30px] bg-[#5259AA] font-bold text-white py-4 px-8 rounded-lg text-lg`}
         >
           REGISTER NOW
         </Link>
