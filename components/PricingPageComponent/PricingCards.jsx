@@ -19,7 +19,7 @@ export default function PricingCards() {
     <div
       className={`${caros.className} flex flex-col lg:flex-row items-center justify-center mt-5 lg:mt-[54px] gap-3`}
     >
-      <div className="bg-[#EEEFFC] w-[332px] h-[190px]  lg:w-[491px] lg:h-[598px] rounded-xl px-[21px] lg:px-[47px]  ">
+      <div className="bg-[#EEEFFC] w-[332px] h-[200px]  lg:w-[491px] lg:h-[598px] rounded-xl px-[21px] lg:px-[47px]  ">
         <div className=" flex justify-evenly lg:flex-col">
           <div className="leftside flex flex-col w-[45%] lg:w-8/12 py-5 lg:mt-[61px]">
             <div className=" flex justify-between items-start flex-col ">
@@ -56,8 +56,8 @@ export default function PricingCards() {
           Participate Now
         </button> */}
         <button
-          data-layer="Rectangle 5266"
-          className="Rectangle5266 w-full lg:text-xl lg:mt-16 lg:font-medium lg:p-[16px] p-[8px] bg-[#5259aa] rounded-[7px] text-[10px] font-medium leading-3 text-white"
+          data-layer=""
+          className=" w-full lg:text-xl lg:mt-16 lg:font-medium lg:p-[16px] p-[10px] bg-[#5259aa] rounded-[7px] text-[10px] font-medium leading-3 text-white"
         >
           Participate Now
         </button>
@@ -74,7 +74,7 @@ export default function PricingCards() {
 
 
 
-      <div className=" relative bg-[#EEEFFC] w-[332px] h-[200px]  lg:w-[491px] lg:h-[598px] rounded-xl px-[21px] lg:px-[47px]  ">
+      <div className=" relative bg-[#EEEFFC] w-[332px] h-[210px]  lg:w-[491px] lg:h-[598px] rounded-xl px-[21px] lg:px-[47px]  ">
         <p className="absolute top-[4%]  lg:top-[6%] bg-[#D73970] py-[2px] px-[13px]  rounded-xl text-[8px]  text-white lg:text-base lg:leading-[15px] lg:px-[23px] lg:py-[10px]">
           Recommended
         </p>
@@ -113,7 +113,7 @@ export default function PricingCards() {
 
         <button
           data-layer="Rectangle 5266"
-          className="Rectangle5266 w-full lg:text-xl lg:mt-6 lg:font-medium lg:p-[16px] p-[8px] bg-[#5259aa] rounded-[7px] text-[10px] font-medium leading-3 text-white"
+          className="Rectangle5266 w-full lg:text-xl lg:mt-6 lg:font-medium lg:p-[16px] p-[10px] bg-[#5259aa] rounded-[7px] text-[10px] font-medium leading-3 text-white"
         >
           Participate Now
         </button>

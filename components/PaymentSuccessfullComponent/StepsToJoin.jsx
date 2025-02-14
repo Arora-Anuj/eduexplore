@@ -40,19 +40,19 @@ export default function StepsToJoin() {
       </h1>
       <div className=" flex flex-col justify-center items-center gap-[30px] mt-[44px] lg:mt-[66px]">
         <p
-          className={`${caros.className} w-[80%] lg:w-[70%] text-start text-[#eeeffc] text-base lg:text-[24px] font-medium font-['Caros'] leading-tight lg:leading-[22px]`}
+          className={`${caros.className} w-[90%] lg:w-[70%] text-start text-[#eeeffc] text-base lg:text-[24px] font-medium font-['Caros'] leading-tight lg:leading-[22px]`}
         >
           {" "}
           Follow these easy steps:
         </p>
         <div className=" mx-auto flex items-center justify-center flex-col lg:flex-row  lg:justify-evenly mt-[20px] lg:mt-[50px] lg:w-full lg:gap-x-[140px] ">
           <div className=" flex flex-col items-center justify-center gap-y-[31px] lg:gap-y-[81px]  ">
-            <Image src={join1} alt="join1" className=" w-[80%] lg:w-[472px] lg:h-[120px] " />
-            <Image src={join4} alt="join1" className=" w-[80%] lg:w-[472px] lg:h-[120px] " />
+            <Image src={join1} alt="join1" className=" w-[90%] lg:w-[472px] lg:h-[120px] " />
+            <Image src={join4} alt="join1" className=" w-[90%] lg:w-[472px] lg:h-[120px] " />
           </div>
           <div className="mt-[31px] lg:mt-0 flex flex-col items-center justify-center gap-y-[31px] lg:gap-y-[81px] ">
-            <Image src={join3} alt="join1" className=" w-[80%] lg:w-[472px] lg:h-[120px] " />
-            <Image src={join2} alt="join1" className=" w-[80%] lg:w-[472px] lg:h-[120px] " />
+            <Image src={join3} alt="join1" className=" w-[90%] lg:w-[472px] lg:h-[120px] " />
+            <Image src={join2} alt="join1" className=" w-[90%] lg:w-[472px] lg:h-[120px] " />
           </div>
         </div>
       </div>
