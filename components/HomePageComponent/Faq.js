@@ -40,7 +40,7 @@ export default function Faq({ pricing, success }) {
       <h2
         className={`${
           publicaSans.className
-        } text-[24px] font-medium mb-6  mt-10 w-[90%] md:w-[80%] leading-[25px] tracking-[-0.41px] ${
+        } text-[24px] lg:text-[57px] lg:text-center  font-semibold mb-6  mt-10 lg:my-[61px] w-[90%] md:w-[80%] leading-[25px] tracking-[-0.41px] ${
           pricing ? "md:text-[#EEEFFC]" : "md:text-[#1B1D30]"
         } ${success ? "text-[#1B1D30]" : "text-[#EEEFFC]"} `}
       >
@@ -50,12 +50,12 @@ export default function Faq({ pricing, success }) {
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className={` ${caros.className} bg-[#CBCDE6] p-4 rounded-lg w-[90%] md:w-[80%]`}
+            className={` ${caros.className} bg-[#CBCDE6] p-4 lg:py-[21px] lg:px-[39px] rounded-lg w-[90%] md:w-[80%]`}
           >
             <div className="w-full flex justify-between items-start gap-2 text-sm sm:text-lg font-semibold">
               <p
                 onClick={() => toggleFAQ(index)}
-                className=" text-[13px] lg:text-xl font-semibold cursor-pointer"
+                className=" text-[13px] lg:text-2xl font-semibold cursor-pointer"
               >
                 {faq.question}
               </p>
@@ -63,21 +63,21 @@ export default function Faq({ pricing, success }) {
                 <Image
                   src={up}
                   alt="up"
-                  width={20}
+                  className=" w-[20px] h-[20px] lg:h-[32px] lg:w-[32px] "
                   onClick={() => toggleFAQ(index)}
                 />
               ) : (
                 <Image
                   src={down}
                   alt="down"
-                  width={20}
+                  className=" w-[20px] h-[20px] lg:h-[32px] lg:w-[32px] "
                   onClick={() => toggleFAQ(index)}
                 />
               )}
               {/* </button> */}
             </div>
             {openIndex === index && (
-              <p className="mt-2 font-normal text-xs lg:text-xl -tracking-[2%] leading-normal ">
+              <p className="mt-2 font-normal text-xs lg:text-2xl -tracking-[2%] leading-normal ">
                 {description}
               </p>
             )}
