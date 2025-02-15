@@ -20,7 +20,7 @@ const caros = localFont({
 
 export default function StepsToJoin() {
   return (
-    <div className=" bg-[#1b1d30] pt-[44px] lg:pt-[66px] flex flex-col items-center justify-center pb-[113px]">
+    <div className=" bg-[#1b1d30] pt-[44px] lg:pt-[66px] flex flex-col items-center justify-center pb-[50px] lg:pb-[113px]">
       <h1
         className={`${publicaSans.className} text-center w-10/12 text-[#d63970] text-[26px] lg:text-[50px] font-semibold leading-[28.5px] lg:leading-[55px] tracking-[-0.408px]`}
       >
