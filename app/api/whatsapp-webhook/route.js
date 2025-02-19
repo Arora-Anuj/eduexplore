@@ -5,11 +5,12 @@ export async function POST(req) {
   try {
     const body = await req.json();
 
-    const order = body?.data;
-    const phone = order?.customer_details?.customer_phone;
-    let customerId = order?.link_id;
+    const info = body?.data;
+    const phone = info?.customer_details?.customer_phone;
+    let customerId = info?.order?.order_tags.link_id;
     customerId = customerId.split('_')[0];
-    // console.log(customerId)
+    
+    console.log(customerId)
 
     const url = "https://api.manychat.com/fb/subscriber/setCustomField";
     const token = process.env.ManyChatToken; 
