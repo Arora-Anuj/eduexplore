@@ -6,8 +6,9 @@ export async function POST(req) {
     const body = await req.json();
 
     const info = body?.data;
+    // console.log(info)
     const phone = info?.customer_details?.customer_phone;
-    let customerId = info?.order?.order_tags.link_id;
+    let customerId = info?.link_id;
     customerId = customerId.split('_')[0];
     
     console.log(customerId)
