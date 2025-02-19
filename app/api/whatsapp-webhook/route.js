@@ -9,7 +9,7 @@ export async function POST(req) {
     const phone = order?.customer_details?.customer_phone;
     let customerId = order?.link_id;
     customerId = customerId.split('_')[0];
-    console.log(customerId)
+    // console.log(customerId)
 
     const url = "https://api.manychat.com/fb/subscriber/setCustomField";
     const token = process.env.ManyChatToken; 
