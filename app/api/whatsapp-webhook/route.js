@@ -37,22 +37,22 @@ export async function POST(req) {
       "Content-Type": "application/json",
     };
 
-    // try {
-    //   const response = await axios.post(url, data, { headers });
-    // //   console.log("Response:", response.data);
-    // } catch (error) {
+    try {
+      const response = await axios.post(url, data, { headers });
+      console.log("Response:", response.data);
+    } catch (error) {
 
-    //   console.error(
-    //     "Error:",
-    //     error.response ? error.response.data : error.message
-    //   );
-    //   return NextResponse.json(
-    //     {
-    //       message: "error in sending message to manychat",
-    //     },
-    //     { status: 500 }
-    //   );
-    // }
+      console.error(
+        "Error in manychats:",
+        error.response ? error.response.data : error.message
+      );
+      return NextResponse.json(
+        {
+          message: "error in sending message to manychat",
+        },
+        { status: 500 }
+      );
+    }
 
     // await retryOperation(() => sendEmail(data, "registrationSuccess"));
 
