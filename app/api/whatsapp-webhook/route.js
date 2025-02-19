@@ -19,7 +19,7 @@ export async function POST(req) {
     if (!token || !customerId) {
       return NextResponse.json(
         {
-          message: "token or customerId is missing",
+          message: "Token or customerId is missing",
         },
         { status: 400 }
       );
