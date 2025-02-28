@@ -37,32 +37,32 @@ export default function Footer({pricing}) {
               <span>Company</span>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <a href="/about-us" className="hover:underline">
                 About Us
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <a href="/request-demo" className="hover:underline">
                 Contact Us
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <a href="/privacy-policy" className="hover:underline">
                 Privacy Policy
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <a href="/refund-cancellation" className="hover:underline">
                 Refund & Cancellation Policy
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <a href="/shipping-delivery" className="hover:underline">
                 Shipping & Delivery
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <a href="/terms-and-conditions" className="hover:underline">
                 Terms & Conditions
               </a>
             </li>
@@ -78,7 +78,7 @@ export default function Footer({pricing}) {
             <span>Products</span>
           </li>
           <li>
-            <a href="#" className="hover:underline">
+            <a href="/" className="hover:underline">
               Starkid App
             </a>
           </li>
