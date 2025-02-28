@@ -64,7 +64,7 @@ export default function TalentPage() {
         "this is the cred",
         process.env.NEXT_PUBLIC_CASHFREE_CLIENT_SECRET
       );
-      const { data } = await axios.post(url, body, { headers });
+      const { data } = await axios.post("/api/cashfree-payment", body);
       console.log(data);
     } catch (error) {
       console.log("error", error);

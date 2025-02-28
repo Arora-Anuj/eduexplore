@@ -51,16 +51,19 @@ export async function POST(req) {
 
     const headers = {
       "x-api-version": "2023-08-01",
-      "x-client-id": process.env.cashfree_clientId,
-      "x-client-secret": process.env.cashfree_clientSecret,
+      "x-client-id": process.env.NEXT_PUBLIC_CASHFREE_CLIENT_ID,
+      "x-client-secret": process.env.NEXT_PUBLIC_CASHFREE_CLIENT_SECRET,
       "Content-Type": "application/json",
     };
 
     try {
+      // console.log(process.env.NEXT_PUBLIC_CASHFREE_CLIENT_ID);
+      // console.log(process.env.NEXT_PUBLIC_CASHFREE_CLIENT_SECRET);
       const response = await axios.post(url, body, { headers });
       console.log(response.data);
       // console.log("Response:", response);
     } catch (error) {
+      console.log(error)
       console.error(
         "Error in cashfree route:",
         error.response ? JSON.stringify(error.response.data) : error.message
