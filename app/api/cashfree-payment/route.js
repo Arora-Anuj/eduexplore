@@ -4,7 +4,7 @@ export async function POST(req) {
   try {
     const body = await req.json();
 
-    console.log(body);
+    // console.log(body);
 
     //   const info = body?.data;
     // console.log(info)
@@ -14,7 +14,7 @@ export async function POST(req) {
 
     //   console.log(customerId);
 
-    //   const url = "https://api.manychat.com/fb/subscriber/setCustomField";
+    const url = "https://api.cashfree.com/pg/links";
     //   const token = process.env.ManyChatToken;
 
     //   if (!token || !customerId) {
@@ -48,27 +48,29 @@ export async function POST(req) {
     //     field_value: true,
     //   };
 
-    //   const headers = {
-    //     accept: "application/json",
-    //     Authorization: `Bearer ${token}`,
-    //     "Content-Type": "application/json",
-    //   };
+    const headers = {
+      "x-api-version": "2023-08-01",
+      "x-client-id": process.env.cashfree_clientId,
+      "x-client-secret": process.env.cashfree_clientSecret,
+      "Content-Type": "application/json",
+    };
 
-    //   try {
-    //     const response = await axios.post(url, data, { headers });
-    //     // console.log("Response:", response);
-    //   } catch (error) {
-    //     console.error(
-    //       "Error in manychats:",
-    //       error.response ? JSON.stringify(error.response.data) : error.message
-    //     );
-    //     return NextResponse.json(
-    //       {
-    //         message: "error in sending message to manychat",
-    //       },
-    //       { status: 500 }
-    //     );
-    //   }
+    try {
+      const response = await axios.post(url, body, { headers });
+      console.log(response.data);
+      // console.log("Response:", response);
+    } catch (error) {
+      console.error(
+        "Error in cashfree route:",
+        error.response ? JSON.stringify(error.response.data) : error.message
+      );
+      return NextResponse.json(
+        {
+          message: "error in generating the link",
+        },
+        { status: 500 }
+      );
+    }
 
     // await retryOperation(() => sendEmail(data, "registrationSuccess"));
 
