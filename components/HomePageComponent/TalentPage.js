@@ -28,6 +28,7 @@ const caros = localFont({
 
 export default function TalentPage() {
   const url = "https://api.cashfree.com/pg/links";
+
   const headers = {
     "x-api-version": "2023-08-01",
     "x-client-id": process.env.cashfree_clientId,
@@ -55,12 +56,13 @@ export default function TalentPage() {
 
   async function getLink() {
     try {
-       const {data} = await axios.post(url, body, { headers });
-    console.log(data)
+      console.log("this is the cred", process.env.cashfree_clientId);
+      console.log("this is the cred", process.env.cashfree_clientSecret);
+      const { data } = await axios.post(url, body, { headers });
+      console.log(data);
     } catch (error) {
-      console.log("error",error)
+      console.log("error", error);
     }
-   
   }
   useEffect(() => {
     getLink();
