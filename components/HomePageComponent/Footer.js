@@ -3,6 +3,7 @@ import brand from "@/public/asset/brand.png";
 import Image from "next/image";
 import { BiLogoFacebook, BiLogoInstagram, BiLogoTwitter } from "react-icons/bi";
 import localFont from "next/font/local";
+import Link from "next/link";
 
 const caros = localFont({
   src: "../../public/fonts/Caros.otf",
@@ -37,34 +38,34 @@ export default function Footer({pricing}) {
               <span>Company</span>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <Link href="/about-us" className="hover:underline">
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <Link href="/request-demo" className="hover:underline">
                 Contact Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <Link href="/privacy-policy" className="hover:underline">
                 Privacy Policy
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <Link href="/refund-cancellation" className="hover:underline">
                 Refund & Cancellation Policy
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <Link href="/shipping-delivery" className="hover:underline">
                 Shipping & Delivery
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <Link href="/terms-and-conditions" className="hover:underline">
                 Terms & Conditions
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -78,9 +79,9 @@ export default function Footer({pricing}) {
             <span>Products</span>
           </li>
           <li>
-            <a href="#" className="hover:underline">
+            <Link href="/" className="hover:underline">
               Starkid App
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
@@ -98,7 +99,7 @@ export default function Footer({pricing}) {
     //     <Image src={inst} height={30} alt="starkid" />
     //     <Image src={inst} height={30} alt="starkid" />
     //     <Image src={inst} height={30} alt="starkid" />
-    //       {/* <a href="#" className="text-gray-700 hover:text-gray-900">
+    //       {/* Link href="#" className="text-gray-700 hover:text-gray-900">
     //         <FaTwitter size={20} />
     //       </a> */}
     //       {/* <a href="#" className="text-gray-700 hover:text-gray-900">
