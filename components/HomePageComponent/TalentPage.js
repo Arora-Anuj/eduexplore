@@ -15,6 +15,8 @@ import "../../app/globals.css";
 
 import { Public_Sans } from "next/font/google";
 import localFont from "next/font/local";
+import { useEffect } from "react";
+import axios from "axios";
 
 const publicaSans = localFont({
   src: "../../public/fonts/PublicaSans.otf",
@@ -25,13 +27,55 @@ const caros = localFont({
 });
 
 export default function TalentPage() {
+  const url = "https://api.cashfree.com/pg/links";
+  const headers = {
+    "x-api-version": "2023-08-01",
+    "x-client-id": process.env.cashfree_clientId,
+    "x-client-secret": process.env.cashfree_clientSecret,
+    "Content-Type": "application/json",
+  };
+
+  const body = {
+    customer_details: {
+      customer_phone: "8999878325",
+    },
+    link_amount: 395,
+    link_currency: "INR",
+    link_id: "aakashtest",
+    link_meta: {
+      notify_url: "https://eduexplore.in/api/whatsapp-webhook",
+    },
+    link_notify: {
+      send_email: false,
+      send_sms: true,
+    },
+    link_notes: { contactId: "789789" },
+    link_purpose: "Instagram Ad Payment For Competition Registration",
+  };
+
+  async function getLink() {
+    try {
+       const {data} = await axios.post(url, body, { headers });
+    console.log(data)
+    } catch (error) {
+      console.log("error",error)
+    }
+   
+  }
+  useEffect(() => {
+    getLink();
+  }, []);
   return (
     <div className=" bg-[#EEEFFC] w-full mt-[36px]  md:hidden">
       <div className="text-center my-[26px]">
-        <span className={`text-[#1b1d30] text-[26px] font-bold  leading-[24.5px] ${publicaSans.className}`}>
+        <span
+          className={`text-[#1b1d30] text-[26px] font-bold  leading-[24.5px] ${publicaSans.className}`}
+        >
           Turning{" "}
         </span>
-        <span className={`text-[#d63970] text-[26px] font-bold  leading-[24.5px] ${publicaSans.className}`}>
+        <span
+          className={`text-[#d63970] text-[26px] font-bold  leading-[24.5px] ${publicaSans.className}`}
+        >
           Talents into Opportunities!
         </span>
       </div>
@@ -64,13 +108,19 @@ export default function TalentPage() {
               />
               <div className=" w-full overflow-clip text-xs leading-normal bg-[#00AFAA] rounded-b-[20px]  text-center">
                 <p className={`py-[15px] px-[20px] ${caros.className}`}>
-                  <span className={`text-white   font-medium ${caros.className}`}>
+                  <span
+                    className={`text-white   font-medium ${caros.className}`}
+                  >
                     Aryan’s public speaking experience with us gave him the
                   </span>{" "}
-                  <span className={`text-[#1b1d30]  font-semibold ${caros.className}`}>
+                  <span
+                    className={`text-[#1b1d30]  font-semibold ${caros.className}`}
+                  >
                     confidence to participate in a national-level
                   </span>{" "}
-                  <span className={`text-white  font-medium ${caros.className}`}>
+                  <span
+                    className={`text-white  font-medium ${caros.className}`}
+                  >
                     debate competition
                   </span>
                 </p>
@@ -90,7 +140,9 @@ export default function TalentPage() {
                   The competitions have improved kid's focus and discipline ,
                   helping them{" "}
                 </span>
-                <span className={`text-[#1b1d30]  font-semibold ${caros.className}`}>
+                <span
+                  className={`text-[#1b1d30]  font-semibold ${caros.className}`}
+                >
                   Perform better in school exams
                 </span>{" "}
               </div>
@@ -106,11 +158,15 @@ export default function TalentPage() {
               />
               <div className=" w-full overflow-clip text-xs leading-normal bg-[#ffc56f] rounded-b-[20px]  text-center">
                 <p className="py-[15px] px-[20px]">
-                  <span className={`text-white  font-medium ${caros.className}`}>
+                  <span
+                    className={`text-white  font-medium ${caros.className}`}
+                  >
                     StarKid's creative contests boosted Ananya's confidence and
                     led her to become
                   </span>{" "}
-                  <span className={`text-[#1b1d30]  font-semibold ${caros.className} `}>
+                  <span
+                    className={`text-[#1b1d30]  font-semibold ${caros.className} `}
+                  >
                     the Head of her school's Creative Club
                   </span>{" "}
                 </p>
