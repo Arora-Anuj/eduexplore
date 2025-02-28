@@ -31,8 +31,8 @@ export default function TalentPage() {
 
   const headers = {
     "x-api-version": "2023-08-01",
-    "x-client-id": process.env.cashfree_clientId,
-    "x-client-secret": process.env.cashfree_clientSecret,
+    "x-client-id": process.env.NEXT_PUBLIC_CASHFREE_CLIENT_ID,
+    "x-client-secret": process.env.NEXT_PUBLIC_CASHFREE_CLIENT_SECRET,
     "Content-Type": "application/json",
   };
 
@@ -56,8 +56,14 @@ export default function TalentPage() {
 
   async function getLink() {
     try {
-      console.log("this is the cred", process.env.cashfree_clientId);
-      console.log("this is the cred", process.env.cashfree_clientSecret);
+      console.log(
+        "this is the cred",
+        process.env.NEXT_PUBLIC_CASHFREE_CLIENT_ID
+      );
+      console.log(
+        "this is the cred",
+        process.env.NEXT_PUBLIC_CASHFREE_CLIENT_SECRET
+      );
       const { data } = await axios.post(url, body, { headers });
       console.log(data);
     } catch (error) {
