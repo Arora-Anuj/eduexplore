@@ -37,11 +37,11 @@ export default function TalentPage() {
       </div>
 
       <div
-        className={`${caros.className} w-full mx-auto h-auto md:w-[500px] md:h-[500px] mb-10`}
+        className={`${caros.className} w-full h-auto md:w-[500px] md:h-[500px] mb-10`}
       >
         <Swiper
           slidesPerView={1.4}
-          centeredSlides={"true"}
+          centeredSlides={true}
           spaceBetween={20}
           pagination={{
             clickable: true,
@@ -51,7 +51,7 @@ export default function TalentPage() {
             delay: 2000, // 2 seconds delay
             disableOnInteraction: false, // Keep autoplay even after user interaction
           }}
-          modules={[Autoplay]}
+          // modules={[Autoplay]}
           className="mySwiper"
         >
           <SwiperSlide>
@@ -62,7 +62,7 @@ export default function TalentPage() {
                 height={170}
                 alt="talent"
               />
-              <div className=" w-full overflow-clip text-xs leading-normal bg-[#00AFAA] rounded-b-[20px]  text-center">
+              <div className=" w-full overflow-hidden text-xs leading-normal bg-[#00AFAA] rounded-b-[20px]  text-center">
                 <p className={`py-[15px] px-[20px] ${caros.className}`}>
                   <span className={`text-white   font-medium ${caros.className}`}>
                     Aryan’s public speaking experience with us gave him the
@@ -85,7 +85,7 @@ export default function TalentPage() {
                 height={170}
                 alt="talent"
               />
-              <div className=" w-full overflow-clip text-xs leading-normal bg-[#d63970] rounded-b-[20px] py-[15px] px-[20px] text-center">
+              <div className=" w-full overflow-hidden text-xs leading-normal bg-[#d63970] rounded-b-[20px] py-[15px] px-[20px] text-center">
                 <span className={`text-white  font-medium ${caros.className}`}>
                   The competitions have improved kid's focus and discipline ,
                   helping them{" "}
@@ -104,7 +104,7 @@ export default function TalentPage() {
                 height={170}
                 alt="talent"
               />
-              <div className=" w-full overflow-clip text-xs leading-normal bg-[#ffc56f] rounded-b-[20px]  text-center">
+              <div className=" w-full overflow-hidden text-xs leading-normal bg-[#ffc56f] rounded-b-[20px]  text-center">
                 <p className="py-[15px] px-[20px]">
                   <span className={`text-white  font-medium ${caros.className}`}>
                     StarKid's creative contests boosted Ananya's confidence and

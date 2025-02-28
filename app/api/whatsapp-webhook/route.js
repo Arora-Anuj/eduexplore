@@ -1,6 +1,41 @@
 import axios from "axios";
 import { NextResponse } from "next/server";
 
+async function createSubscriber(name, phone) {
+  const url = "https://api.manychat.com/fb/subscriber/createSubscriber";
+  const token = process.env.ManyChatToken;
+
+  const data = {
+    first_name: name,
+    phone: phone,
+    whatsapp_phone: phone,
+    has_opt_in_sms: true,
+    consent_phrase: "True",
+    optin_whatsapp: true,
+    optin_phone: true,
+  };
+
+  try {
+    const response = await axios.post(url, data, {
+      headers: {
+        accept: "application/json",
+        Authorization: `Bearer ${token}`,
+        "Content-Type": "application/json",
+      },
+    });
+    // console.log("Response:", response.data);
+    return {
+      status: true,
+      data: response.data,
+    };
+  } catch (error) {
+    console.error("Error:", error);
+    return {
+      status: false,
+    };
+  }
+}
+
 export async function POST(req) {
   try {
     const body = await req.json();
@@ -8,23 +43,39 @@ export async function POST(req) {
     const info = body?.data;
     // console.log(info)
     const phone = info?.customer_details?.customer_phone;
-    let customerId = info?.link_id;
-    customerId = customerId.split('_')[0];
-    
-    console.log(customerId)
+    let customerId = info?.link_notes?.contactId;
+    // customerId = customerId.s
+
+    console.log(customerId);
 
     const url = "https://api.manychat.com/fb/subscriber/setCustomField";
-    const token = process.env.ManyChatToken; 
+    const token = process.env.ManyChatToken;
 
     if (!token || !customerId) {
-      return NextResponse.json(
-        {
-          message: "Token or customerId is missing",
-        },
-        { status: 400 }
-      );
-    }
+      const name = "Aakash Sharma";
 
+      const { data } = await createSubscriber(name, phone);
+
+      console.log(data.data);
+
+      customerId = data?.data?.id;
+      console.log(customerId);
+
+      if (!data.status) {
+        return NextResponse.json(
+          {
+            message: "error in creating contact to manychat",
+          },
+          { status: 400 }
+        );
+      }
+      // return NextResponse.json(
+      //   {
+      //     message: "Token or customerId is missing",
+      //   },
+      //   { status: 400 }
+      // );
+    }
     const data = {
       subscriber_id: customerId,
       field_id: 12540295,
@@ -39,12 +90,11 @@ export async function POST(req) {
 
     try {
       const response = await axios.post(url, data, { headers });
-      console.log("Response:", response.data);
+      // console.log("Response:", response);
     } catch (error) {
-
       console.error(
         "Error in manychats:",
-        error.response ? error.response.data : error.message
+        error.response ? JSON.stringify(error.response.data) : error.message
       );
       return NextResponse.json(
         {
@@ -74,4 +124,3 @@ export async function POST(req) {
     return new Response("Internal Server Error", { status: 500 });
   }
 }
-
