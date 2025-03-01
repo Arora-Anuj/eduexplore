@@ -57,8 +57,8 @@ export async function POST(req) {
     };
 
     try {
-      // console.log(process.env.NEXT_PUBLIC_CASHFREE_CLIENT_ID);
-      // console.log(process.env.NEXT_PUBLIC_CASHFREE_CLIENT_SECRET);
+      console.log(process.env.NEXT_PUBLIC_CASHFREE_CLIENT_ID);
+      console.log(process.env.NEXT_PUBLIC_CASHFREE_CLIENT_SECRET);
       const response = await axios.post(url, body, { headers });
       console.log(response.data);
       // console.log("Response:", response);
