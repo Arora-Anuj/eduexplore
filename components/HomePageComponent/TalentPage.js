@@ -56,14 +56,14 @@ export default function TalentPage() {
 
   async function getLink() {
     try {
-      console.log(
-        "this is the cred",
-        process.env.NEXT_PUBLIC_CASHFREE_CLIENT_ID
-      );
-      console.log(
-        "this is the cred",
-        process.env.NEXT_PUBLIC_CASHFREE_CLIENT_SECRET
-      );
+      // console.log(
+      //   "this is the cred",
+      //   process.env.NEXT_PUBLIC_CASHFREE_CLIENT_ID
+      // );
+      // console.log(
+      //   "this is the cred",
+      //   process.env.NEXT_PUBLIC_CASHFREE_CLIENT_SECRET
+      // );
       const { data } = await axios.post("/api/cashfree-payment", body);
       console.log(data);
     } catch (error) {
