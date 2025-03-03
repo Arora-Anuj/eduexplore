@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import star from "@/public/asset/star-logo.png";
 import starkid from "@/public/asset/starkid.png";
+
 import CompetitionRegistration from "@/components/HomePageComponent/CompetationRegistration";
 import TalentPage from "@/components/HomePageComponent/TalentPage";
 import Recomendation from "@/components/HomePageComponent/Recomendation";
@@ -58,29 +59,29 @@ export default function LandingPage() {
         </div>
 
         <div className=" flex flex-col md:flex-row md:mb-16 lg:mt-[50px]">
-          <div className=" md:w-6/12 mx-auto text-center flex flex-col  items-center px-2 md:px-0">
+          <div className=" md:w-5/12 lg:mt-[50px] mx-auto text-center flex flex-col  items-center px-2 md:px-0">
             <p
               className={`${publicaSans.className}text-white text-[33px] font-medium leading-9 `}
             >
               <span
                 className={`${publicaSans.className}  text-white text-[33px] md:text-4xl xl:text-6xl md:leading-[110%] tracking-tight font-medium`}
               >
-                Your{" "}
+                Unleash Your{" "}
               </span>
               <span
                 className={`${publicaSans.className} text-[#d63970] text-[33px] md:text-4xl xl:text-6xl md:leading-[110%] tracking-tight font-medium`}
               >
-                Child’s Talent{" "}
+                Child’s Confidence{" "}
               </span>
               <span
-                className={`${publicaSans.className} block text-white text-[33px] md:text-4xl xl:text-6xl md:leading-[110%] tracking-tight font-medium`}
+                className={`${publicaSans.className}  text-white text-[33px] md:text-4xl xl:text-6xl md:leading-[110%] tracking-tight font-medium`}
               >
-                Deserves the Spotlight!
+                and Shine!
               </span>
             </p>
 
             <p
-              className={`${caros.className} text-white text-[15px] font-light font-['Caros'] leading-[18px] mt-[12px] lg:mt-[25px]`}
+              className={`${caros.className} text-white text-[15px] font-light font-['Caros'] leading-[18px] mt-[12px] lg:mt-[45px]`}
             >
               <span
                 className={` block ${caros.className} font-light md:text-[16px] xl:text-[25px] md:leading-[30px] md:tracking-[-0.41px]`}
@@ -108,7 +109,7 @@ export default function LandingPage() {
 
             <div className="hidden md:block">
               <p
-                className={`text-white font-medium mt-[100px] text-xl leading-[25px] ${inter.className}`}
+                className={`text-white font-medium mt-[100px] lg:mt-[150px] text-xl md:text-2xl leading-[25px] ${inter.className}`}
               >
                 Last few spots left !
               </p>
@@ -131,13 +132,13 @@ export default function LandingPage() {
                 </div>
               </Link>
               <p
-                className={`${caros.className} text-white text-lg mt-[23px] text-center`}
+                className={`${caros.className} text-white text-lg mt-[23px] md:text-xl text-center`}
               >
                 Participate in any competition for just ₹259!
               </p>
             </div>
           </div>
-          {/* mobile view */}
+          {/* desktop view */}
           <HeroSection />
         </div>
 

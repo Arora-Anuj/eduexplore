@@ -1,8 +1,8 @@
 import React from "react";
 import join1 from "@/public/asset/join1.png";
 import join2 from "@/public/asset/join2.png";
-import join3 from "@/public/asset/join3.png";
-import certficate from "@/public/asset/certficate.png";
+import join3 from "@/public/asset/join.png";
+import certficate from "@/public/asset/certificate.png";
 import Image from "next/image";
 import localFont from "next/font/local";
 import { Inter, Poppins, Public_Sans } from "next/font/google";
@@ -33,14 +33,14 @@ export default function PerksOfJoining({ pricing }) {
     >
       <div className=" flex flex-col items-center justify-center mt-10 ">
         <div
-          className={`${publicaSans.className} leading-[24px] tracking-[-0.41px]`}
+          className={`${publicaSans.className} text-center leading-[24px] tracking-[-0.41px]`}
         >
-          <span className="text-[#1b1d30] text-[26px] md:text-[32px] lg:text-[52px] font-bold font-['Publica Sans'] leading-normal">
-            Perks of Joining{" "}
-          </span>
-          <span className="text-[#d63970] text-[26px] md:text-[32px] lg:text-[52px] font-bold font-['Publica Sans'] leading-normal">
-            StarKid:
-          </span>
+          <p className="text-[#1b1d30] text-[26px] md:text-[32px] lg:text-[52px] font-bold font-['Publica Sans'] leading-normal">
+          Starkid: Enhancing
+          </p>
+          <p className="text-[#d63970] text-[26px] md:text-[32px] lg:text-[52px] font-bold font-['Publica Sans'] leading-normal">
+          Growth,Development and Engagement
+          </p>
         </div>
         <div
           className={` ${caros.className} my-5 flex flex-wrap items-center justify-center gap-x-[30px] w-full gap-y-7`}
@@ -62,7 +62,8 @@ export default function PerksOfJoining({ pricing }) {
             <p className=" text-white font-bold">Experts Feedback</p>
           </div>
         </div>
-        <Link href={"/pricing"}
+        <Link
+          href={"/pricing"}
           className={` ${poppins.className} mb-10 bg-[#5259AA] font-bold text-white py-4 px-8 rounded-lg text-lg`}
         >
           REGISTER NOW

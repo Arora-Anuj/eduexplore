@@ -1,9 +1,6 @@
-"use client";
-
 import Image from "next/image";
 import chal from "@/public/asset/chal.png";
 import winner from "@/public/asset/winner.png";
-import trophy from "@/public/asset/trophy.png";
 import Link from "next/link";
 import localFont from "next/font/local";
 import { Poppins } from "next/font/google";
@@ -22,16 +19,16 @@ export default function Challenges() {
     <>
       <div className=" pt-[21px] bg-[#EEEFFC] w-full flex flex-col items-center justify-center md:bg-[#1B1D30]">
         <div className="  text-center w-11/12 md:w-7/12 lg:w-7/12 md:my-[50px] my-[20px]">
-          <span className={`text-[#1b1d30] text-[26px] md:text-[32px] lg:text-[52px] lg:leading-[50px] md:leading-[30px] font-medium leading-[25px] ${publicaSans.className}  md:text-[#eeeffc]`}>
-            Take a look at the
+          <span className={`text-[#1b1d30] text-[26px] font-semibold md:text-[32px] lg:text-[52px] lg:leading-[50px] md:leading-[30px]  leading-[25px] ${publicaSans.className}  md:text-[#eeeffc]`}>
+          Explore
           </span>
-          <span className={`text-[#d63970] text-[26px] md:text-[32px] lg:text-[52px] lg:leading-[50px] md:leading-[30px] font-medium leading-[25px] ${publicaSans.className}`}>
+          <span className={`text-[#d63970] text-[26px] font-semibold md:text-[32px] lg:text-[52px] lg:leading-[50px] md:leading-[30px]  leading-[25px] ${publicaSans.className}`}>
             {" "}
-            Most Exciting Challenges
+            Top Challenges
           </span>
-          <span className={`text-[#1b1d30] md:text-[#eeeffc] text-[26px] md:text-[32px] lg:text-[52px] lg:leading-[50px] md:leading-[30px] font-medium leading-[25px] ${publicaSans.className}`}>
+          <span className={`text-[#1b1d30] md:text-[#eeeffc] text-[26px] font-semibold md:text-[32px] lg:text-[52px] lg:leading-[50px] md:leading-[30px]  leading-[25px] ${publicaSans.className}`}>
             {" "}
-            and Previous Competition Winners
+            and Past Winners
           </span>
         </div>
         <Image src={winner} alt="winner" className=" w-auto h-[450px] mt-[20px] md:hidden" />
