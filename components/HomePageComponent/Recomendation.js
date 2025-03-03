@@ -2,6 +2,7 @@ import React from "react";
 import recom from "@/public/asset/recom.png";
 import wh1 from "@/public/asset/wh1.png";
 import wh2 from "@/public/asset/wh2.png";
+import wh3 from "@/public/asset/wh3.png";
 import Image from "next/image";
 import { Poppins, Public_Sans } from "next/font/google";
 import localFont from "next/font/local";
@@ -53,7 +54,7 @@ export default function Recomendation() {
             className="absolute -top-5 -right-5"
           />
         </div> */}
-        <Image src={wh2} alt="wh1" width={253} height={186} className=" md:w-[400px] md:h-[357px] " />
+        <Image src={wh3} alt="wh1" width={253} height={186} className=" md:w-[400px] md:h-[357px] " />
         {/* <div className=" relative w-10/12 sm:w-[280px]">
           <Image
             src={recom}
