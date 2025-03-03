@@ -64,8 +64,8 @@ export default function TalentPage() {
       //   "this is the cred",
       //   process.env.NEXT_PUBLIC_CASHFREE_CLIENT_SECRET
       // );
-      const { data } = await axios.post("/api/cashfree-payment", body);
-      console.log(data);
+      // const { data } = await axios.post("/api/cashfree-payment", body);
+      // console.log(data);
     } catch (error) {
       console.log("error", error);
     }
@@ -75,16 +75,16 @@ export default function TalentPage() {
   }, []);
   return (
     <div className=" bg-[#EEEFFC] w-full mt-[36px]  md:hidden">
-      <div className="text-center my-[26px]">
+      <div className="text-center my-[26px] px-[10px]">
         <span
           className={`text-[#1b1d30] text-[26px] font-bold  leading-[24.5px] ${publicaSans.className}`}
         >
-          Turning{" "}
+          Spark Motivation and Take{" "}
         </span>
         <span
-          className={`text-[#d63970] text-[26px] font-bold  leading-[24.5px] ${publicaSans.className}`}
+          className={`text-[#d63970] text-[26px]  font-bold  leading-[24.5px] ${publicaSans.className}`}
         >
-          Talents into Opportunities!
+          Small Steps Towards Big Goals
         </span>
       </div>
 
@@ -119,17 +119,17 @@ export default function TalentPage() {
                   <span
                     className={`text-white   font-medium ${caros.className}`}
                   >
-                    Aryan’s public speaking experience with us gave him the
+                    Nistha, a world record-holding gymnast, is taking
                   </span>{" "}
                   <span
                     className={`text-[#1b1d30]  font-semibold ${caros.className}`}
                   >
-                    confidence to participate in a national-level
+                    small steps toward her dream of joining a reality dance show
                   </span>{" "}
                   <span
                     className={`text-white  font-medium ${caros.className}`}
                   >
-                    debate competition
+                    by participating in StarKid competitions.
                   </span>
                 </p>
               </div>
@@ -145,13 +145,12 @@ export default function TalentPage() {
               />
               <div className=" w-full overflow-clip text-xs leading-normal bg-[#d63970] rounded-b-[20px] py-[15px] px-[20px] text-center">
                 <span className={`text-white  font-medium ${caros.className}`}>
-                  The competitions have improved kid's focus and discipline ,
-                  helping them{" "}
+                StarKid’s creative contests boosted Kalpita’s confidence and led her to become{" "}
                 </span>
                 <span
                   className={`text-[#1b1d30]  font-semibold ${caros.className}`}
                 >
-                  Perform better in school exams
+                  the Head of her school’s Creative Club
                 </span>{" "}
               </div>
             </div>
@@ -164,18 +163,22 @@ export default function TalentPage() {
                 height={170}
                 alt="talent"
               />
-              <div className=" w-full overflow-clip text-xs leading-normal bg-[#ffc56f] rounded-b-[20px]  text-center">
+              <div className=" w-full overflow-clip text-xs leading-normal bg-[#00AFAA] rounded-b-[20px]  text-center">
                 <p className="py-[15px] px-[20px]">
                   <span
                     className={`text-white  font-medium ${caros.className}`}
                   >
-                    StarKid's creative contests boosted Ananya's confidence and
-                    led her to become
+                    Manan, shy about dancing in front of crowds
                   </span>{" "}
                   <span
                     className={`text-[#1b1d30]  font-semibold ${caros.className} `}
                   >
-                    the Head of her school's Creative Club
+                    felt motivated and confident
+                  </span>{" "}
+                  <span
+                    className={`text-white  font-medium ${caros.className}`}
+                  >
+                    after receiving his StarKid dance certificate.
                   </span>{" "}
                 </p>
               </div>

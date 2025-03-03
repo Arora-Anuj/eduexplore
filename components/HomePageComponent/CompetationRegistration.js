@@ -84,15 +84,15 @@ const caros = localFont({
 
 export default function CompetitionRegistration() {
   return (
-    <div className=" mt-[51px] md:hidden">
+    <div className=" mt-[1px] md:hidden">
       <div className="relative flex flex-col items-center justify-center">
         <Image src={group} alt="groupimage" height={306} width={356} />
-        <div className=" flex items-center justify-center flex-col mt-[19px] ">
-          <p
+        <div className=" flex items-center justify-center flex-col mt-[0px] ">
+          {/* <p
             className={`text-white text-lg font-medium leading-snug ${inter.className}`}
           >
             Last few spots left!
-          </p>
+          </p> */}
 
           {/* <button
             className={`${poppins.className} mt-2 bg-[#5259AA] font-semibold text-white py-3 px-5 rounded-lg text-base`}
