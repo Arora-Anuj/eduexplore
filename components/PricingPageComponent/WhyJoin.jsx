@@ -53,7 +53,7 @@ export default function WhyJoin() {
           <div className=" flex justify-between items-center h-auto w-[90%] bg-[#1B1D30] text-white px-3 py-2">
             <Image src={certficate} alt="join1" className=" h-[107px] w-[118px] " />
             <div className=" flex flex-col gap-1 items-end justify-center text-end ">
-              <p className=" w-[80%] font-bold">Certificates for all</p>
+              <p className=" w-[80%] font-bold"> E-Certificates for all</p>
               <p className=" w-[70%] text-[9px] ">
                 Every child receives a certificate to celebrate their effort and
                 creativity!

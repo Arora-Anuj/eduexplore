@@ -51,7 +51,7 @@ export default function PerksOfJoining({ pricing }) {
           </div>
           <div className=" bg-[#1B1D30] w-7/12 sm:w-[200px] sm:h-[250px] lg:w-[285px] lg:h-[344px] items-center justify-center flex flex-col gap-2 p-4 rounded-2xl text-center">
             <Image alt="perks of joining" src={certficate} />
-            <p className=" text-white font-bold">Certificate for All</p>
+            <p className=" text-white font-bold">E-Certificate for All</p>
           </div>
           <div className=" bg-[#1B1D30] w-7/12 sm:w-[200px] sm:h-[250px] lg:w-[285px] lg:h-[344px] items-center justify-center flex flex-col gap-2 p-4 rounded-2xl text-center">
             <Image alt="perks of joining" src={join2} />
