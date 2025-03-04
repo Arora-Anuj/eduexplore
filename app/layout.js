@@ -41,4 +41,4 @@ export default function RootLayout({ children }) {
 //   "og:type": "website",
 // },
 
-<a href="https://ibb.co/LhxpxMSD"><img src="https://i.ibb.co/YTcjc624/og.png" alt="og" border="0"></a>
+{/* <a href="https://ibb.co/LhxpxMSD"><img src="https://i.ibb.co/YTcjc624/og.png" alt="og" border="0"></a> */}
