@@ -16,8 +16,8 @@ export const metadata = {
     "theme-color": "#f5f6f9",
     // 'og:url':'https://www.eduexplore.in',
     "og:url": "https://eduexplore.in/",
-    "og:image": "https://i.ibb.co/Z1dgDp05/og.png",
-    "twitter:image": "https://i.ibb.co/Z1dgDp05/og.png",
+    "og:image": "https://i.ibb.co/YTcjc624/og.png",
+    "twitter:image": "https://i.ibb.co/YTcjc624/og.png",
     "twitter:card": "summary_large_image",
     "og:type": "website",
   },
@@ -29,3 +29,16 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+// other: {
+//   // 'theme-color':'#0d1117',
+//   "theme-color": "#f5f6f9",
+//   // 'og:url':'https://www.eduexplore.in',
+//   "og:url": "https://eduexplore.in/",
+//   "og:image": "https://i.ibb.co/PD7YPG2/Group-1000008179.png",
+//   "twitter:image": "https://i.ibb.co/PD7YPG2/Group-1000008179.png",
+//   "twitter:card": "summary_large_image",
+//   "og:type": "website",
+// },
+
+{/* <a href="https://ibb.co/LhxpxMSD"><img src="https://i.ibb.co/YTcjc624/og.png" alt="og" border="0"></a> */}
