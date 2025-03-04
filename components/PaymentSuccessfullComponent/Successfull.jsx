@@ -35,13 +35,13 @@ export default function Successfull() {
       >
         Payment Successful
       </h1>
-      <h3
+      {/* <h3
         className={`${caros.className}  mt-[6px lg:mt-[8px] text-white text-[17px] font-light leading-[18px] lg:text-[28px] lg:leading-[18px]`}
       >
         Successfully paid ₹500
-      </h3>
+      </h3> */}
 
-      <div className=" w-[90%] mt-[60px] lg:w-[909px] ">
+      {/* <div className=" w-[90%] mt-[60px] lg:w-[909px] ">
         <p
           className={`${caros.className} text-start text-white text-base lg:text-[27px] font-normal font-['Caros'] leading-[18px]`}
         >
@@ -83,7 +83,7 @@ export default function Successfull() {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* <div className=" w-full bg-[#5259aa] rounded-[30px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]" /> */}
       <div className="  w-[90%] lg:w-[909px] flex justify-between items-center py-[10px] px-[15px] lg:py-[18px] lg:px-[28px] mt-[10px] lg:mt-[24px] bg-[#5259aa] rounded-[10px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">
