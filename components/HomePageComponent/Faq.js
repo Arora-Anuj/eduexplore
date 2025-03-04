@@ -180,7 +180,7 @@ export default function Faq({ pricing, success }) {
               onClick={() => toggleFAQ(index)}
               className="w-full flex justify-between cursor-pointer items-start gap-2 text-sm sm:text-lg font-semibold"
             >
-              <p className=" text-[13px] lg:text-2xl font-semibold ">
+              <p className=" text-[13px] lg:text-2xl font-semibold">
                 {faq.question}
               </p>
               {openIndex.includes(index) ? (
