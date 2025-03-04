@@ -28,7 +28,7 @@ export default function Footer({pricing}) {
             <BiLogoFacebook size={20} />
             <BiLogoInstagram size={20} />
           </div>
-          <Image src={payment} alt="payment partner" />
+          <Image src={payment} alt="payment partner" className=" hidden md:flex md:w-[340px] lg:w-[380px] mt-10 " />
         </div>
 
         <div className={` md:h-[460px] md:w-[1px] w-full h-[1px] mt-5 md:mt-0 bg-[#1B1D30] opacity-50 ${!pricing ?"md:bg-[#EEEFFC]" : "md:bg-[#1B1D30]"}`}></div>
@@ -86,6 +86,7 @@ export default function Footer({pricing}) {
             </Link>
           </li>
         </ul>
+        <Image src={payment} alt="payment partner" className="md:hidden w-[350px] mt-10 " />
       </div>
     </div>
 
