@@ -50,26 +50,6 @@
   </style>
 </head>
 <body>
-  <div class="login-container">
-    <h2>Login</h2>
-    <input type="text" id="username" placeholder="Username" />
-    <input type="password" id="password" placeholder="Password" />
-    <button onclick="checkLogin()">Login</button>
-    <div class="error" id="error-message"></div>
-  </div>
-
-  <script>
-    function checkLogin() {
-      const user = document.getElementById("username").value;
-      const pass = document.getElementById("password").value;
-      const errorMessage = document.getElementById("error-message");
-
-      if (user === "throughchildvision" && pass === "Mamta#1") {
-        window.location.href = "/throughchildvision";
-      } else {
-        errorMessage.textContent = "Invalid username or password.";
-      }
-    }
-  </script>
+  
 </body>
 </html>
