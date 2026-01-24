@@ -182,7 +182,7 @@ export async function sendEmail(
         to:
           emailType === "registration"
             ? [data.email, "aakash123exam.com@gmail.com"]
-            : [process.env.SendtoEmail, "aakash123exam.com@gmail.com"],
+            : [process.env.SendtoEmail],
         subject:
           emailType === "enquiry" ? "MY TALENT Enquiry" : "Registration Update",
         html: emailHtml,
